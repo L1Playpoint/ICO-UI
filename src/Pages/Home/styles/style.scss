@@ -1,0 +1,148 @@
+.home__container {
+  margin-top: 9.3vh;
+
+  @media (max-width: 992px) {
+    margin-top: 6.8xvh;
+  }
+
+  // @section => landing
+  .home__container__landing {
+    width: 100vw;
+  }
+
+  // @section => about
+  .home__container__about {
+    position: relative;
+    color: #fff;
+    padding: 0 5vw;
+    margin-top: 50px;
+
+    .absolute__title {
+      font-family: "Fira Code", monospace;
+      font-size: 8em;
+      opacity: 0.3;
+      -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 4px;
+      -webkit-text-stroke-color: #fff;
+    }
+
+    .home__container__about__content {
+      display: flex;
+      align-items: flex-end;
+
+      .description,
+      .icon {
+        flex: 1 1 0;
+      }
+
+      .description {
+        .title {
+          font-size: 1.5em;
+          margin-bottom: 20px;
+
+          .stroke {
+            -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+
+        p {
+          font-family: "Roboto", sans-serif;
+          font-size: 18px;
+          line-height: 1.5;
+        }
+      }
+
+      .icon {
+        position: relative;
+
+        img {
+          width: 70%;
+          object-fit: contain;
+          display: block;
+          margin: 0 auto;
+          z-index: 1;
+
+          &.absolute__icon {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  // @section => token sale
+  .home__container__tokenSale {
+    background-size: cover;
+    margin: 90px 5vw;
+    border-radius: 15px;
+
+    .title {
+      h1 {
+        font-family: "Fira Code", monospace;
+        font-size: 5em;
+        opacity: 0.3;
+        -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-color: #fff;
+        text-align: center;
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+    //   flex-wrap: wrap;
+
+      .content__video,
+      .content__description {
+        // flex: 1 1 0;
+        color: #fff;
+      }
+
+      .content__video {
+        video {
+          width: 30vw;
+          object-fit: contain;
+        }
+      }
+
+      .content__description {
+        margin-left: 50px;
+        font-size: 18px;
+        line-height: 1.5;
+        font-family: "Roboto", sans-serif;
+
+        .stroke__colored {
+          -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #3C2184;
+          font-size: 2.5em;
+        }
+
+        .heading {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        ul{
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-between;
+            list-style-type: disc;
+            margin-bottom: 30px;
+        }
+
+        .marketing{
+            opacity: 0.4;
+        }
+      }
+    }
+  }
+}

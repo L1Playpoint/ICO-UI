@@ -8,6 +8,10 @@
   position: relative; }
   .home__container .home__container__landing {
     width: 100vw; }
+    @media (max-width: 768px) {
+      .home__container .home__container__landing {
+        margin-top: 25px;
+        transform: scale(1.2); } }
   .home__container .home__container__about {
     color: #fff;
     padding: 0 5vw;
@@ -20,14 +24,26 @@
       /* Will override color (regardless of order) */
       -webkit-text-stroke-width: 4px;
       -webkit-text-stroke-color: #fff; }
+      @media (max-width: 768px) {
+        .home__container .home__container__about .absolute__title {
+          font-size: 3.5em;
+          -webkit-text-stroke-width: 2px; } }
     .home__container .home__container__about .title {
       font-family: "Fira Code", monospace; }
     .home__container .home__container__about .home__container__about__content {
       display: flex;
       align-items: flex-end; }
+      @media (max-width: 992px) {
+        .home__container .home__container__about .home__container__about__content {
+          flex-direction: column;
+          align-items: center; } }
       .home__container .home__container__about .home__container__about__content .description,
       .home__container .home__container__about .home__container__about__content .icon {
         flex: 1 1 0; }
+        @media (max-width: 992px) {
+          .home__container .home__container__about .home__container__about__content .description,
+          .home__container .home__container__about .home__container__about__content .icon {
+            flex: 1; } }
       .home__container .home__container__about .home__container__about__content .description .title {
         font-size: 1.5em;
         margin-bottom: 20px; }
@@ -43,18 +59,30 @@
         line-height: 1.5; }
       .home__container .home__container__about .home__container__about__content .icon {
         position: relative; }
+        @media (max-width: 992px) {
+          .home__container .home__container__about .home__container__about__content .icon {
+            margin-top: 50px; } }
         .home__container .home__container__about .home__container__about__content .icon img {
           width: 70%;
           object-fit: contain;
           display: block;
           margin: 0 auto;
           z-index: 1; }
+          @media (max-width: 768px) {
+            .home__container .home__container__about .home__container__about__content .icon img {
+              width: 80%; } }
           .home__container .home__container__about .home__container__about__content .icon img.absolute__icon {
             position: absolute;
             bottom: 0;
             right: 0;
             z-index: -1;
             opacity: 0.5; }
+            @media (max-width: 992px) {
+              .home__container .home__container__about .home__container__about__content .icon img.absolute__icon {
+                right: 50px; } }
+            @media (max-width: 768px) {
+              .home__container .home__container__about .home__container__about__content .icon img.absolute__icon {
+                right: 10px; } }
   .home__container .home__container__tokenSale {
     background-size: cover;
     margin: 90px 5vw;
@@ -68,35 +96,61 @@
       -webkit-text-stroke-width: 4px;
       -webkit-text-stroke-color: #fff;
       text-align: center; }
+      @media (max-width: 768px) {
+        .home__container .home__container__tokenSale .title h1 {
+          font-size: 2.5em;
+          -webkit-text-stroke-width: 2px; } }
     .home__container .home__container__tokenSale .content {
       display: flex;
       align-items: center; }
+      @media (max-width: 992px) {
+        .home__container .home__container__tokenSale .content {
+          align-items: flex-start; } }
+      @media (max-width: 768px) {
+        .home__container .home__container__tokenSale .content {
+          flex-direction: column;
+          align-items: center; } }
       .home__container .home__container__tokenSale .content .content__video,
       .home__container .home__container__tokenSale .content .content__description {
         color: #fff; }
       .home__container .home__container__tokenSale .content .content__video video {
         width: 30vw;
         object-fit: contain; }
+        @media (max-width: 768px) {
+          .home__container .home__container__tokenSale .content .content__video video {
+            width: 80vw; } }
       .home__container .home__container__tokenSale .content .content__description {
         margin-left: 50px;
         font-size: 18px;
         line-height: 1.5;
         font-family: "Roboto", sans-serif; }
+        @media (max-width: 768px) {
+          .home__container .home__container__tokenSale .content .content__description {
+            margin-left: 0; } }
         .home__container .home__container__tokenSale .content .content__description .stroke__colored {
           -webkit-text-fill-color: #000;
           /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: #6f48d8;
           font-size: 2.5em; }
+          @media (max-width: 768px) {
+            .home__container .home__container__tokenSale .content .content__description .stroke__colored {
+              font-size: 2em; } }
         .home__container .home__container__tokenSale .content .content__description .heading {
           font-size: 3em;
           margin-bottom: 20px; }
+          @media (max-width: 768px) {
+            .home__container .home__container__tokenSale .content .content__description .heading {
+              font-size: 2.5em; } }
         .home__container .home__container__tokenSale .content .content__description ul {
           display: flex;
           margin-top: 30px;
           list-style-type: disc;
           margin-bottom: 30px;
           flex-wrap: wrap; }
+          @media (max-width: 768px) {
+            .home__container .home__container__tokenSale .content .content__description ul {
+              margin-left: 35px; } }
           .home__container .home__container__tokenSale .content .content__description ul li {
             margin-right: 50px; }
         .home__container .home__container__tokenSale .content .content__description .marketing {
@@ -114,17 +168,28 @@
       top: 10vh;
       left: 50%;
       font-size: 5em; }
+      @media (max-width: 768px) {
+        .home__container .home__container__roadmap .absolute__title {
+          font-size: 2em;
+          left: 10%; } }
       .home__container .home__container__roadmap .absolute__title h1 {
         -webkit-text-fill-color: #000;
         /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 4px;
         -webkit-text-stroke-color: #fff;
         font-family: "Fira Code", monospace; }
+        @media (max-width: 768px) {
+          .home__container .home__container__roadmap .absolute__title h1 {
+            -webkit-text-stroke-width: 2px; } }
     .home__container .home__container__roadmap .roadmap__title {
       font-size: 50px;
       margin-bottom: 40px;
       font-family: "Fira Code", monospace;
       animation: glow 2s ease-in-out infinite alternate; }
+      @media (max-width: 768px) {
+        .home__container .home__container__roadmap .roadmap__title {
+          font-size: 35px;
+          margin-bottom: 20px; } }
     .home__container .home__container__roadmap p {
       font-family: "Roboto", sans-serif;
       font-size: 17px;
@@ -134,9 +199,16 @@
       margin-bottom: 40px;
       text-align: center;
       opacity: 0.5; }
+      @media (max-width: 768px) {
+        .home__container .home__container__roadmap .top__description {
+          max-width: 80vw; } }
     .home__container .home__container__roadmap .timeline__container .title {
       font-family: "Fira Code", monospace;
       margin-bottom: 20px; }
+      @media (max-width: 768px) {
+        .home__container .home__container__roadmap .timeline__container .title {
+          font-size: 18px;
+          margin-bottom: 10px; } }
   .home__container .home__container__gallery {
     display: block;
     margin: 0 auto;
@@ -195,6 +267,9 @@
       .home__container .home__container__documents {
         flex-wrap: wrap;
         flex-direction: column; } }
+    @media (max-width: 768px) {
+      .home__container .home__container__documents {
+        margin: 50px 5vw; } }
     .home__container .home__container__documents .faqs,
     .home__container .home__container__documents .documents__links {
       flex: 1 1 0;
@@ -220,6 +295,9 @@
     .home__container .home__container__documents .faqs h1 {
       font-family: "Fira Code", monospace;
       font-size: 4em; }
+      @media (max-width: 768px) {
+        .home__container .home__container__documents .faqs h1 {
+          font-size: 2em; } }
     .home__container .home__container__documents .faqs .faq__description {
       line-height: 1.5;
       color: #999999;
@@ -257,6 +335,9 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #fff;
         font-family: "Fira Code", monospace; }
+        @media (max-width: 768px) {
+          .home__container .home__container__documents .documents__links h1 {
+            font-size: 2em; } }
       .home__container .home__container__documents .documents__links .MuiButton-root {
         margin-bottom: 20px;
         background: #000;
@@ -270,8 +351,14 @@
         border-radius: 15px;
         margin-top: 25px;
         margin-bottom: 20px; }
+        @media (max-width: 768px) {
+          .home__container .home__container__documents .documents__links img {
+            width: 90vw; } }
       .home__container .home__container__documents .documents__links b {
         color: #9361ff; }
+      @media (max-width: 768px) {
+        .home__container .home__container__documents .documents__links .contractAddr {
+          font-size: 14px; } }
   .home__container .footer__container {
     color: #fff;
     padding: 0 5vw;
@@ -286,6 +373,9 @@
     .home__container .footer__container ul {
       display: flex;
       list-style-type: none; }
+      @media (max-width: 768px) {
+        .home__container .footer__container ul {
+          margin-top: 20px; } }
       .home__container .footer__container ul a {
         color: #fff;
         margin-left: 30px;

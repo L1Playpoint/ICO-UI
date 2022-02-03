@@ -252,10 +252,10 @@ export default function Home() {
 
           <img src={IceBreaker} alt="Breaking Gold" />
 
-          <p>
+          <p className="contractAddr">
             <b>Token Contract:</b> 0xfc3da4a1b6fadab364038763498457b7c0c16521cd
           </p>
-          <p>
+          <p className="contractAddr">
             <b>Crowdsale Contract:</b> 0xfbt88hdgb6fadab364038763498457b7c0c16521cd
           </p>
         </div>

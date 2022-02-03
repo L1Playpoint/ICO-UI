@@ -18,6 +18,11 @@
   // @section => landing
   .home__container__landing {
     width: 100vw;
+
+    @media (max-width: 768px){
+      margin-top: 25px;
+      transform: scale(1.2);
+    }
   }
 
   // @section => about
@@ -33,6 +38,11 @@
       -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
       -webkit-text-stroke-width: 4px;
       -webkit-text-stroke-color: #fff;
+      
+      @media (max-width: 768px){
+        font-size: 3.5em;
+        -webkit-text-stroke-width: 2px;
+      }
     }
 
     .title {
@@ -43,9 +53,18 @@
       display: flex;
       align-items: flex-end;
 
+      @media (max-width: 992px){
+        flex-direction: column;
+        align-items: center;
+      }
+
       .description,
       .icon {
         flex: 1 1 0;
+
+        @media (max-width: 992px){
+          flex: 1;
+        }
       }
 
       .description {
@@ -71,6 +90,10 @@
       .icon {
         position: relative;
 
+        @media (max-width: 992px){
+          margin-top: 50px;
+        }
+
         img {
           width: 70%;
           object-fit: contain;
@@ -78,12 +101,24 @@
           margin: 0 auto;
           z-index: 1;
 
+          @media (max-width: 768px){
+            width: 80%;
+          }
+
           &.absolute__icon {
             position: absolute;
             bottom: 0;
             right: 0;
             z-index: -1;
             opacity: 0.5;
+
+            @media (max-width: 992px){
+              right: 50px;
+            }
+
+            @media (max-width: 768px){
+              right: 10px;
+            }
           }
         }
       }
@@ -105,17 +140,30 @@
         -webkit-text-stroke-width: 4px;
         -webkit-text-stroke-color: #fff;
         text-align: center;
+
+        @media (max-width: 768px){
+          font-size: 2.5em;
+          -webkit-text-stroke-width: 2px;
+        }
       }
     }
 
     .content {
       display: flex;
       align-items: center;
-      //   flex-wrap: wrap;
+
+      @media (max-width: 992px){
+        align-items: flex-start;
+      }
+      
+      @media (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+      }
+
 
       .content__video,
       .content__description {
-        // flex: 1 1 0;
         color: #fff;
       }
 
@@ -123,6 +171,10 @@
         video {
           width: 30vw;
           object-fit: contain;
+
+          @media (max-width: 768px){
+            width: 80vw;
+          }
         }
       }
 
@@ -132,17 +184,29 @@
         line-height: 1.5;
         font-family: "Roboto", sans-serif;
 
+        @media (max-width: 768px){
+          margin-left: 0;
+        }
+
         .stroke__colored {
           -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: #6f48d8;
           font-size: 2.5em;
-          //   animation: glow 1s ease-in-out infinite alternate;
+          
+
+          @media (max-width:768px){
+            font-size: 2em;
+          }
         }
 
         .heading {
           font-size: 3em;
           margin-bottom: 20px;
+
+          @media (max-width:768px){
+            font-size: 2.5em;
+          }
         }
 
         ul {
@@ -151,6 +215,10 @@
           list-style-type: disc;
           margin-bottom: 30px;
           flex-wrap: wrap;
+
+          @media (max-width: 768px){
+            margin-left: 35px;
+          }
 
           li {
             margin-right: 50px;
@@ -180,11 +248,20 @@
       left: 50%;
       font-size: 5em;
 
+      @media (max-width: 768px){
+        font-size: 2em;
+        left: 10%;
+      }
+
       h1 {
         -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 4px;
         -webkit-text-stroke-color: #fff;
         font-family: "Fira Code", monospace;
+
+        @media (max-width: 768px){
+          -webkit-text-stroke-width: 2px;
+        }
       }
     }
 
@@ -193,6 +270,11 @@
       margin-bottom: 40px;
       font-family: "Fira Code", monospace;
       animation: glow 2s ease-in-out infinite alternate;
+
+      @media (max-width:768px){
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
     }
 
     p {
@@ -206,12 +288,21 @@
       margin-bottom: 40px;
       text-align: center;
       opacity: 0.5;
+
+      @media (max-width:768px){
+        max-width: 80vw;
+      }
     }
 
     .timeline__container {
       .title {
         font-family: "Fira Code", monospace;
         margin-bottom: 20px;
+
+        @media (max-width: 768px){
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
       }
     }
   }
@@ -292,6 +383,10 @@
       flex-wrap: wrap;
       flex-direction: column;
     }
+    
+    @media (max-width: 768px) {
+      margin: 50px 5vw;
+    }
 
     .faqs,
     .documents__links {
@@ -324,6 +419,10 @@
       h1 {
         font-family: "Fira Code", monospace;
         font-size: 4em;
+
+        @media (max-width: 768px){
+          font-size: 2em;
+        }
       }
 
       .faq__description {
@@ -382,6 +481,10 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #fff;
         font-family: "Fira Code", monospace;
+
+        @media (max-width: 768px){
+          font-size: 2em;
+        }
       }
 
       .MuiButton-root {
@@ -401,10 +504,20 @@
         border-radius: 15px;
         margin-top: 25px;
         margin-bottom: 20px;
+
+        @media (max-width: 768px){
+          width: 90vw;
+        }
       }
 
       b {
         color: #9361ff;
+      }
+
+      .contractAddr{
+        @media (max-width: 768px){
+          font-size: 14px;
+        }
       }
     }
   }
@@ -426,6 +539,10 @@
     ul{
       display: flex;
       list-style-type: none;
+
+      @media (max-width: 768px){
+        margin-top: 20px;
+      }
 
       a{
         color: #fff;

@@ -26,7 +26,7 @@
       -webkit-text-stroke-color: #fff; }
       @media (max-width: 768px) {
         .home__container .home__container__about .absolute__title {
-          font-size: 3.5em;
+          font-size: 3em;
           -webkit-text-stroke-width: 2px; } }
     .home__container .home__container__about .title {
       font-family: "Fira Code", monospace; }
@@ -53,6 +53,9 @@
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: #fff;
           font-family: "Roboto", sans-serif; }
+        @media (max-width: 768px) {
+          .home__container .home__container__about .home__container__about__content .description .title {
+            font-size: 1em; } }
       .home__container .home__container__about .home__container__about__content .description p {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
@@ -62,6 +65,9 @@
         @media (max-width: 992px) {
           .home__container .home__container__about .home__container__about__content .icon {
             margin-top: 50px; } }
+        @media (max-width: 992px) {
+          .home__container .home__container__about .home__container__about__content .icon {
+            margin-top: 30px; } }
         .home__container .home__container__about .home__container__about__content .icon img {
           width: 70%;
           object-fit: contain;
@@ -87,6 +93,9 @@
     background-size: cover;
     margin: 90px 5vw;
     border-radius: 15px; }
+    @media (max-width: 768px) {
+      .home__container .home__container__tokenSale {
+        margin: 50px 5vw; } }
     .home__container .home__container__tokenSale .title h1 {
       font-family: "Fira Code", monospace;
       font-size: 5em;
@@ -215,6 +224,9 @@
     margin-top: 120px;
     width: 100%;
     padding: 0 5vw; }
+    @media (max-width: 768px) {
+      .home__container .home__container__gallery {
+        margin-top: 50px; } }
     .home__container .home__container__gallery .row {
       display: -ms-flexbox;
       /* IE10 */

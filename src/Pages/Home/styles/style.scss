@@ -40,7 +40,7 @@
       -webkit-text-stroke-color: #fff;
       
       @media (max-width: 768px){
-        font-size: 3.5em;
+        font-size: 3em;
         -webkit-text-stroke-width: 2px;
       }
     }
@@ -78,6 +78,10 @@
             -webkit-text-stroke-color: #fff;
             font-family: "Roboto", sans-serif;
           }
+
+          @media (max-width:768px){
+            font-size: 1em;
+          }
         }
 
         p {
@@ -92,6 +96,10 @@
 
         @media (max-width: 992px){
           margin-top: 50px;
+        }
+        
+        @media (max-width: 992px){
+          margin-top: 30px;
         }
 
         img {
@@ -130,6 +138,10 @@
     background-size: cover;
     margin: 90px 5vw;
     border-radius: 15px;
+
+    @media (max-width: 768px){
+      margin: 50px 5vw;
+    }
 
     .title {
       h1 {
@@ -314,6 +326,10 @@
     margin-top: 120px;
     width: 100%;
     padding: 0 5vw;
+
+    @media (max-width: 768px) {
+      margin-top: 50px;
+    }
 
     .row {
       display: -ms-flexbox; /* IE10 */

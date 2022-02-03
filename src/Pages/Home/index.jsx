@@ -17,26 +17,6 @@ import TimelineContainer from "./components/Timeline";
 import Faqs from "./components/Faqs";
 import Footer from "../../Components/Footer";
 
-/**
- * @assets custom assets
- * @dev assets must be delivered from CDN
- */
-import LandingImage from "../../Assets/Landing1.png";
-import AboutBanner from "../../Assets/About.png";
-import AboutBanner1 from "../../Assets/About1.png";
-import BuyMe from "../../Assets/BuyMe.mp4";
-import IceBreaker from "../../Assets/IceBreaking.png";
-
-// Games Images;
-import Game9 from "../../Assets/Games/9.png";
-import Game8 from "../../Assets/Games/8.png";
-import Game7 from "../../Assets/Games/7.png";
-import Game6 from "../../Assets/Games/6.png";
-import Game4 from "../../Assets/Games/4.png";
-import Game3 from "../../Assets/Games/3.png";
-import Game2 from "../../Assets/Games/2.png";
-import Game1 from "../../Assets/Games/1.png";
-
 export default function Home() {
   // refs
   const HomeRef = React.useRef();
@@ -52,23 +32,34 @@ export default function Home() {
     TokenSaleRef,
     RoadmapRef,
     GalleryRef,
-    DocumentsRef
-  }
-    
+    DocumentsRef,
+  };
+
   return (
     <div className="home__container">
       <Helmet>
         <title>Playpoint | Decentralized Betting Platform</title>
       </Helmet>
 
-      <Navbar refs={refs}/>
+      <Navbar refs={refs} />
 
       {/**
        * @section => landing
        */}
       <img
-      ref={HomeRef}
-        src={LandingImage}
+        ref={HomeRef}
+        src={
+          window.innerWidth >= 1920 ||
+          (window.innerWidth <= 1920 && window.innerWidth > 992)
+            ? "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-1920,h-1039.340"
+            : window.innerWidth <= 992 && window.innerWidth > 768
+            ? "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-992,h-536.641"
+            : window.innerWidth <= 768 && window.innerWidth > 576
+            ? "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-768,h-415.734"
+            : window.innerWidth <= 576
+            ? "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-576,h-311.797"
+            : "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-390,h-211.109"
+        }
         alt="The City of Winners"
         className="home__container__landing"
       />
@@ -94,11 +85,35 @@ export default function Home() {
           </div>
           <div className="icon">
             <img
-              src={AboutBanner}
+              src={
+                window.innerWidth >= 1920 ||
+                (window.innerWidth <= 1920 && window.innerWidth > 992)
+                  ? "https://ik.imagekit.io/lexworld/About.png?tr=w-604.797,h-548.297"
+                  : window.innerWidth <= 992 && window.innerWidth > 768
+                  ? "https://ik.imagekit.io/lexworld/About.png?tr=w-604.797,h-548.297"
+                  : window.innerWidth <= 768 && window.innerWidth > 576
+                  ? "https://ik.imagekit.io/lexworld/About.png?tr=w-552.969,h-501.297"
+                  : window.innerWidth <= 576
+                  ? "https://ik.imagekit.io/lexworld/About.png?tr=w-414.719,h-375.969"
+                  : "https://ik.imagekit.io/lexworld/About.png?tr=w-280.797,h-254.562"
+              }
               className="animate__infinite animate__animated animate__pulse animate__slow"
               alt=""
             />
-            <img src={AboutBanner1} alt="" className="absolute__icon" />
+            <img 
+            src={
+                window.innerWidth >= 1920 ||
+                (window.innerWidth <= 1920 && window.innerWidth > 992)
+                  ? "https://ik.imagekit.io/lexworld/About1.png?tr=w-604.797,h-236.172"
+                  : window.innerWidth <= 992 && window.innerWidth > 768
+                  ? "https://ik.imagekit.io/lexworld/About1.png?tr=w-423.500,h-165.375"
+                  : window.innerWidth <= 768 && window.innerWidth > 576
+                  ? "https://ik.imagekit.io/lexworld/About1.png?tr=w-484,h-189"
+                  : window.innerWidth <= 576
+                  ? "https://ik.imagekit.io/lexworld/About1.png?tr=w-414.719,h-161.938"
+                  : "https://ik.imagekit.io/lexworld/About1.png?tr=w-280.797,h-109.641"
+              } 
+              alt="" className="absolute__icon" />
           </div>
         </div>
       </div>
@@ -113,7 +128,7 @@ export default function Home() {
 
         <div className="content">
           <div className="content__video">
-            <video src={BuyMe} autoPlay loop muted />
+            <video src="https://ik.imagekit.io/lexworld/BuyMe.mp4" autoPlay loop muted />
           </div>
 
           <div className="content__description">
@@ -187,34 +202,34 @@ export default function Home() {
         <div className="row">
           <div className="column">
             <div className="image-box">
-              <img src={Game6} alt="" />
+              <img src="https://ik.imagekit.io/lexworld/6.png" alt="" />
             </div>
             <div className="image-box">
-              <img src={Game9} alt="" />
-            </div>
-          </div>
-          <div className="column">
-            <div className="image-box">
-              <img src={Game2} alt="" />
-            </div>
-            <div className="image-box">
-              <img src={Game4} alt="" />
+              <img src="https://ik.imagekit.io/lexworld/9.png" alt="" />
             </div>
           </div>
           <div className="column">
             <div className="image-box">
-              <img src={Game1} alt="" />
+              <img src="https://ik.imagekit.io/lexworld/2.png" alt="" />
             </div>
             <div className="image-box">
-              <img src={Game3} alt="" />
+              <img src="https://ik.imagekit.io/lexworld/4.png" alt="" />
             </div>
           </div>
           <div className="column">
             <div className="image-box">
-              <img src={Game8} alt="" />
+              <img src="https://ik.imagekit.io/lexworld/1.png" alt="" />
             </div>
             <div className="image-box">
-              <img src={Game7} alt="" />
+              <img src="https://ik.imagekit.io/lexworld/3.png" alt="" />
+            </div>
+          </div>
+          <div className="column">
+            <div className="image-box">
+              <img src="https://ik.imagekit.io/lexworld/8.png" alt="" />
+            </div>
+            <div className="image-box">
+              <img src="https://ik.imagekit.io/lexworld/7.png" alt="" />
             </div>
           </div>
         </div>
@@ -250,18 +265,32 @@ export default function Home() {
             excepturi, culpa et dolorum eveniet voluptate?
           </p>
 
-          <img src={IceBreaker} alt="Breaking Gold" />
+          <img 
+          src={
+            window.innerWidth >= 1920 ||
+            (window.innerWidth <= 1920 && window.innerWidth > 992)
+              ? "https://ik.imagekit.io/lexworld/IceBreaking.png?tr=w-824,h-397.797"
+              : window.innerWidth <= 992 && window.innerWidth > 768
+              ? "https://ik.imagekit.io/lexworld/IceBreaking.png?tr=w-892.812,h-431.016"
+              : window.innerWidth <= 768 && window.innerWidth > 576
+              ? "https://ik.imagekit.io/lexworld/IceBreaking.png?tr=w-691.188,h-333.688"
+              : window.innerWidth <= 576
+              ? "https://ik.imagekit.io/lexworld/IceBreaking.png?tr=w-518.391,h-250.266"
+              : "https://ik.imagekit.io/lexworld/IceBreaking.png?tr=w-351,h-169.453"
+          }
+          alt="Breaking Gold" />
 
           <p className="contractAddr">
             <b>Token Contract:</b> 0xfc3da4a1b6fadab364038763498457b7c0c16521cd
           </p>
           <p className="contractAddr">
-            <b>Crowdsale Contract:</b> 0xfbt88hdgb6fadab364038763498457b7c0c16521cd
+            <b>Crowdsale Contract:</b>{" "}
+            0xfbt88hdgb6fadab364038763498457b7c0c16521cd
           </p>
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

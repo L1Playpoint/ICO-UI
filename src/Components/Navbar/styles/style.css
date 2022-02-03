@@ -25,17 +25,22 @@
     @media (max-width: 992px) {
       .navbar__container .navbar__links {
         display: none; } }
-    .navbar__container .navbar__links a {
+    .navbar__container .navbar__links button {
       color: #fff;
       text-decoration: none;
-      margin: 0 20px; }
+      margin: 0 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px; }
   .navbar__container .navbar__app {
     border: 1px solid #fff;
     border-radius: 10px;
     padding: 10px 20px;
-    transition: 0.3s all ease; }
+    transition: 0.3s all ease;
+    cursor: pointer; }
     .navbar__container .navbar__app:hover {
-      background-color: #fff;
-      color: #1c5fee; }
+      background-color: #5308F7;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

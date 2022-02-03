@@ -30,10 +30,14 @@
         display: none;
     }
 
-    a {
+    button {
       color: #fff;
       text-decoration: none;
       margin: 0 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
     }
   }
 
@@ -42,10 +46,11 @@
     border-radius: 10px;
     padding: 10px 20px;
     transition: 0.3s all ease;
+    cursor: pointer;
 
     &:hover{
-        background-color: #fff;
-        color: #1c5fee;
+        background-color: #5308F7;
+        color: #fff;
     }
   }
 }

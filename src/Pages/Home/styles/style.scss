@@ -1,9 +1,19 @@
-.home__container {
-  margin-top: 9.3vh;
-
-  @media (max-width: 992px) {
-    margin-top: 6.8xvh;
+// Animation => Glow
+@keyframes glow {
+  from {
+    text-shadow: 0 0 0 #2a2a2a, 0 0 5px #2a2a2a, 0 0 10px #3c2184,
+      0 0 20px #3c2184, 0 0 50px #3c2184, 0 0 60px #3c2184, 0 0 70px #3c2184;
   }
+
+  to {
+    text-shadow: 0 0 10px rgb(87, 87, 87), 0 0 20px #353535, 0 0 30px #5739a8,
+      0 0 50px #5739a8, 0 0 60px #5739a8, 0 0 70px #5739a8, 0 0 80px #5739a8;
+  }
+}
+
+.home__container {
+  margin-top: 70px;
+  position: relative;
 
   // @section => landing
   .home__container__landing {
@@ -12,7 +22,6 @@
 
   // @section => about
   .home__container__about {
-    position: relative;
     color: #fff;
     padding: 0 5vw;
     margin-top: 50px;
@@ -24,6 +33,10 @@
       -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
       -webkit-text-stroke-width: 4px;
       -webkit-text-stroke-color: #fff;
+    }
+
+    .title {
+      font-family: "Fira Code", monospace;
     }
 
     .home__container__about__content {
@@ -98,7 +111,7 @@
     .content {
       display: flex;
       align-items: center;
-    //   flex-wrap: wrap;
+      //   flex-wrap: wrap;
 
       .content__video,
       .content__description {
@@ -122,26 +135,303 @@
         .stroke__colored {
           -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: #3C2184;
+          -webkit-text-stroke-color: #6f48d8;
           font-size: 2.5em;
+          //   animation: glow 1s ease-in-out infinite alternate;
         }
 
         .heading {
-            font-size: 3em;
-            margin-bottom: 20px;
+          font-size: 3em;
+          margin-bottom: 20px;
         }
 
-        ul{
-            display: flex;
-            margin-top: 30px;
-            justify-content: space-between;
-            list-style-type: disc;
-            margin-bottom: 30px;
+        ul {
+          display: flex;
+          margin-top: 30px;
+          list-style-type: disc;
+          margin-bottom: 30px;
+          flex-wrap: wrap;
+
+          li {
+            margin-right: 50px;
+          }
         }
 
-        .marketing{
-            opacity: 0.4;
+        .marketing {
+          opacity: 0.4;
         }
+      }
+    }
+  }
+
+  // @section => roadmap
+  .home__container__roadmap {
+    color: #fff;
+    position: relative;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .absolute__title {
+      position: absolute;
+      opacity: 0.1;
+      top: 10vh;
+      left: 50%;
+      font-size: 5em;
+
+      h1 {
+        -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-color: #fff;
+        font-family: "Fira Code", monospace;
+      }
+    }
+
+    .roadmap__title {
+      font-size: 50px;
+      margin-bottom: 40px;
+      font-family: "Fira Code", monospace;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    .top__description {
+      max-width: 50vw;
+      margin-bottom: 40px;
+      text-align: center;
+      opacity: 0.5;
+    }
+
+    .timeline__container {
+      .title {
+        font-family: "Fira Code", monospace;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  // @section => gallery
+  .home__container__gallery {
+    display: block;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 100%;
+    padding: 0 5vw;
+
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 5px;
+      justify-content: center;
+
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 5px;
+
+        .image-box {
+          width: 100%;
+          position: relative;
+          margin: auto;
+          overflow: hidden;
+          vertical-align: middle;
+          margin-top: 10px;
+        }
+
+        img {
+          width: 100%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          display: block;
+          transform: scale(1);
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 992px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 768px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  // @section => documents
+  .home__container__documents {
+    color: #fff;
+    margin: 100px 5vw;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .faqs,
+    .documents__links {
+      flex: 1 1 0;
+      font-family: "Roboto", sans-serif;
+
+      @media (max-width: 992px) {
+        flex: 1;
+      }
+    }
+
+    .absolute {
+      position: absolute;
+      font-size: 15em;
+      -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 2px;
+      z-index: -1;
+      top: 50%;
+      -webkit-text-stroke-color: #fff;
+      transform: translateY(-50%);
+      opacity: 0.1;
+    }
+
+    .overlay {
+      width: 0;
+      height: 0;
+    }
+
+    .faqs {
+      h1 {
+        font-family: "Fira Code", monospace;
+        font-size: 4em;
+      }
+
+      .faq__description {
+        line-height: 1.5;
+        color: rgb(153, 153, 153);
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      .faqs__container {
+        margin-top: 40px;
+
+        .MuiPaper-root {
+          background: transparent;
+          color: #fff;
+        }
+
+        .MuiAccordionSummary-root {
+          border-top: 0.2px solid #dedede;
+          //   border-bottom: 0.2px solid #dedede;
+        }
+
+        .MuiTypography-root {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .MuiAccordionDetails-root {
+          .MuiTypography-root {
+            font-size: 16px;
+            font-weight: 400;
+            color: #b9b9b9;
+          }
+        }
+
+        .MuiAccordionSummary-expandIconWrapper {
+          color: #fff;
+        }
+      }
+    }
+
+    .documents__links {
+      margin-left: 80px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #a7a7a7;
+
+      @media (max-width: 992px) {
+        margin-left: 0;
+        margin-top: 50px;
+      }
+
+      h1 {
+        font-size: 4em;
+        -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        font-family: "Fira Code", monospace;
+      }
+
+      .MuiButton-root {
+        margin-bottom: 20px;
+        background: #000;
+        border: 0.5px solid #fff;
+        color: #fff;
+        padding: 0 40px;
+
+        &:hover {
+          background: #5308f7;
+        }
+      }
+
+      img {
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+      }
+
+      b {
+        color: #9361ff;
+      }
+    }
+  }
+
+  .footer__container{
+    color: #fff;
+    padding: 0 5vw;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .update{
+      font-family: "Fira Code", monospace;
+      font-size: 18px;
+    }
+
+    ul{
+      display: flex;
+      list-style-type: none;
+
+      a{
+        color: #fff;
+        margin-left: 30px;
+        font-size: 30px;
+        text-decoration: none;
       }
     }
   }

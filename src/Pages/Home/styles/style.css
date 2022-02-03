@@ -1,12 +1,14 @@
+@keyframes glow {
+  from {
+    text-shadow: 0 0 0 #2a2a2a, 0 0 5px #2a2a2a, 0 0 10px #3c2184, 0 0 20px #3c2184, 0 0 50px #3c2184, 0 0 60px #3c2184, 0 0 70px #3c2184; }
+  to {
+    text-shadow: 0 0 10px #575757, 0 0 20px #353535, 0 0 30px #5739a8, 0 0 50px #5739a8, 0 0 60px #5739a8, 0 0 70px #5739a8, 0 0 80px #5739a8; } }
 .home__container {
-  margin-top: 9.3vh; }
-  @media (max-width: 992px) {
-    .home__container {
-      margin-top: 6.8xvh; } }
+  margin-top: 70px;
+  position: relative; }
   .home__container .home__container__landing {
     width: 100vw; }
   .home__container .home__container__about {
-    position: relative;
     color: #fff;
     padding: 0 5vw;
     margin-top: 50px; }
@@ -18,6 +20,8 @@
       /* Will override color (regardless of order) */
       -webkit-text-stroke-width: 4px;
       -webkit-text-stroke-color: #fff; }
+    .home__container .home__container__about .title {
+      font-family: "Fira Code", monospace; }
     .home__container .home__container__about .home__container__about__content {
       display: flex;
       align-items: flex-end; }
@@ -82,7 +86,7 @@
           -webkit-text-fill-color: #000;
           /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: #3C2184;
+          -webkit-text-stroke-color: #6f48d8;
           font-size: 2.5em; }
         .home__container .home__container__tokenSale .content .content__description .heading {
           font-size: 3em;
@@ -90,10 +94,202 @@
         .home__container .home__container__tokenSale .content .content__description ul {
           display: flex;
           margin-top: 30px;
-          justify-content: space-between;
           list-style-type: disc;
-          margin-bottom: 30px; }
+          margin-bottom: 30px;
+          flex-wrap: wrap; }
+          .home__container .home__container__tokenSale .content .content__description ul li {
+            margin-right: 50px; }
         .home__container .home__container__tokenSale .content .content__description .marketing {
           opacity: 0.4; }
+  .home__container .home__container__roadmap {
+    color: #fff;
+    position: relative;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .home__container .home__container__roadmap .absolute__title {
+      position: absolute;
+      opacity: 0.1;
+      top: 10vh;
+      left: 50%;
+      font-size: 5em; }
+      .home__container .home__container__roadmap .absolute__title h1 {
+        -webkit-text-fill-color: #000;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-color: #fff;
+        font-family: "Fira Code", monospace; }
+    .home__container .home__container__roadmap .roadmap__title {
+      font-size: 50px;
+      margin-bottom: 40px;
+      font-family: "Fira Code", monospace;
+      animation: glow 2s ease-in-out infinite alternate; }
+    .home__container .home__container__roadmap p {
+      font-family: "Roboto", sans-serif;
+      font-size: 17px;
+      line-height: 1.5; }
+    .home__container .home__container__roadmap .top__description {
+      max-width: 50vw;
+      margin-bottom: 40px;
+      text-align: center;
+      opacity: 0.5; }
+    .home__container .home__container__roadmap .timeline__container .title {
+      font-family: "Fira Code", monospace;
+      margin-bottom: 20px; }
+  .home__container .home__container__gallery {
+    display: block;
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 100%;
+    padding: 0 5vw; }
+    .home__container .home__container__gallery .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 5px;
+      justify-content: center;
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ }
+      .home__container .home__container__gallery .row .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 5px; }
+        .home__container .home__container__gallery .row .column .image-box {
+          width: 100%;
+          position: relative;
+          margin: auto;
+          overflow: hidden;
+          vertical-align: middle;
+          margin-top: 10px; }
+        .home__container .home__container__gallery .row .column img {
+          width: 100%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          display: block;
+          transform: scale(1); }
+          .home__container .home__container__gallery .row .column img:hover {
+            transform: scale(1.1); }
+      @media screen and (max-width: 992px) {
+        .home__container .home__container__gallery .row .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%; } }
+      @media screen and (max-width: 768px) {
+        .home__container .home__container__gallery .row .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%; } }
+  .home__container .home__container__documents {
+    color: #fff;
+    margin: 100px 5vw;
+    display: flex;
+    align-items: flex-start;
+    position: relative; }
+    @media (max-width: 992px) {
+      .home__container .home__container__documents {
+        flex-wrap: wrap;
+        flex-direction: column; } }
+    .home__container .home__container__documents .faqs,
+    .home__container .home__container__documents .documents__links {
+      flex: 1 1 0;
+      font-family: "Roboto", sans-serif; }
+      @media (max-width: 992px) {
+        .home__container .home__container__documents .faqs,
+        .home__container .home__container__documents .documents__links {
+          flex: 1; } }
+    .home__container .home__container__documents .absolute {
+      position: absolute;
+      font-size: 15em;
+      -webkit-text-fill-color: #000;
+      /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 2px;
+      z-index: -1;
+      top: 50%;
+      -webkit-text-stroke-color: #fff;
+      transform: translateY(-50%);
+      opacity: 0.1; }
+    .home__container .home__container__documents .overlay {
+      width: 0;
+      height: 0; }
+    .home__container .home__container__documents .faqs h1 {
+      font-family: "Fira Code", monospace;
+      font-size: 4em; }
+    .home__container .home__container__documents .faqs .faq__description {
+      line-height: 1.5;
+      color: #999999;
+      font-size: 16px;
+      margin-top: 20px; }
+    .home__container .home__container__documents .faqs .faqs__container {
+      margin-top: 40px; }
+      .home__container .home__container__documents .faqs .faqs__container .MuiPaper-root {
+        background: transparent;
+        color: #fff; }
+      .home__container .home__container__documents .faqs .faqs__container .MuiAccordionSummary-root {
+        border-top: 0.2px solid #dedede; }
+      .home__container .home__container__documents .faqs .faqs__container .MuiTypography-root {
+        font-size: 18px;
+        font-weight: 600; }
+      .home__container .home__container__documents .faqs .faqs__container .MuiAccordionDetails-root .MuiTypography-root {
+        font-size: 16px;
+        font-weight: 400;
+        color: #b9b9b9; }
+      .home__container .home__container__documents .faqs .faqs__container .MuiAccordionSummary-expandIconWrapper {
+        color: #fff; }
+    .home__container .home__container__documents .documents__links {
+      margin-left: 80px;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #a7a7a7; }
+      @media (max-width: 992px) {
+        .home__container .home__container__documents .documents__links {
+          margin-left: 0;
+          margin-top: 50px; } }
+      .home__container .home__container__documents .documents__links h1 {
+        font-size: 4em;
+        -webkit-text-fill-color: #000;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        font-family: "Fira Code", monospace; }
+      .home__container .home__container__documents .documents__links .MuiButton-root {
+        margin-bottom: 20px;
+        background: #000;
+        border: 0.5px solid #fff;
+        color: #fff;
+        padding: 0 40px; }
+        .home__container .home__container__documents .documents__links .MuiButton-root:hover {
+          background: #5308f7; }
+      .home__container .home__container__documents .documents__links img {
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 25px;
+        margin-bottom: 20px; }
+      .home__container .home__container__documents .documents__links b {
+        color: #9361ff; }
+  .home__container .footer__container {
+    color: #fff;
+    padding: 0 5vw;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .home__container .footer__container .update {
+      font-family: "Fira Code", monospace;
+      font-size: 18px; }
+    .home__container .footer__container ul {
+      display: flex;
+      list-style-type: none; }
+      .home__container .footer__container ul a {
+        color: #fff;
+        margin-left: 30px;
+        font-size: 30px;
+        text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

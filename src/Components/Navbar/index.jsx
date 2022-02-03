@@ -1,35 +1,42 @@
 import "./styles/style.css";
 import React from "react";
 
-export default function Navbar() {
+export default function Navbar({ refs }) {
+  const { HomeRef, AboutRef, TokenSaleRef, RoadmapRef, GalleryRef, DocumentsRef } = refs;
+
+  const scrollToElement = (ref) =>
+    window.scrollTo({ top: ref.current.offsetTop - 50, behavior: "smooth" });
+
   return (
     <div className="navbar__container">
-      <div className="navbar__logo">PLAYPOINT</div>
+      <div onClick={() => scrollToElement(HomeRef)} className="navbar__logo">PLAYPOINT</div>
 
       <div className="navbar__links">
         <div className="navbar__link">
-          <a href="/">About</a>
+          <button onClick={() => scrollToElement(HomeRef)}>Home</button>
         </div>
         <div className="navbar__link">
-          <a href="/">Token Sale</a>
+          <button onClick={() => scrollToElement(AboutRef)}>About</button>
         </div>
         <div className="navbar__link">
-          <a href="/">Roadmap</a>
+          <button onClick={() => scrollToElement(TokenSaleRef)}>
+            Token Sale
+          </button>
         </div>
         <div className="navbar__link">
-          <a href="/">Documents</a>
+          <button onClick={() => scrollToElement(RoadmapRef)}>Roadmap</button>
         </div>
         <div className="navbar__link">
-          <a href="/">Team</a>
+          <button onClick={() => scrollToElement(GalleryRef)}>Gallery</button>
         </div>
         <div className="navbar__link">
-          <a href="/">Contact</a>
+          <button onClick={() => scrollToElement(DocumentsRef)}>
+            Documents
+          </button>
         </div>
       </div>
 
-        <div className="navbar__app">
-          Launch App
-        </div>
+      <div className="navbar__app">Launch App</div>
     </div>
   );
 }

@@ -18,8 +18,20 @@
   z-index: 5;
 
   .navbar__logo {
-    font-weight: 700;
-    font-size: 19px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+
+    img{
+      width: 40px;
+      object-fit: contain;
+      margin-right: 10px;
+    }
+
+    p{
+      font-weight: bold;
+    }
   }
 
   .navbar__links {

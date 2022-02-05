@@ -9,7 +9,7 @@ export default function Navbar({ refs }) {
 
   return (
     <div className="navbar__container">
-      <div onClick={() => scrollToElement(HomeRef)} className="navbar__logo">PLAYPOINT</div>
+      <div onClick={() => scrollToElement(HomeRef)} className="navbar__logo"><img src="https://ik.imagekit.io/lexworld/Logo.png" alt="Playpoint Logo" /><p>Playpoint</p></div>
 
       <div className="navbar__links">
         <div className="navbar__link">
@@ -36,7 +36,7 @@ export default function Navbar({ refs }) {
         </div>
       </div>
 
-      <div className="navbar__app">Launch App</div>
+      <div className="navbar__app">Launch Crowdsale_</div>
     </div>
   );
 }

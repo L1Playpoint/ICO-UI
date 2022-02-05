@@ -17,8 +17,16 @@
   backdrop-filter: blur(10px);
   z-index: 5; }
   .navbar__container .navbar__logo {
-    font-weight: 700;
-    font-size: 19px; }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer; }
+    .navbar__container .navbar__logo img {
+      width: 40px;
+      object-fit: contain;
+      margin-right: 10px; }
+    .navbar__container .navbar__logo p {
+      font-weight: bold; }
   .navbar__container .navbar__links {
     display: flex;
     align-items: center; }

@@ -16,7 +16,7 @@ export default function TimelineContainer() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <h1 className="title">Lorem Ipsum Dolor Sit Amet</h1>
+            <h1 className="title">Quarter 1</h1>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sint voluptatum aliquam in facilis voluptas voluptate iste totam. Aliquid sint cum fugiat autem quam illum sed dolor sapiente temporibus modi!
             </p>
@@ -28,7 +28,7 @@ export default function TimelineContainer() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <h1 className="title">Lorem Ipsum Dolor Sit Amet</h1>
+            <h1 className="title">Quarter 2</h1>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sint voluptatum aliquam in facilis voluptas voluptate iste totam. Aliquid sint cum fugiat autem quam illum sed dolor sapiente temporibus modi!
             </p>
@@ -40,7 +40,7 @@ export default function TimelineContainer() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <h1 className="title">Lorem Ipsum Dolor Sit Amet</h1>
+            <h1 className="title">Quarter 3</h1>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sint voluptatum aliquam in facilis voluptas voluptate iste totam. Aliquid sint cum fugiat autem quam illum sed dolor sapiente temporibus modi!
             </p>
@@ -51,7 +51,7 @@ export default function TimelineContainer() {
             <TimelineDot />
           </TimelineSeparator>
           <TimelineContent>
-            <h1 className="title">Lorem Ipsum Dolor Sit Amet</h1>
+            <h1 className="title">Quarter 4</h1>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sint voluptatum aliquam in facilis voluptas voluptate iste totam. Aliquid sint cum fugiat autem quam illum sed dolor sapiente temporibus modi!
             </p>

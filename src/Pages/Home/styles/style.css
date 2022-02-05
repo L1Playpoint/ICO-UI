@@ -59,7 +59,10 @@
       .home__container .home__container__about .home__container__about__content .description p {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
-        line-height: 1.5; }
+        line-height: 1.6; }
+        .home__container .home__container__about .home__container__about__content .description p .highlight {
+          animation: glow 2s ease-in-out infinite alternate;
+          font-weight: bold; }
       .home__container .home__container__about .home__container__about__content .icon {
         position: relative; }
         @media (max-width: 992px) {
@@ -171,6 +174,9 @@
     display: flex;
     align-items: center;
     flex-direction: column; }
+    @media (max-width: 768px) {
+      .home__container .home__container__roadmap {
+        padding: 0; } }
     .home__container .home__container__roadmap .absolute__title {
       position: absolute;
       opacity: 0.1;
@@ -207,7 +213,8 @@
       max-width: 50vw;
       margin-bottom: 40px;
       text-align: center;
-      opacity: 0.5; }
+      opacity: 0.5;
+      font-size: 20px; }
       @media (max-width: 768px) {
         .home__container .home__container__roadmap .top__description {
           max-width: 80vw; } }
@@ -313,7 +320,7 @@
     .home__container .home__container__documents .faqs .faq__description {
       line-height: 1.5;
       color: #999999;
-      font-size: 16px;
+      font-size: 18px;
       margin-top: 20px; }
     .home__container .home__container__documents .faqs .faqs__container {
       margin-top: 40px; }

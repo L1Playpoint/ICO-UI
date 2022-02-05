@@ -4,8 +4,9 @@ import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import {pure } from 'recompose'
 
-export default function Faqs () {
+function Faqs () {
   return (
     <div className='faqs__container'>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
@@ -125,3 +126,5 @@ export default function Faqs () {
     </div>
   )
 }
+
+export default pure(Faqs)

@@ -88,10 +88,11 @@
           font-family: "Roboto", sans-serif;
           font-size: 18px;
           line-height: 1.6;
+          color: #c3c3c3;
 
-          .highlight {
+          b {
+            color: #fff;
             animation: glow 2s ease-in-out infinite alternate;
-            font-weight: bold;
           }
         }
       }
@@ -200,6 +201,12 @@
         font-size: 18px;
         line-height: 1.5;
         font-family: "Roboto", sans-serif;
+        color: #c3c3c3;
+
+        b{
+          color: #fff;
+          animation: glow 2s ease-in-out infinite alternate;
+        }
 
         @media (max-width: 768px){
           margin-left: 0;
@@ -290,7 +297,7 @@
       font-size: 50px;
       margin-bottom: 40px;
       font-family: "Fira Code", monospace;
-      animation: glow 2s ease-in-out infinite alternate;
+      // animation: glow 2s ease-in-out infinite alternate;
 
       @media (max-width:768px){
         font-size: 35px;

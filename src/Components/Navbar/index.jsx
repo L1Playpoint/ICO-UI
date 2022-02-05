@@ -1,7 +1,9 @@
 import './styles/style.css'
-import React from 'react'
 
-export default function Navbar ({ refs }) {
+import React from 'react'
+import { pure } from 'recompose';
+
+function Navbar ({ refs }) {
   const { HomeRef, AboutRef, TokenSaleRef, RoadmapRef, GalleryRef, DocumentsRef } = refs
 
   const scrollToElement = (ref) =>
@@ -40,3 +42,5 @@ export default function Navbar ({ refs }) {
     </div>
   )
 }
+
+export default pure(Navbar)

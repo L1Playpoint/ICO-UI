@@ -59,10 +59,11 @@
       .home__container .home__container__about .home__container__about__content .description p {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
-        line-height: 1.6; }
-        .home__container .home__container__about .home__container__about__content .description p .highlight {
-          animation: glow 2s ease-in-out infinite alternate;
-          font-weight: bold; }
+        line-height: 1.6;
+        color: #c3c3c3; }
+        .home__container .home__container__about .home__container__about__content .description p b {
+          color: #fff;
+          animation: glow 2s ease-in-out infinite alternate; }
       .home__container .home__container__about .home__container__about__content .icon {
         position: relative; }
         @media (max-width: 992px) {
@@ -135,7 +136,11 @@
         margin-left: 50px;
         font-size: 18px;
         line-height: 1.5;
-        font-family: "Roboto", sans-serif; }
+        font-family: "Roboto", sans-serif;
+        color: #c3c3c3; }
+        .home__container .home__container__tokenSale .content .content__description b {
+          color: #fff;
+          animation: glow 2s ease-in-out infinite alternate; }
         @media (max-width: 768px) {
           .home__container .home__container__tokenSale .content .content__description {
             margin-left: 0; } }
@@ -199,8 +204,7 @@
     .home__container .home__container__roadmap .roadmap__title {
       font-size: 50px;
       margin-bottom: 40px;
-      font-family: "Fira Code", monospace;
-      animation: glow 2s ease-in-out infinite alternate; }
+      font-family: "Fira Code", monospace; }
       @media (max-width: 768px) {
         .home__container .home__container__roadmap .roadmap__title {
           font-size: 35px;

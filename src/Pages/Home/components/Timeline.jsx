@@ -5,8 +5,9 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator'
 import TimelineConnector from '@mui/lab/TimelineConnector'
 import TimelineContent from '@mui/lab/TimelineContent'
 import TimelineDot from '@mui/lab/TimelineDot'
+import {pure } from 'recompose'
 
-export default function TimelineContainer () {
+function TimelineContainer () {
   return (
     <div className='timeline__container'>
       <Timeline position='alternate'>
@@ -61,3 +62,5 @@ export default function TimelineContainer () {
     </div>
   )
 }
+
+export default pure(TimelineContainer)

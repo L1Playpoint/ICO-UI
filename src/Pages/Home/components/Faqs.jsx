@@ -1,18 +1,18 @@
-import * as React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import * as React from 'react'
+import Accordion from '@mui/material/Accordion'
+import AccordionSummary from '@mui/material/AccordionSummary'
+import AccordionDetails from '@mui/material/AccordionDetails'
+import Typography from '@mui/material/Typography'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
-export default function Faqs() {
+export default function Faqs () {
   return (
-    <div className="faqs__container">
+    <div className='faqs__container'>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          aria-controls='panel2a-content'
+          id='panel2a-header'
         >
           <Typography>Is PPT, the native token, a cryptocurrency?</Typography>
         </AccordionSummary>
@@ -29,9 +29,9 @@ export default function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon color="#fff" />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+          expandIcon={<ExpandMoreIcon color='#fff' />}
+          aria-controls='panel1a-content'
+          id='panel1a-header'
         >
           <Typography>
             Do it offers Staking, Liquidation Protocol?
@@ -49,8 +49,8 @@ export default function Faqs() {
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          aria-controls='panel2a-content'
+          id='panel2a-header'
         >
           <Typography>What are Variant Prediction Pools?</Typography>
         </AccordionSummary>
@@ -70,8 +70,8 @@ export default function Faqs() {
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          aria-controls='panel2a-content'
+          id='panel2a-header'
         >
           <Typography>What is a Community Hub?</Typography>
         </AccordionSummary>
@@ -92,8 +92,8 @@ export default function Faqs() {
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          aria-controls='panel2a-content'
+          id='panel2a-header'
         >
           <Typography>How can I stay updated about Playpoint?</Typography>
         </AccordionSummary>
@@ -107,8 +107,8 @@ export default function Faqs() {
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+          aria-controls='panel2a-content'
+          id='panel2a-header'
         >
           <Typography>How do I play on Playpoint?</Typography>
         </AccordionSummary>
@@ -123,5 +123,5 @@ export default function Faqs() {
         </AccordionDetails>
       </Accordion>
     </div>
-  );
+  )
 }

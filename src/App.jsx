@@ -1,14 +1,14 @@
 /**
  * @components Custom main components
  */
-import Home from "./Pages/Home";
+import Home from './Pages/Home'
 
-function App() {
+function App () {
   return (
-    <div className="app__container">
-      <Home/>
+    <div className='app__container'>
+      <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

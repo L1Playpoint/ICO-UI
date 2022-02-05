@@ -67,7 +67,12 @@ function Home() {
         <div className="blob" />
         <div className="home__container__about__content">
           <div className="description" data-aos="fade-right">
-            <h1 className="absolute__title">About_</h1>
+            <h1 className="absolute__title">
+              About
+              <span className="animate__flash animate__slower animate__animated animate__infinite">
+                _
+              </span>
+            </h1>
             <div className="title">
               <h1>Playpoint</h1>
               {/* <h1 className="stroke">Prediction Pool Platform</h1> */}
@@ -130,7 +135,12 @@ function Home() {
        */}
       <div ref={TokenSaleRef} className="home__container__tokenSale">
         <div className="title">
-          <h1>Token Sale_</h1>
+          <h1>
+            Token Sale
+            <span className="animate__flash animate__slower animate__animated animate__infinite">
+              _
+            </span>
+          </h1>
         </div>
 
         <div className="content">
@@ -207,7 +217,12 @@ function Home() {
           <h1>Roadmap_</h1>
           <h1>Roadmap_</h1>
         </div>
-        <h1 className="roadmap__title">Roadmap_</h1>
+        <h1 className="roadmap__title">
+          Roadmap
+          <span className="animate__flash animate__slower animate__animated animate__infinite">
+            _
+          </span>
+        </h1>
         <p className="top__description">
           Playpoint will continue to grow with new features, systems, and
           cross-chain expansions. The roadmap below indicates the expected
@@ -310,15 +325,21 @@ function Home() {
           data-aos-delay="600"
           data-aos-duration="500"
         >
-          <h1>Whitepaper_</h1>
+          <h1>
+            Whitepaper
+            <span className="animate__flash animate__slower animate__animated animate__infinite">
+              _
+            </span>
+          </h1>
 
           <Button>Coming Soon_</Button>
 
           <p>
             Here's the guide that informs our new players concisely about a
-            complex mechanism of gameplay's and presents the playpoint's main
-            philosophy on the matter. It is meant to help players understand an
-            requirements of our platform, solve a problem, or make a decision.
+            complex mechanism of gameplay's and presents the playpoint's{" "}
+            <b className="content__highlight">main philosophy on the matter</b>.
+            It is meant to help players understand an requirements of our
+            platform, solve a problem, or make a decision.
           </p>
 
           <img
@@ -339,11 +360,10 @@ function Home() {
           />
 
           <p className="contractAddr">
-            <b>Token Contract:</b> 0xfc3da4a1b6fadab364038763498457b7c0c16521cd
+            <b>Centralized Landing(Google Firebase):</b> <a href="https://playpointgame.web.app" target="_blank">playpointgame.web.app</a>
           </p>
           <p className="contractAddr">
-            <b>Crowdsale Contract:</b>{" "}
-            0xfbt88hdgb6fadab364038763498457b7c0c16521cd
+            <b>Decentralized Landing(IPFS):</b> <a href="https://playpoint.on.fleek.co" target="_blank">playpoint.on.fleek.co</a>
           </p>
         </div>
       </div>

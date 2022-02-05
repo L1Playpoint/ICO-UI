@@ -232,8 +232,17 @@
           font-size: 18px;
           margin-bottom: 10px; } }
     .home__container .home__container__roadmap .timeline__container p {
-      color: #c3c3c3;
+      color: #adadad;
       line-height: 1.5; }
+      .home__container .home__container__roadmap .timeline__container p li {
+        margin-bottom: 20px;
+        list-style: none; }
+        .home__container .home__container__roadmap .timeline__container p li b {
+          font-size: 19px;
+          line-height: 2;
+          color: #fff; }
+        .home__container .home__container__roadmap .timeline__container p li span {
+          color: #9361ff; }
   .home__container .home__container__gallery {
     display: block;
     margin: 0 auto;
@@ -384,6 +393,11 @@
             width: 90vw; } }
       .home__container .home__container__documents .documents__links b {
         color: #9361ff; }
+        .home__container .home__container__documents .documents__links b.content__highlight {
+          color: #fff; }
+      .home__container .home__container__documents .documents__links .contractAddr a {
+        color: #fff;
+        text-decoration: none; }
       @media (max-width: 768px) {
         .home__container .home__container__documents .documents__links .contractAddr {
           font-size: 14px; } }

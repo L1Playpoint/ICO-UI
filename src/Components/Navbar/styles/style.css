@@ -22,6 +22,7 @@
     flex-direction: row;
     cursor: pointer; }
     .navbar__container .navbar__logo img {
+      width: 40px;
       object-fit: contain;
       margin-right: 10px; }
     .navbar__container .navbar__logo p {

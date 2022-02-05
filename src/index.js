@@ -4,11 +4,11 @@ import App from './App'
 
 import ReactDOM from 'react-dom'
 import React from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import reportWebVitals from './reportWebVitals'
 
-AOS.init();
+AOS.init()
 
 ReactDOM.render(
   <React.StrictMode>

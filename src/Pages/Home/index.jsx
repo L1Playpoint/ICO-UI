@@ -67,10 +67,10 @@ export default function Home () {
       {/**
        * @section => about
        */}
-      <div ref={AboutRef} className='home__container__about' data-aos="fade-up">
+      <div ref={AboutRef} className='home__container__about' data-aos='fade-up'>
         <div className='blob' />
         <div className='home__container__about__content'>
-          <div className='description' data-aos="fade-right">
+          <div className='description' data-aos='fade-right'>
             <h1 className='absolute__title'>About_</h1>
             <div className='title'>
               <h1>Playpoint</h1>
@@ -147,7 +147,7 @@ export default function Home () {
             />
           </div>
 
-          <div className='content__description' data-aos="fade-left">
+          <div className='content__description' data-aos='fade-left'>
             <h1 className='stroke__colored'>Utility and Governance Token,</h1>
             <h1 className='heading'>Playpoint Token (PPT)</h1>
             <p>
@@ -225,34 +225,34 @@ export default function Home () {
       <div ref={GalleryRef} className='home__container__gallery'>
         <div className='row'>
           <div className='column'>
-            <div className='image-box' data-aos="zoom-in">
+            <div className='image-box' data-aos='zoom-in'>
               <img src='https://ik.imagekit.io/lexworld/6.png' alt='' />
             </div>
-            <div className='image-box' data-aos="zoom-in">
+            <div className='image-box' data-aos='zoom-in'>
               <img src='https://ik.imagekit.io/lexworld/9.png' alt='' />
             </div>
           </div>
           <div className='column'>
-            <div className='image-box' data-aos="zoom-in">
+            <div className='image-box' data-aos='zoom-in'>
               <img src='https://ik.imagekit.io/lexworld/2.png' alt='' />
             </div>
-            <div className='image-box' data-aos="zoom-in">
+            <div className='image-box' data-aos='zoom-in'>
               <img src='https://ik.imagekit.io/lexworld/4.png' alt='' />
             </div>
           </div>
           <div className='column'>
-            <div className='image-box' data-aos="zoom-in">
+            <div className='image-box' data-aos='zoom-in'>
               <img src='https://ik.imagekit.io/lexworld/1.png' alt='' />
             </div>
-            <div className='image-box' data-aos="zoom-in">
+            <div className='image-box' data-aos='zoom-in'>
               <img src='https://ik.imagekit.io/lexworld/3.png' alt='' />
             </div>
           </div>
           <div className='column'>
-            <div className='image-box' data-aos="zoom-in">
+            <div className='image-box' data-aos='zoom-in'>
               <img src='https://ik.imagekit.io/lexworld/8.png' alt='' />
             </div>
-            <div className='image-box' data-aos="zoom-in">
+            <div className='image-box' data-aos='zoom-in'>
               <img src='https://ik.imagekit.io/lexworld/7.png' alt='' />
             </div>
           </div>
@@ -267,7 +267,7 @@ export default function Home () {
           <Marquee>Frequently Asked Question, Whitepaper</Marquee>
           <Marquee>Whitepaper, FAQs, Frequently Asked Question</Marquee>
         </div>
-        <div className='faqs' data-aos="fade-right">
+        <div className='faqs' data-aos='fade-right'>
           <h1>Frequently Asked Questions_</h1>
           <p className='faq__description'>
             The tech is new and ever-evolving – it helps to have a guide. Here's
@@ -275,7 +275,7 @@ export default function Home () {
           </p>
           <Faqs />
         </div>
-        <div className='documents__links' data-aos="fade-left" data-aos-delay="600" data-aos-duration="500">
+        <div className='documents__links' data-aos='fade-left' data-aos-delay='600' data-aos-duration='500'>
           <h1>Whitepaper_</h1>
 
           <Button>Coming Soon_</Button>

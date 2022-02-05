@@ -10,7 +10,7 @@ export default function TimelineContainer () {
   return (
     <div className='timeline__container'>
       <Timeline position='alternate'>
-        <TimelineItem data-aos="fade-up-left">
+        <TimelineItem data-aos='fade-up-left'>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
@@ -22,7 +22,7 @@ export default function TimelineContainer () {
             </p>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem data-aos="fade-up-right">
+        <TimelineItem data-aos='fade-up-right'>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
@@ -34,7 +34,7 @@ export default function TimelineContainer () {
             </p>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem data-aos="fade-up-left">
+        <TimelineItem data-aos='fade-up-left'>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
@@ -46,7 +46,7 @@ export default function TimelineContainer () {
             </p>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem data-aos="fade-up-right">
+        <TimelineItem data-aos='fade-up-right'>
           <TimelineSeparator>
             <TimelineDot />
           </TimelineSeparator>

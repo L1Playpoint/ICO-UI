@@ -8,6 +8,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  user-select: none!important;
 }
 
 html,
@@ -20,4 +21,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   background: #000;
+
 }

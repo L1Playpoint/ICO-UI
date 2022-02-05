@@ -11,7 +11,7 @@ function Navbar ({ refs }) {
 
   return (
     <div className='navbar__container'>
-      <div onClick={() => scrollToElement(HomeRef)} className='navbar__logo'><img src='https://ik.imagekit.io/lexworld/Logo.png' alt='Playpoint Logo' /><p>Playpoint</p></div>
+      <div onClick={() => scrollToElement(HomeRef)} className='navbar__logo'><img onContextMenu={false} src="https://ik.imagekit.io/lexworld/Logo.png?tr=w-40,h-40" alt='Playpoint Logo' /><p>Playpoint</p></div>
 
       <div className='navbar__links'>
         <div className='navbar__link'>

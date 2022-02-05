@@ -73,15 +73,11 @@ function Home() {
               {/* <h1 className="stroke">Prediction Pool Platform</h1> */}
             </div>
             <p>
-              is an{" "}
-              <b>
-                play-to-earn online prediction pool platform
-              </b>{" "}
-              based on real-time sporting events, supported by decentralized
-              blockchain networks. Its primary networks comprises a logical
-              Marketplace, a virtual Showcase vendor, a{" "}
-              <b>prediction questionnaires hub</b>, and variant prediction
-              Pools.
+              is an <b>play-to-earn online prediction pool platform</b> based on
+              real-time sporting events, supported by decentralized blockchain
+              networks. Its primary networks comprises a logical Marketplace, a
+              virtual Showcase vendor, a <b>prediction questionnaires hub</b>,
+              and variant prediction Pools.
               <br />
               &nbsp;
               <br />
@@ -92,6 +88,7 @@ function Home() {
           </div>
           <div className="icon">
             <img
+              onContextMenu={false}
               src={
                 window.innerWidth >= 1920 ||
                 (window.innerWidth <= 1920 && window.innerWidth > 992)
@@ -108,6 +105,7 @@ function Home() {
               alt=""
             />
             <img
+              onContextMenu={false}
               src={
                 window.innerWidth >= 1920 ||
                 (window.innerWidth <= 1920 && window.innerWidth > 992)
@@ -225,34 +223,66 @@ function Home() {
         <div className="row">
           <div className="column">
             <div className="image-box" data-aos="zoom-in">
-              <img src="https://ik.imagekit.io/lexworld/6.png" alt="" />
+              <img
+                onContextMenu={false}
+                src="https://ik.imagekit.io/lexworld/6.png"
+                alt=""
+              />
             </div>
             <div className="image-box" data-aos="zoom-in">
-              <img src="https://ik.imagekit.io/lexworld/9.png" alt="" />
-            </div>
-          </div>
-          <div className="column">
-            <div className="image-box" data-aos="zoom-in">
-              <img src="https://ik.imagekit.io/lexworld/2.png" alt="" />
-            </div>
-            <div className="image-box" data-aos="zoom-in">
-              <img src="https://ik.imagekit.io/lexworld/4.png" alt="" />
-            </div>
-          </div>
-          <div className="column">
-            <div className="image-box" data-aos="zoom-in">
-              <img src="https://ik.imagekit.io/lexworld/1.png" alt="" />
-            </div>
-            <div className="image-box" data-aos="zoom-in">
-              <img src="https://ik.imagekit.io/lexworld/3.png" alt="" />
+              <img
+                onContextMenu={false}
+                src="https://ik.imagekit.io/lexworld/9.png"
+                alt=""
+              />
             </div>
           </div>
           <div className="column">
             <div className="image-box" data-aos="zoom-in">
-              <img src="https://ik.imagekit.io/lexworld/8.png" alt="" />
+              <img
+                onContextMenu={false}
+                src="https://ik.imagekit.io/lexworld/2.png"
+                alt=""
+              />
             </div>
             <div className="image-box" data-aos="zoom-in">
-              <img src="https://ik.imagekit.io/lexworld/7.png" alt="" />
+              <img
+                onContextMenu={false}
+                src="https://ik.imagekit.io/lexworld/4.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="column">
+            <div className="image-box" data-aos="zoom-in">
+              <img
+                onContextMenu={false}
+                src="https://ik.imagekit.io/lexworld/1.png"
+                alt=""
+              />
+            </div>
+            <div className="image-box" data-aos="zoom-in">
+              <img
+                onContextMenu={false}
+                src="https://ik.imagekit.io/lexworld/3.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="column">
+            <div className="image-box" data-aos="zoom-in">
+              <img
+                onContextMenu={false}
+                src="https://ik.imagekit.io/lexworld/8.png"
+                alt=""
+              />
+            </div>
+            <div className="image-box" data-aos="zoom-in">
+              <img
+                onContextMenu={false}
+                src="https://ik.imagekit.io/lexworld/7.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -292,6 +322,7 @@ function Home() {
           </p>
 
           <img
+            onContextMenu={false}
             src={
               window.innerWidth >= 1920 ||
               (window.innerWidth <= 1920 && window.innerWidth > 992)

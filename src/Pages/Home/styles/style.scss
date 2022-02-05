@@ -316,7 +316,8 @@
       margin-bottom: 40px;
       text-align: center;
       opacity: 0.5;
-      font-size: 20px;
+      font-size: 19px;
+      line-height: 1.5;
 
       @media (max-width:768px){
         max-width: 80vw;
@@ -327,11 +328,17 @@
       .title {
         font-family: "Fira Code", monospace;
         margin-bottom: 20px;
+        font-size: 2.5em;
 
         @media (max-width: 768px){
             font-size: 18px;
             margin-bottom: 10px;
         }
+      }
+
+      p{
+        color: #c3c3c3;
+      line-height: 1.5;
       }
     }
   }

@@ -218,17 +218,22 @@
       margin-bottom: 40px;
       text-align: center;
       opacity: 0.5;
-      font-size: 20px; }
+      font-size: 19px;
+      line-height: 1.5; }
       @media (max-width: 768px) {
         .home__container .home__container__roadmap .top__description {
           max-width: 80vw; } }
     .home__container .home__container__roadmap .timeline__container .title {
       font-family: "Fira Code", monospace;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-size: 2.5em; }
       @media (max-width: 768px) {
         .home__container .home__container__roadmap .timeline__container .title {
           font-size: 18px;
           margin-bottom: 10px; } }
+    .home__container .home__container__roadmap .timeline__container p {
+      color: #c3c3c3;
+      line-height: 1.5; }
   .home__container .home__container__gallery {
     display: block;
     margin: 0 auto;

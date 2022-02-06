@@ -15,6 +15,10 @@
   margin-top: 70px;
   position: relative;
 
+  p {
+    line-height: 1.5;
+  }
+
   // @section => landing
   .home__container__landing {
     width: 100vw;
@@ -198,7 +202,6 @@
       .content__description {
         margin-left: 50px;
         font-size: 18px;
-        line-height: 1.5;
         font-family: "Roboto", sans-serif;
         color: #c3c3c3;
 
@@ -249,6 +252,106 @@
 
         .marketing {
           opacity: 0.4;
+        }
+      }
+    }
+
+    .tokenEconomics {
+      margin-top: 90px;
+      color: #fff;
+      display: flex;
+      position: relative;
+      align-items: center;
+
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      @media (max-width: 768px) {
+        margin: 50px 5vw;
+      }
+
+      .absolute__title {
+        position: absolute;
+        opacity: 0.1;
+        top: 5vh;
+        right: 50%;
+        font-size: 3em;
+        z-index: 1;
+
+        @media (max-width: 768px) {
+          font-size: 2em;
+          left: 10%;
+        }
+
+        h1 {
+          -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+          -webkit-text-stroke-width: 4px;
+          -webkit-text-stroke-color: #fff;
+          font-family: "Fira Code", monospace;
+
+          @media (max-width: 768px) {
+            -webkit-text-stroke-width: 2px;
+          }
+        }
+      }
+
+      .tokenEconomics__content,
+      .chart {
+        flex: 1 1 0;
+        max-width: 45vw;
+
+        @media (max-width: 992px) {
+          flex: 1;
+          max-width: 100vw;
+          width: 100%;
+        }
+      }
+
+      .tokenEconomics__content {
+        h1 {
+          font-size: 50px;
+          margin-bottom: 20px;
+          font-family: "Fira Code", monospace;
+
+          .stroke {
+            -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+          }
+
+          @media (max-width: 768px) {
+            font-size: 35px;
+            margin-bottom: 20px;
+          }
+        }
+
+        p {
+          font-family: "Roboto", sans-serif;
+          font-size: 19px;
+          color: #c3c3c3;
+
+           .highlight {
+             color: #9361ff;
+           }
+        }
+      }
+
+      .chart {
+        z-index: 2;
+
+        canvas {
+          margin-left: 50px;
+          max-width: 36vw;
+          object-fit: contain;
+
+          @media (max-width: 992px) {
+            margin-left: 0;
+            max-width: 85vw;
+            width: 85vw;
+            margin-top: 50px;
+          }
         }
       }
     }
@@ -306,7 +409,6 @@
     p {
       font-family: "Roboto", sans-serif;
       font-size: 17px;
-      line-height: 1.5;
     }
 
     .top__description {
@@ -315,7 +417,6 @@
       text-align: center;
       opacity: 0.5;
       font-size: 19px;
-      line-height: 1.5;
 
       @media (max-width: 768px) {
         max-width: 80vw;
@@ -336,19 +437,18 @@
 
       .p {
         color: #adadad;
-        line-height: 1.5;
 
         li {
           margin-bottom: 20px;
           list-style: none;
 
-          b{
+          b {
             font-size: 19px;
             line-height: 2;
             color: #fff;
           }
 
-          span{
+          span {
             color: #9361ff;
           }
         }
@@ -479,7 +579,6 @@
       }
 
       .faq__description {
-        line-height: 1.5;
         color: rgb(153, 153, 153);
         font-size: 18px;
         margin-top: 20px;
@@ -520,7 +619,6 @@
     .documents__links {
       margin-left: 80px;
       font-size: 18px;
-      line-height: 1.5;
       color: #a7a7a7;
 
       @media (max-width: 992px) {
@@ -572,7 +670,7 @@
       }
 
       .contractAddr {
-        a{
+        a {
           color: #fff;
           text-decoration: none;
         }

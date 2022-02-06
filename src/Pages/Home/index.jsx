@@ -15,6 +15,7 @@ import Navbar from "../../Components/Navbar";
 import TimelineContainer from "./components/Timeline";
 import Faqs from "./components/Faqs";
 import Footer from "../../Components/Footer";
+import PolarChart from "./components/PolarChart";
 
 function Home() {
   // refs
@@ -227,11 +228,11 @@ function Home() {
             <ul>
               <li>
                 <b>Soft Cap:</b>
-                <span> 12345678 PPT</span>
+                <span> 25,000,000 PPT</span>
               </li>
               <li>
                 <b>Crowdsale:</b>
-                <span> 12345678 PPT</span>
+                <span> 20,000,000 PPT</span>
               </li>
               <li>
                 <b>Hard Cap:</b>
@@ -240,6 +241,44 @@ function Home() {
             </ul>
 
             <b className="marketing">HOLD PPT & JOIN THE JOURNEY</b>
+          </div>
+        </div>
+
+        <div className="tokenEconomics">
+          <div className="absolute__title">
+            <h1>Token Economics_</h1>
+            <h1>Token Economics_</h1>
+          </div>
+          <div className="tokenEconomics__content">
+            <h1>
+              Token Economics
+              <span className="animate__flash animate__slower animate__animated animate__infinite stroke">
+                _
+              </span>
+            </h1>
+            <p>
+              Playpoint's contingency management is based on the{" "}
+              <b className="highlight">
+                systematic reinforcement of target behavior
+              </b>
+              . The reinforcers are symbols or tokens that can be exchanged for
+              other reinforcers.
+              <br />
+              &nbsp;
+              <br />
+              If technology is the backbone of cryptocurrencies then{" "}
+              <b className="highlight">token economics is the heart</b>, pumping
+              blood to Playpoint platform and exchange markets. With gamers,
+              users, and traders proper incentivization, PPT Token will increase
+              it's value to token holders.
+              <br />
+              &nbsp;
+              <br />
+              <b>Token Supply</b>: 100,000,000 PPT
+            </p>
+          </div>
+          <div className="chart">
+            <PolarChart />
           </div>
         </div>
       </div>
@@ -380,7 +419,9 @@ function Home() {
             </span>
           </h1>
 
-          <Button>Coming Soon_</Button>
+          <form method="get" target="_blank" action="https://ik.imagekit.io/lexworld/Landing1.png?tr=w-1920,h-1039.340">
+            <Button type="submit">Download_</Button>
+          </form>
 
           <p>
             Here's the guide that informs our new players concisely about a

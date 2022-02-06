@@ -9,7 +9,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 function TimelineContainer() {
   return (
     <div className="timeline__container">
-      <Timeline position="alternate">
+      <Timeline position={window.innerWidth >= 992 ? "alternate" : "right"}>
         <TimelineItem>
           <TimelineSeparator>
             <TimelineDot />

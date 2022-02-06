@@ -44,18 +44,7 @@ function Home() {
        */}
       <img
         ref={HomeRef}
-        src={
-          window.innerWidth >= 1920 ||
-          (window.innerWidth <= 1920 && window.innerWidth > 992)
-            ? "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-1920,h-1039.340"
-            : window.innerWidth <= 992 && window.innerWidth > 768
-            ? "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-992,h-536.641"
-            : window.innerWidth <= 768 && window.innerWidth > 576
-            ? "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-768,h-415.734"
-            : window.innerWidth <= 576
-            ? "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-576,h-311.797"
-            : "https://ik.imagekit.io/lexworld/Landing1.png?tr=w-390,h-211.109"
-        }
+        src="https://ik.imagekit.io/lexworld/Landing.png"
         alt="The City of Winners"
         className="home__container__landing"
         width={
@@ -79,7 +68,7 @@ function Home() {
       <div ref={AboutRef} className="home__container__about">
         <div className="blob" />
         <div className="home__container__about__content">
-          <div className="description" data-aos="fade-right">
+          <div className="description">
             <h1 className="absolute__title">
               About
               <span className="animate__flash animate__slower animate__animated animate__infinite">
@@ -321,7 +310,7 @@ function Home() {
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/lexworld/6.png"
-                alt=""
+                alt="Sport"
               />
             </div>
             <div className="image-box">
@@ -329,7 +318,7 @@ function Home() {
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/lexworld/9.png"
-                alt=""
+                alt="Sport"
               />
             </div>
           </div>
@@ -339,7 +328,7 @@ function Home() {
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/lexworld/2.png"
-                alt=""
+                alt="Sport"
               />
             </div>
             <div className="image-box">
@@ -347,7 +336,7 @@ function Home() {
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/lexworld/4.png"
-                alt=""
+                alt="Sport"
               />
             </div>
           </div>
@@ -357,7 +346,7 @@ function Home() {
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/lexworld/1.png"
-                alt=""
+                alt="Sport"
               />
             </div>
             <div className="image-box">
@@ -365,7 +354,7 @@ function Home() {
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/lexworld/3.png"
-                alt=""
+                alt="Sport"
               />
             </div>
           </div>
@@ -375,7 +364,7 @@ function Home() {
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/lexworld/8.png"
-                alt=""
+                alt="Sport"
               />
             </div>
             <div className="image-box">
@@ -383,7 +372,7 @@ function Home() {
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/lexworld/7.png"
-                alt=""
+                alt="Sport"
               />
             </div>
           </div>

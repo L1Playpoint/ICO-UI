@@ -12,12 +12,15 @@
     width: 100vw; }
     @media (max-width: 768px) {
       .home__container .home__container__landing {
-        margin-top: 25px;
-        transform: scale(1.2); } }
+        margin-top: 73px;
+        transform: scale(1.95); } }
   .home__container .home__container__about {
     color: #fff;
     padding: 0 5vw;
-    margin-top: 50px; }
+    margin-top: -120px; }
+    @media (max-width: 768px) {
+      .home__container .home__container__about {
+        margin-top: 100px; } }
     .home__container .home__container__about .absolute__title {
       font-family: "Fira Code", monospace;
       font-size: 8em;
@@ -28,7 +31,7 @@
       -webkit-text-stroke-color: #fff; }
       @media (max-width: 768px) {
         .home__container .home__container__about .absolute__title {
-          font-size: 3em;
+          font-size: 4em;
           -webkit-text-stroke-width: 2px; } }
     .home__container .home__container__about .title {
       font-family: "Fira Code", monospace; }
@@ -313,6 +316,9 @@
           color: #fff; }
         .home__container .home__container__roadmap .timeline__container .p li span {
           color: #9361ff; }
+    @media (max-width: 991px) {
+      .home__container .home__container__roadmap .timeline__container .MuiTimelineItem-root::before {
+        flex: 0; } }
   .home__container .home__container__gallery {
     display: block;
     margin: 0 auto;

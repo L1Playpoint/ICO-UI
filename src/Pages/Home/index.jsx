@@ -7,7 +7,6 @@ import "animate.css";
 import React from "react";
 import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
-import { pure } from "recompose";
 
 /**
  * @components custom main components
@@ -58,12 +57,25 @@ function Home() {
         }
         alt="The City of Winners"
         className="home__container__landing"
+        width={
+          window.innerWidth >= 1920 ||
+          (window.innerWidth <= 1920 && window.innerWidth > 992)
+            ? "1920"
+            : window.innerWidth <= 992 && window.innerWidth > 768
+            ? "992"
+            : window.innerWidth <= 768 && window.innerWidth > 576
+            ? "768,415.734"
+            : window.innerWidth <= 576
+            ? "576"
+            : "390"
+        }
+        height="auto"
       />
 
       {/**
        * @section => about
        */}
-      <div ref={AboutRef} className="home__container__about" data-aos="fade-up">
+      <div ref={AboutRef} className="home__container__about">
         <div className="blob" />
         <div className="home__container__about__content">
           <div className="description" data-aos="fade-right">
@@ -93,7 +105,6 @@ function Home() {
           </div>
           <div className="icon">
             <img
-              onContextMenu={false}
               src={
                 window.innerWidth >= 1920 ||
                 (window.innerWidth <= 1920 && window.innerWidth > 992)
@@ -108,9 +119,21 @@ function Home() {
               }
               className="animate__infinite animate__animated animate__pulse animate__slow"
               alt=""
+              width={
+                window.innerWidth >= 1920 ||
+                (window.innerWidth <= 1920 && window.innerWidth > 992)
+                  ? "604.797"
+                  : window.innerWidth <= 992 && window.innerWidth > 768
+                  ? "604.797"
+                  : window.innerWidth <= 768 && window.innerWidth > 576
+                  ? "552.969"
+                  : window.innerWidth <= 576
+                  ? "414.719"
+                  : "280.797"
+              }
+              height="auto"
             />
             <img
-              onContextMenu={false}
               src={
                 window.innerWidth >= 1920 ||
                 (window.innerWidth <= 1920 && window.innerWidth > 992)
@@ -123,8 +146,21 @@ function Home() {
                   ? "https://ik.imagekit.io/lexworld/About1.png?tr=w-414.719,h-161.938"
                   : "https://ik.imagekit.io/lexworld/About1.png?tr=w-280.797,h-109.641"
               }
-              alt=""
+              alt="About"
               className="absolute__icon"
+              width={
+                window.innerWidth >= 1920 ||
+                (window.innerWidth <= 1920 && window.innerWidth > 992)
+                  ? "604.797"
+                  : window.innerWidth <= 992 && window.innerWidth > 768
+                  ? "423.500"
+                  : window.innerWidth <= 768 && window.innerWidth > 576
+                  ? "484"
+                  : window.innerWidth <= 576
+                  ? "414.719"
+                  : "280.797"
+              }
+              height="auto"
             />
           </div>
         </div>
@@ -199,7 +235,7 @@ function Home() {
               </li>
               <li>
                 <b>Hard Cap:</b>
-                <span> 12345678 PPT</span>
+                <span> 100,000,000 PPT</span>
               </li>
             </ul>
 
@@ -234,67 +270,79 @@ function Home() {
       {/**
        * @section => Gallery
        */}
-      <div ref={GalleryRef} className="home__container__gallery">
+      <div
+        ref={GalleryRef}
+        className="home__container__gallery"
+        data-aos="zoom-in"
+      >
         <div className="row">
           <div className="column">
-            <div className="image-box" data-aos="zoom-in">
+            <div className="image-box">
               <img
-                onContextMenu={false}
+                width="100%"
+                height="auto"
                 src="https://ik.imagekit.io/lexworld/6.png"
                 alt=""
               />
             </div>
-            <div className="image-box" data-aos="zoom-in">
+            <div className="image-box">
               <img
-                onContextMenu={false}
+                width="100%"
+                height="auto"
                 src="https://ik.imagekit.io/lexworld/9.png"
                 alt=""
               />
             </div>
           </div>
           <div className="column">
-            <div className="image-box" data-aos="zoom-in">
+            <div className="image-box">
               <img
-                onContextMenu={false}
+                width="100%"
+                height="auto"
                 src="https://ik.imagekit.io/lexworld/2.png"
                 alt=""
               />
             </div>
-            <div className="image-box" data-aos="zoom-in">
+            <div className="image-box">
               <img
-                onContextMenu={false}
+                width="100%"
+                height="auto"
                 src="https://ik.imagekit.io/lexworld/4.png"
                 alt=""
               />
             </div>
           </div>
           <div className="column">
-            <div className="image-box" data-aos="zoom-in">
+            <div className="image-box">
               <img
-                onContextMenu={false}
+                width="100%"
+                height="auto"
                 src="https://ik.imagekit.io/lexworld/1.png"
                 alt=""
               />
             </div>
-            <div className="image-box" data-aos="zoom-in">
+            <div className="image-box">
               <img
-                onContextMenu={false}
+                width="100%"
+                height="auto"
                 src="https://ik.imagekit.io/lexworld/3.png"
                 alt=""
               />
             </div>
           </div>
           <div className="column">
-            <div className="image-box" data-aos="zoom-in">
+            <div className="image-box">
               <img
-                onContextMenu={false}
+                width="100%"
+                height="auto"
                 src="https://ik.imagekit.io/lexworld/8.png"
                 alt=""
               />
             </div>
-            <div className="image-box" data-aos="zoom-in">
+            <div className="image-box">
               <img
-                onContextMenu={false}
+                width="100%"
+                height="auto"
                 src="https://ik.imagekit.io/lexworld/7.png"
                 alt=""
               />
@@ -343,7 +391,6 @@ function Home() {
           </p>
 
           <img
-            onContextMenu={false}
             src={
               window.innerWidth >= 1920 ||
               (window.innerWidth <= 1920 && window.innerWidth > 992)
@@ -356,14 +403,41 @@ function Home() {
                 ? "https://ik.imagekit.io/lexworld/IceBreaking.png?tr=w-518.391,h-250.266"
                 : "https://ik.imagekit.io/lexworld/IceBreaking.png?tr=w-351,h-169.453"
             }
+            width={
+              window.innerWidth >= 1920 ||
+              (window.innerWidth <= 1920 && window.innerWidth > 992)
+                ? "824"
+                : window.innerWidth <= 992 && window.innerWidth > 768
+                ? "892.812"
+                : window.innerWidth <= 768 && window.innerWidth > 576
+                ? "691.188"
+                : window.innerWidth <= 576
+                ? "518.391"
+                : "351"
+            }
+            height="auto"
             alt="Breaking Gold"
           />
 
           <p className="contractAddr">
-            <b>Centralized Landing(Google Firebase):</b> <a href="https://playpointgame.web.app" target="_blank">playpointgame.web.app</a>
+            <b>Centralized Landing(Google Firebase):</b>{" "}
+            <a
+              href="https://playpointgame.web.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              playpointgame.web.app
+            </a>
           </p>
           <p className="contractAddr">
-            <b>Decentralized Landing(IPFS):</b> <a href="https://playpoint.on.fleek.co" target="_blank">playpoint.on.fleek.co</a>
+            <b>Decentralized Landing(IPFS):</b>{" "}
+            <a
+              href="https://playpoint.on.fleek.co"
+              target="_blank"
+              rel="noreferrer"
+            >
+              playpoint.on.fleek.co
+            </a>
           </p>
         </div>
       </div>
@@ -373,4 +447,4 @@ function Home() {
   );
 }
 
-export default pure(Home);
+export default Home;

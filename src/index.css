@@ -8,11 +8,11 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  user-select: none!important;
 }
 
 html,
 body {
+  user-select: none;
   overflow-x: hidden !important;
 }
 body {

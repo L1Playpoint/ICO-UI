@@ -92,7 +92,7 @@
 
           b {
             color: #fff;
-            animation: glow 2s ease-in-out infinite alternate;
+            // animation: glow 2s ease-in-out infinite alternate;
           }
         }
       }
@@ -204,7 +204,7 @@
 
         b {
           color: #fff;
-          animation: glow 2s ease-in-out infinite alternate;
+          // animation: glow 2s ease-in-out infinite alternate;
         }
 
         @media (max-width: 768px) {
@@ -334,7 +334,7 @@
         }
       }
 
-      p {
+      .p {
         color: #adadad;
         line-height: 1.5;
 

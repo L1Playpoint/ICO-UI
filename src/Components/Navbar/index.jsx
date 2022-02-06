@@ -1,7 +1,6 @@
 import './styles/style.css'
 
 import React from 'react'
-import { pure } from 'recompose';
 
 function Navbar ({ refs }) {
   const { HomeRef, AboutRef, TokenSaleRef, RoadmapRef, GalleryRef, DocumentsRef } = refs
@@ -11,7 +10,7 @@ function Navbar ({ refs }) {
 
   return (
     <div className='navbar__container'>
-      <div onClick={() => scrollToElement(HomeRef)} className='navbar__logo'><img onContextMenu={false} src="https://ik.imagekit.io/lexworld/Logo.png" alt='Playpoint Logo' width="40" height="40" /><p>Playpoint</p></div>
+      <div onClick={() => scrollToElement(HomeRef)} className='navbar__logo'><img src="https://ik.imagekit.io/lexworld/Logo.png" alt='Playpoint Logo' width="40" height="40" /><p>Playpoint</p></div>
 
       <div className='navbar__links'>
         <div className='navbar__link'>
@@ -43,4 +42,4 @@ function Navbar ({ refs }) {
   )
 }
 
-export default pure(Navbar)
+export default Navbar

@@ -7,23 +7,28 @@ export default function Footer () {
       <div className='update'>Website Last Updated: Feb 1, 2022</div>
       <ul className='social__links'>
         <li>
-          <a href='https://blog.theboringschool.org'>
-            <i className='ri-github-fill' />
+          <a aria-label="GitHub" href='https://blog.theboringschool.org'>
+            <i className='ri-github-fill'/>
           </a>
         </li>
         <li>
-          <a href='https://blog.theboringschool.org'>
-            <i className='ri-discord-line' />
+          <a aria-label="Discord" href='https://blog.theboringschool.org'>
+            <i className='ri-discord-line'/>
           </a>
         </li>
         <li>
-          <a href='https://blog.theboringschool.org'>
-            <i className='ri-twitter-line' />
+          <a aria-label="Twitter" href='https://blog.theboringschool.org'>
+            <i className='ri-twitter-line'/>
           </a>
         </li>
         <li>
-          <a href='https://blog.theboringschool.org'>
-            <i className='ri-medium-line' />
+          <a aria-label="Medium" href='https://blog.theboringschool.org'>
+            <i className='ri-medium-line'/>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Telegram" href='https://blog.theboringschool.org'>
+          <i className='ri-telegram-line'/>
           </a>
         </li>
       </ul>

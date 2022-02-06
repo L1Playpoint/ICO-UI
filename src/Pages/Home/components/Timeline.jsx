@@ -5,20 +5,19 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { pure } from "recompose";
 
 function TimelineContainer() {
   return (
     <div className="timeline__container">
       <Timeline position="alternate">
-        <TimelineItem data-aos="fade-up-left">
+        <TimelineItem>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>
+          <TimelineContent data-aos="fade-up-left">
             <h1 className="title">Quarter 1</h1>
-            <p>
+            <div className="p">
               <ul>
                 <li>
                   <b>1.1 Project Landing Page Introduction </b>
@@ -42,17 +41,17 @@ function TimelineContainer() {
                   Source code will be open sourced on GitHub.
                 </li>
               </ul>
-            </p>
+            </div>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem data-aos="fade-up-right">
+        <TimelineItem>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>
+          <TimelineContent data-aos="fade-up-right">
             <h1 className="title">Quarter 2</h1>
-            <p>
+            <div className="p">
               <ul>
                 <li>
                   <b>2.1 Crowdsale & CEX, DEX Listings </b>
@@ -78,21 +77,27 @@ function TimelineContainer() {
                   <span>#3 gamers</span>.
                 </li>
               </ul>
-            </p>
+            </div>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem data-aos="fade-up-left">
+        <TimelineItem>
           <TimelineSeparator>
             <TimelineDot />
           </TimelineSeparator>
-          <TimelineContent>
+          <TimelineContent data-aos="fade-up-left">
             <h1 className="title">
               Q3-Loading
-              <span className="animate__flash animate__slower animate__animated animate__infinite">.</span>
-              <span className="animate__flash animate__slower animate__animated animate__infinite animate__delay-0.3s">.</span>
-              <span className="animate__flash animate__slower animate__animated animate__infinite animate__delay-0.6s">.</span>
+              <span className="animate__flash animate__slower animate__animated animate__infinite">
+                .
+              </span>
+              <span className="animate__flash animate__slower animate__animated animate__infinite animate__delay-0.3s">
+                .
+              </span>
+              <span className="animate__flash animate__slower animate__animated animate__infinite animate__delay-0.6s">
+                .
+              </span>
             </h1>
-            <p></p>
+            <div></div>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
@@ -100,4 +105,4 @@ function TimelineContainer() {
   );
 }
 
-export default pure(TimelineContainer);
+export default TimelineContainer;

@@ -77,7 +77,6 @@ function Home() {
             </h1>
             <div className="title">
               <h1>Playpoint</h1>
-              {/* <h1 className="stroke">Prediction Pool Platform</h1> */}
             </div>
             <p>
               is an <b>play-to-earn online prediction pool platform</b> based on

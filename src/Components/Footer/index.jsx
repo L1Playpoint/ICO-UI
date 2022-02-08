@@ -9,7 +9,7 @@ export default function Footer() {
         <li>
           <a
             aria-label="GitHub"
-            href="https://blog.theboringschool.org"
+            href="https://github.com/L1Playpoint"
             target="_blank"
             rel="noreferrer"
           >
@@ -29,7 +29,7 @@ export default function Footer() {
         <li>
           <a
             aria-label="Twitter"
-            href="https://blog.theboringschool.org"
+            href="https://twitter.com/TheBoringSchool"
             target="_blank"
             rel="noreferrer"
           >
@@ -49,7 +49,7 @@ export default function Footer() {
         <li>
           <a
             aria-label="Telegram"
-            href="https://blog.theboringschool.org"
+            href="https://t.me/L1Playpoint"
             target="_blank"
             rel="noreferrer"
           >

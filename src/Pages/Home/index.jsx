@@ -237,7 +237,7 @@ function Home() {
             <h1>Token Economics_</h1>
             <h1>Token Economics_</h1>
           </div>
-          <div className="tokenEconomics__content">
+          <div className="tokenEconomics__content" data-aos="fade-right">
             <h1>
               Token Economics
               <span className="animate__flash animate__slower animate__animated animate__infinite stroke">
@@ -265,7 +265,7 @@ function Home() {
               <b>Token Supply</b>: 100,000,000 PPT
             </p>
           </div>
-          <div className="chart">
+          <div className="chart" data-aos="fade-left">
             <PolarChart />
           </div>
         </div>

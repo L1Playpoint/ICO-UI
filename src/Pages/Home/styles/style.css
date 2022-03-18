@@ -12,15 +12,11 @@
     width: 100vw; }
     @media (max-width: 768px) {
       .home__container .home__container__landing {
-        margin-top: 73px;
+        margin-top: 65px;
         transform: scale(1.95); } }
   .home__container .home__container__about {
     color: #fff;
-    padding: 0 5vw;
-    margin-top: -120px; }
-    @media (max-width: 768px) {
-      .home__container .home__container__about {
-        margin-top: 100px; } }
+    padding: 0 5vw; }
     .home__container .home__container__about .absolute__title {
       font-family: "Fira Code", monospace;
       font-size: 8em;
@@ -254,7 +250,8 @@
     padding: 0 5vw;
     display: flex;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 80px; }
     @media (max-width: 768px) {
       .home__container .home__container__roadmap {
         padding: 0; } }

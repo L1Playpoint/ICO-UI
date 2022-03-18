@@ -24,7 +24,7 @@
     width: 100vw;
 
     @media (max-width: 768px) {
-      margin-top: 73px;
+      margin-top: 65px;
       transform: scale(1.95);
     }
   }
@@ -33,10 +33,10 @@
   .home__container__about {
     color: #fff;
     padding: 0 5vw;
-    margin-top: -120px;
+    // margin-top: -120px;
 
     @media (max-width: 768px) {
-      margin-top: 100px;
+      // margin-top: 100px;
     }
 
     .absolute__title {
@@ -336,9 +336,9 @@
           font-size: 19px;
           color: #c3c3c3;
 
-           .highlight {
-             color: #9361ff;
-           }
+          .highlight {
+            color: #9361ff;
+          }
         }
       }
 
@@ -369,6 +369,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 80px;
 
     @media (max-width: 768px) {
       padding: 0;
@@ -458,7 +459,7 @@
         }
       }
 
-      .MuiTimelineItem-root::before{
+      .MuiTimelineItem-root::before {
         @media (max-width: 991px) {
           flex: 0;
         }

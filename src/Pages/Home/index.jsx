@@ -15,7 +15,8 @@ import Navbar from "../../Components/Navbar";
 import TimelineContainer from "./components/Timeline";
 import Faqs from "./components/Faqs";
 import Footer from "../../Components/Footer";
-import PolarChart from "./components/PolarChart";
+// import PolarChart from "./components/PolarChart";
+import BannerImage from '../../Assets/Banner.png'
 
 function Home() {
   // refs
@@ -42,7 +43,7 @@ function Home() {
       {/**
        * @section => landing
        */}
-      <img
+      {/* <img
         ref={HomeRef}
         src="https://ik.imagekit.io/lexworld/Landing.png"
         alt="The City of Winners"
@@ -59,6 +60,14 @@ function Home() {
             ? "576"
             : "390"
         }
+        height="auto"
+      /> */}
+      <img
+        // src="https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
+        src={BannerImage}
+        ref={HomeRef}
+        alt="The City of Winners"
+        className="home__container__landing"
         height="auto"
       />
 
@@ -157,8 +166,9 @@ function Home() {
 
       {/**
        * @section => token sale
+       * @dev => will be uncommented soon
        */}
-      <div ref={TokenSaleRef} className="home__container__tokenSale">
+      {/* <div ref={TokenSaleRef} className="home__container__tokenSale">
         <div className="title">
           <h1>
             Token Sale
@@ -183,8 +193,7 @@ function Home() {
             <h1 className="stroke__colored">Utility and Governance Token,</h1>
             <h1 className="heading">Playpoint Token (PPT)</h1>
             <p>
-              PPT is a <b>fungible token</b> on the Binance Smart Chain
-              blockchain, similar to any BEP20 Token or Currency. However, PPT
+              PPT is a <b>fungible token</b> on the Avalanche, similar to any ARC20 Token or Currency. However, PPT
               can be used as a <b>utility</b> and a <b>tradable token</b>. This
               means it can be used inside Playpoint and can be withdrawn. By
               doing so, we can achieve trading of PPT on external or
@@ -205,7 +214,7 @@ function Home() {
               </li>
               <li>
                 <b>Type:</b>
-                <span> BEP20</span>
+                <span> ARC20</span>
               </li>
               <li>
                 <b>Symbol:</b>
@@ -269,7 +278,7 @@ function Home() {
             <PolarChart />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/**
        * @section => Project Timeline or Roadmap
@@ -407,8 +416,14 @@ function Home() {
             </span>
           </h1>
 
-          <form method="get" target="_blank" action="https://ik.imagekit.io/lexworld/Landing1.png?tr=w-1920,h-1039.340">
-            <Button type="submit">Download_</Button>
+          <form
+            method="get"
+            target="_blank"
+            action="https://ik.imagekit.io/lexworld/Landing1.png?tr=w-1920,h-1039.340"
+          >
+            <Button type="submit" disabled>
+              Coming Soon_
+            </Button>
           </form>
 
           <p>
@@ -450,12 +465,8 @@ function Home() {
 
           <p className="contractAddr">
             <b>Centralized Landing(Google Firebase):</b>{" "}
-            <a
-              href="https://playpointgame.web.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              playpointgame.web.app
+            <a href="https://playpoint.ai" target="_blank" rel="noreferrer">
+              https://platpoint.ai
             </a>
           </p>
           <p className="contractAddr">

@@ -36,7 +36,7 @@ function TimelineContainer() {
                 <li>
                   <b>1.3 Token Deployment & Pre, Private-Token Sale</b>
                   <br />
-                  BEP20 Token(PPT) Smart Contract (
+                  ARC20 Token(PPT) Smart Contract (
                   <i>Backed by: OpenZeppelin</i>) will be live and audited.
                   Source code will be open sourced on GitHub.
                 </li>
@@ -67,7 +67,7 @@ function TimelineContainer() {
                   Staking & Liquidity platform will be introduced to{" "}
                   <span>#2 investors</span>
                   with cross-bridge chain supports(
-                  <i>Note: Base Network will still be Binance Smart Chain.</i>).
+                  <i>Note: Base Network will still be Avalanche Ecosystem.</i>).
                 </li>
                 <li>
                   <b>2.3 Viable Product(VP) Gaming/Betting Platform</b>

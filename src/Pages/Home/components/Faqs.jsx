@@ -1,41 +1,39 @@
-import * as React from 'react'
-import Accordion from '@mui/material/Accordion'
-import AccordionSummary from '@mui/material/AccordionSummary'
-import AccordionDetails from '@mui/material/AccordionDetails'
-import Typography from '@mui/material/Typography'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import * as React from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-function Faqs () {
+function Faqs() {
   return (
-    <div className='faqs__container'>
+    <div className="faqs__container">
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls='faq1-content'
-          id='faq1-header'
+          aria-controls="faq1-content"
+          id="faq1-header"
         >
           <Typography>Is PPT, the native token, a cryptocurrency?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Technically, PPT is a fungible token on the Binance Smart Chain
-            blockchain, similar to any BEP20 Token or Currency. However, PPT can
-            be used as a utility and a tradable token. This means it can be used
-            inside Playpoint and can be withdrawn. By doing so, we can achieve
-            trading of PPT on external or decentralized exchanges outside of our
+            Technically, PPT is a fungible token on the Avalanche Ecosystem,
+            similar to any ARC20 Token or Currency. However, PPT can be used as
+            a utility and a tradable token. This means it can be used inside
+            Playpoint and can be withdrawn. By doing so, we can achieve trading
+            of PPT on external or decentralized exchanges outside of our
             control.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon color='#fff' />}
-          aria-controls='faq2-content'
-          id='faq2-header'
+          expandIcon={<ExpandMoreIcon color="#fff" />}
+          aria-controls="faq2-content"
+          id="faq2-header"
         >
-          <Typography>
-            Do it offers Staking, Liquidation Protocol?
-          </Typography>
+          <Typography>Do it offers Staking, Liquidation Protocol?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -49,8 +47,8 @@ function Faqs () {
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls='faq3-content'
-          id='faq3-header'
+          aria-controls="faq3-content"
+          id="faq3-header"
         >
           <Typography>What are Variant Prediction Pools?</Typography>
         </AccordionSummary>
@@ -70,8 +68,8 @@ function Faqs () {
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls='faq4-content'
-          id='faq4-header'
+          aria-controls="faq4-content"
+          id="faq4-header"
         >
           <Typography>What is a Community Hub?</Typography>
         </AccordionSummary>
@@ -92,8 +90,8 @@ function Faqs () {
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls='faq5-content'
-          id='faq5-header'
+          aria-controls="faq5-content"
+          id="faq5-header"
         >
           <Typography>How can I stay updated about Playpoint?</Typography>
         </AccordionSummary>
@@ -107,8 +105,8 @@ function Faqs () {
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls='faq6-content'
-          id='faq6-header'
+          aria-controls="faq6-content"
+          id="faq6-header"
         >
           <Typography>How do I play on Playpoint?</Typography>
         </AccordionSummary>
@@ -123,7 +121,7 @@ function Faqs () {
         </AccordionDetails>
       </Accordion>
     </div>
-  )
+  );
 }
 
-export default Faqs
+export default Faqs;

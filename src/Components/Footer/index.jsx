@@ -19,7 +19,7 @@ export default function Footer() {
         <li>
           <a
             aria-label="Discord"
-            href="https://blog.theboringschool.org"
+            href="https://discord.com/invite/6Uu7pEvGhE"
             target="_blank"
             rel="noreferrer"
           >
@@ -29,7 +29,7 @@ export default function Footer() {
         <li>
           <a
             aria-label="Twitter"
-            href="https://twitter.com/TheBoringSchool"
+            href="https://twitter.com/PlaypointP2E"
             target="_blank"
             rel="noreferrer"
           >
@@ -39,7 +39,7 @@ export default function Footer() {
         <li>
           <a
             aria-label="Medium"
-            href="https://blog.theboringschool.org"
+            href="https://blog.playpoint.ai"
             target="_blank"
             rel="noreferrer"
           >

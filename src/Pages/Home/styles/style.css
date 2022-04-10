@@ -454,6 +454,9 @@
         padding: 0 40px; }
         .home__container .home__container__documents .documents__links .MuiButton-root:hover {
           background: #5308f7; }
+        .home__container .home__container__documents .documents__links .MuiButton-root a {
+          text-decoration: none;
+          color: #fff; }
       .home__container .home__container__documents .documents__links img {
         width: 100%;
         border-radius: 15px;

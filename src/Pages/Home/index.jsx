@@ -16,7 +16,7 @@ import TimelineContainer from "./components/Timeline";
 import Faqs from "./components/Faqs";
 import Footer from "../../Components/Footer";
 // import PolarChart from "./components/PolarChart";
-import BannerImage from '../../Assets/Banner.png'
+// import BannerImage from "../../Assets/Banner.png";
 
 function Home() {
   // refs
@@ -64,7 +64,8 @@ function Home() {
       /> */}
       <img
         // src="https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-        src={BannerImage}
+        // src={BannerImage}
+        src="https://ik.imagekit.io/pptai/Banner_ZDXMZTHVO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611976675"
         ref={HomeRef}
         alt="The City of Winners"
         className="home__container__landing"
@@ -421,8 +422,14 @@ function Home() {
             target="_blank"
             action="https://ik.imagekit.io/lexworld/Landing1.png?tr=w-1920,h-1039.340"
           >
-            <Button type="submit" disabled>
-              Coming Soon_
+            <Button type="submit">
+              <a
+                href="https://docs.playpoint.ai/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Whitepaper_
+              </a>
             </Button>
           </form>
 

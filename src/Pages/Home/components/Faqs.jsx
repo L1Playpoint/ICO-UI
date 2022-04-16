@@ -114,7 +114,7 @@ function Faqs() {
           <Typography>
             For broader advice on game strategy, we'll maintain network of
             broadcasters who make content about how to play the game. Above all,
-            we will a community full of awesome, friendly players who love
+            we are a community full of awesome, friendly players who love
             helping new players succeed: join them on our Discord and don’t be
             shy about asking any questions you may have!
           </Typography>

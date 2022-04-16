@@ -98,7 +98,7 @@ function Home() {
               &nbsp;
               <br />
               Attracting developers into the ecosystem results in more games,
-              betting & community participation, which results in more gamers,
+              predicting & community participation, which results in more gamers,
               which attract more developers & community.
             </p>
           </div>

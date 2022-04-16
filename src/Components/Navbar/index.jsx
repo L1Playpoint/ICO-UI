@@ -29,7 +29,7 @@ function Navbar({ refs }) {
             <span className="numbering">#2</span> All the relevant remaining AMA Questions will be answered on Blog Post.🤝
           </p>
           <p>
-            <span className="numbering">#2</span> Interested Investors & Venture Capitalists can get in touch or direct contact to learn about the process.💵
+            <span className="numbering">#2</span> Interested Investors & Venture Capitalists can get in touch or directly contact to learn about the process.💵
           </p>
         </Marquee>
       </div>

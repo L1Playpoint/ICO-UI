@@ -417,21 +417,9 @@ function Home() {
             </span>
           </h1>
 
-          <form
-            method="get"
-            target="_blank"
-            action="https://ik.imagekit.io/lexworld/Landing1.png?tr=w-1920,h-1039.340"
-          >
-            <Button type="submit">
-              <a
-                href="https://docs.playpoint.ai/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Whitepaper_
-              </a>
-            </Button>
-          </form>
+          <a href="https://docs.playpoint.ai/" target="_blank" rel="noreferrer">
+            <Button type="submit">Whitepaper_</Button>
+          </a>
 
           <p>
             Here's the guide that informs our new players concisely about a

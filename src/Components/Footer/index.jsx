@@ -4,7 +4,7 @@ import "remixicon/fonts/remixicon.css";
 export default function Footer() {
   return (
     <div className="footer__container">
-      <div className="update">Website Last Updated: Apr 10, 2022</div>
+      <div className="update">Website Last Updated: Apr 16, 2022</div>
       <ul className="social__links">
         <li>
           <a
@@ -49,7 +49,7 @@ export default function Footer() {
         <li>
           <a
             aria-label="Telegram"
-            href="https://t.me/L1Playpoint"
+            href="https://t.me/+jam5SrIv4OpiOThl"
             target="_blank"
             rel="noreferrer"
           >

@@ -26,7 +26,7 @@
 }
 @media (max-width: 768px) {
   .home__container .home__container__landing {
-    margin-top: 65px;
+    margin-top: 55px;
     -webkit-transform: scale(1.95);
             transform: scale(1.95);
   }
@@ -34,6 +34,11 @@
 .home__container .home__container__about {
   color: #fff;
   padding: 0 5vw;
+}
+@media (max-width: 768px) {
+  .home__container .home__container__about {
+    margin-top: 80px;
+  }
 }
 .home__container .home__container__about .absolute__title {
   font-family: "Fira Code", monospace;
@@ -761,3 +766,4 @@
   font-size: 30px;
   text-decoration: none;
 }
+/*# sourceMappingURL=style.css.map */

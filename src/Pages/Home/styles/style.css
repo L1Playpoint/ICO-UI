@@ -688,12 +688,12 @@
   background: #000;
   border: 0.5px solid #fff;
   color: #fff;
-  padding: 0 40px;
 }
 .home__container .home__container__documents .documents__links .MuiButton-root:hover {
   background: #5308f7;
 }
 .home__container .home__container__documents .documents__links .MuiButton-root a {
+  padding: 0 40px;
   text-decoration: none;
   color: #fff;
 }

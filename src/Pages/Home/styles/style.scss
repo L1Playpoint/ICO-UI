@@ -654,13 +654,13 @@
         background: #000;
         border: 0.5px solid #fff;
         color: #fff;
-        padding: 0 40px;
-
+        
         &:hover {
           background: #5308f7;
         }
-
+        
         a{
+          padding: 0 40px;
           text-decoration: none;
           color: #fff;
         }

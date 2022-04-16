@@ -417,9 +417,15 @@ function Home() {
             </span>
           </h1>
 
-          <a href="https://docs.playpoint.ai/" target="_blank" rel="noreferrer">
-            <Button type="submit">Whitepaper_</Button>
-          </a>
+            <Button type="submit">
+              <a
+                href="https://docs.playpoint.ai/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Whitepaper_
+              </a>
+            </Button>
 
           <p>
             Here's the guide that informs our new players concisely about a

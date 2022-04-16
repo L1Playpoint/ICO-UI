@@ -688,6 +688,7 @@
   background: #000;
   border: 0.5px solid #fff;
   color: #fff;
+  padding: 0;
 }
 .home__container .home__container__documents .documents__links .MuiButton-root:hover {
   background: #5308f7;

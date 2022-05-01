@@ -59,7 +59,7 @@
 
     .home__container__about__content {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
 
       @media (max-width: 992px) {
         flex-direction: column;
@@ -101,6 +101,10 @@
           b {
             color: #fff;
             // animation: glow 2s ease-in-out infinite alternate;
+          }
+
+          ol{
+            margin: 20px;
           }
         }
       }

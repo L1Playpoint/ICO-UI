@@ -16,7 +16,7 @@ function TimelineContainer() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent data-aos="fade-up-left">
-            <h1 className="title">Quarter 1</h1>
+            <h1 className="title">Quarter 1: Apr-Jun</h1>
             <div className="p">
               <ul>
                 <li>
@@ -34,11 +34,13 @@ function TimelineContainer() {
                   platforms for playpoint's betterment and support.
                 </li>
                 <li>
-                  <b>1.3 Token Deployment & Pre, Private-Token Sale</b>
+                  <b>1.3 Pre, Private-Token Sale</b>
                   <br />
-                  ARC20 Token(PPT) Smart Contract (
-                  <i>Backed by: OpenZeppelin</i>) will be live and audited.
-                  Source code will be open sourced on GitHub.
+                  The pre and private token sales (ARC20 Token, Smart Contract)
+                  will be handled with SAFT instruments. These instruments will
+                  ensure the safety and legality of the tokens on sale. They
+                  will only be distributed at the time of TGE (Token Generating
+                  Event).
                 </li>
               </ul>
             </div>
@@ -50,22 +52,22 @@ function TimelineContainer() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent data-aos="fade-up-right">
-            <h1 className="title">Quarter 2</h1>
+            <h1 className="title">Quarter 2: Jul-Sep</h1>
             <div className="p">
               <ul>
                 <li>
-                  <b>2.1 Crowdsale & CEX, DEX Listings </b>
+                  <b>2.1 Crowdsale, Token Deployment & CEX, DEX Listings </b>
                   <br />
-                  Crowdsale Smart Contract (<i>Backed by: OpenZeppelin</i>) will
-                  be audited, deployed and User Interface will be live.
-                  Playpoint will start to be listed on centralized, and
-                  decentralized exchanges for <span>#1 traders</span>.
+                  Our first priority for Q2 is to launch a successful <span>#1 Crowd Sale </span>
+                  and distribute tokens to holders. As part of our goal, we will
+                  be working on having smart contracts audited and ready to be
+                  accessed by the traders of our community.
                 </li>
                 <li>
                   <b>2.2 Staking & Liquidity Platform</b>
                   <br />
                   Staking & Liquidity platform will be introduced to{" "}
-                  <span>#2 investors</span>
+                  <span>#2 investors </span>
                   with cross-bridge chain supports(
                   <i>Note: Base Network will still be Avalanche Ecosystem.</i>).
                 </li>

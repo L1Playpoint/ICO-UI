@@ -89,8 +89,9 @@ function Home() {
               <h1>Playpoint</h1>
             </div>
             <p>
-              is an online <b>Play to Earn (P2E)</b> and <b>prediction-pool
-              platform</b>, based on real-time sporting events. It is supported by
+              is an online <b>Play to Earn (P2E)</b> and{" "}
+              <b>prediction-pool platform</b>, based on real-time sporting
+              events. It is supported by
               <b> decentralized blockchain network</b> and its primary network
               comprises:
               <br />
@@ -102,11 +103,13 @@ function Home() {
               </ol>
               The affiliated participants can take part in the prediction pool
               sweepstakes by selecting a match or matches (fixtures) prescribed
-              in the <b>Playpoint Showcase</b>. After the selection, the participant
-              must ultimately answer the questions based on their predictions
-              for the said match. These questions are assessed or set up by the
-              <b> Playpoint Questionnaires hub</b>.<br/> The participants acquiring the
-              highest score range, in percentage, become prize contenders.
+              in the <b>Playpoint Showcase</b>. After the selection, the
+              participant must ultimately answer the questions based on their
+              predictions for the said match. These questions are assessed or
+              set up by the
+              <b> Playpoint Questionnaires hub</b>.<br /> The participants
+              acquiring the highest score range, in percentage, become prize
+              contenders.
             </p>
           </div>
           <div className="icon">
@@ -435,11 +438,9 @@ function Home() {
           </Button>
 
           <p>
-            Here's the guide that informs our new players concisely about a
-            complex mechanism of gameplay's and presents the playpoint's{" "}
-            <b className="content__highlight">main philosophy on the matter</b>.
-            It is meant to help players understand an requirements of our
-            platform, solve a problem, or make a decision.
+            A complete guide for investors, players and community stake holders
+            which explains the complex mechanics of the game play and tokenomics
+            of Playpoint Token.
           </p>
 
           <img
@@ -487,12 +488,16 @@ function Home() {
               playpoint.on.fleek.co
             </a>
           </p>
-          <h1 style={{marginTop: 20}}>
-            Contact Us_
-          </h1>
-            <p><b>Email</b>: info@playpoint.ai</p>
-            <p><b>Marketing</b>: neil@playpoint.ai</p>
-            <p><b>Development</b>: domsan@playpoint.ai</p>
+          <h1 style={{ marginTop: 20 }}>Contact Us_</h1>
+          <p>
+            <b>Email</b>: info@playpoint.ai
+          </p>
+          <p>
+            <b>Marketing</b>: neil@playpoint.ai
+          </p>
+          <p>
+            <b>Development</b>: domsan@playpoint.ai
+          </p>
         </div>
       </div>
 

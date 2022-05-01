@@ -74,9 +74,7 @@ function TimelineContainer() {
                 <li>
                   <b>2.3 Viable Product(VP) Gaming/Prediction Platform</b>
                   <br />
-                  As we're primarily focused for P2E as per our philosophy on
-                  matter. We'll introduce Viable Platoform - VP(Beta) for{" "}
-                  <span>#3 gamers</span>.
+                  As a Play to Earn (P2E) focused website, by the end of Q2, we will have launched the <span>#3 Viable Platform-VP</span> for beta testing among gamers to test the overall user experience and plausibility.
                 </li>
               </ul>
             </div>

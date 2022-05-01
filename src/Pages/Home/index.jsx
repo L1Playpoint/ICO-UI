@@ -91,7 +91,7 @@ function Home() {
             <p>
               is an online <b>Play to Earn (P2E)</b> and <b>prediction-pool
               platform</b>, based on real-time sporting events. It is supported by
-              <b>decentralized blockchain network</b> and its primary network
+              <b> decentralized blockchain network</b> and its primary network
               comprises:
               <br />
               <ol>

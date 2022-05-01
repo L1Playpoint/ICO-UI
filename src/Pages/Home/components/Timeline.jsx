@@ -70,7 +70,7 @@ function TimelineContainer() {
                   <i>Note: Base Network will still be Avalanche Ecosystem.</i>).
                 </li>
                 <li>
-                  <b>2.3 Viable Product(VP) Gaming/Betting Platform</b>
+                  <b>2.3 Viable Product(VP) Gaming/Prediction Platform</b>
                   <br />
                   As we're primarily focused for P2E as per our philosophy on
                   matter. We'll introduce Viable Platoform - VP(Beta) for{" "}

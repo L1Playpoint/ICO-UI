@@ -33,7 +33,7 @@ function Faqs() {
           aria-controls="faq2-content"
           id="faq2-header"
         >
-          <Typography>Do it offers Staking, Liquidation Protocol?</Typography>
+          <Typography>Does Playpoint offer Staking?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

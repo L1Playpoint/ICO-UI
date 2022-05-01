@@ -89,17 +89,24 @@ function Home() {
               <h1>Playpoint</h1>
             </div>
             <p>
-              is an <b>play-to-earn online prediction pool platform</b> based on
-              real-time sporting events, supported by decentralized blockchain
-              networks. Its primary networks comprises a logical Marketplace, a
-              virtual Showcase vendor, a <b>prediction questionnaires hub</b>,
-              and variant prediction Pools.
+              is an online <b>Play to Earn (P2E)</b> and <b>prediction-pool
+              platform</b>, based on real-time sporting events. It is supported by
+              <b> decentralized blockchain network</b> and its primary network
+              comprises:
               <br />
-              &nbsp;
-              <br />
-              Attracting developers into the ecosystem results in more games,
-              betting & community participation, which results in more gamers,
-              which attract more developers & community.
+              <ol>
+                <li>Logical Marketplace </li>
+                <li>Virtual Showcase Vendor,</li>
+                <li>Prediction Questionnaire Hub, and </li>
+                <li>Variant Prediction Pools. </li>
+              </ol>
+              The affiliated participants can take part in the prediction pool
+              sweepstakes by selecting a match or matches (fixtures) prescribed
+              in the <b>Playpoint Showcase</b>. After the selection, the participant
+              must ultimately answer the questions based on their predictions
+              for the said match. These questions are assessed or set up by the
+              <b> Playpoint Questionnaires hub</b>.<br/> The participants acquiring the
+              highest score range, in percentage, become prize contenders.
             </p>
           </div>
           <div className="icon">
@@ -417,21 +424,15 @@ function Home() {
             </span>
           </h1>
 
-          <form
-            method="get"
-            target="_blank"
-            action="https://ik.imagekit.io/lexworld/Landing1.png?tr=w-1920,h-1039.340"
-          >
-            <Button type="submit">
-              <a
-                href="https://docs.playpoint.ai/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Whitepaper_
-              </a>
-            </Button>
-          </form>
+          <Button type="submit">
+            <a
+              href="https://docs.playpoint.ai/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Whitepaper_
+            </a>
+          </Button>
 
           <p>
             Here's the guide that informs our new players concisely about a
@@ -486,6 +487,12 @@ function Home() {
               playpoint.on.fleek.co
             </a>
           </p>
+          <h1 style={{marginTop: 20}}>
+            Contact Us_
+          </h1>
+            <p><b>Email</b>: info@playpoint.ai</p>
+            <p><b>Marketing</b>: neil@playpoint.ai</p>
+            <p><b>Development</b>: domsan@playpoint.ai</p>
         </div>
       </div>
 

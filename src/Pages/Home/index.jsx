@@ -487,6 +487,12 @@ function Home() {
               playpoint.on.fleek.co
             </a>
           </p>
+          <h1 style={{marginTop: 20}}>
+            Contact Us_
+          </h1>
+            <p><b>Email</b>: info@playpoint.ai</p>
+            <p><b>Marketing</b>: neil@playpoint.ai</p>
+            <p><b>Development</b>: domsan@playpoint.ai</p>
         </div>
       </div>
 

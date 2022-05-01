@@ -58,7 +58,8 @@ function TimelineContainer() {
                 <li>
                   <b>2.1 Crowdsale, Token Deployment & CEX, DEX Listings </b>
                   <br />
-                  Our first priority for Q2 is to launch a successful <span>#1 Crowd Sale </span>
+                  Our first priority for Q2 is to launch a successful{" "}
+                  <span>#1 Crowd Sale </span>
                   and distribute tokens to holders. As part of our goal, we will
                   be working on having smart contracts audited and ready to be
                   accessed by the traders of our community.
@@ -74,7 +75,10 @@ function TimelineContainer() {
                 <li>
                   <b>2.3 Viable Product(VP) Gaming/Prediction Platform</b>
                   <br />
-                  As a Play to Earn (P2E) focused website, by the end of Q2, we will have launched the <span>#3 Viable Platform-VP</span> for beta testing among gamers to test the overall user experience and plausibility.
+                  As a Play to Earn (P2E) focused website, by the end of Q2, we
+                  will have launched the <span>#3 Viable Platform-VP</span> for
+                  beta testing among gamers to test the overall user experience
+                  and plausibility.
                 </li>
               </ul>
             </div>

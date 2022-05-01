@@ -21,24 +21,24 @@ function Navbar({ refs }) {
     <div className="nav__container">
       <div className="topbar__container">
         <Marquee pauseOnHover={true} speed={35}>
-          <p>
+          {/* <p>
             <span className="numbering">#1</span> All the relevant remaining AMA
             Questions will be answered on Blog Post.🤝
-          </p>
+          </p> */}
           <p>
-            <span className="numbering">#2</span> Invitation to Private
+            <span className="numbering">#1</span> Invitation to Private
             Investors; Get in touch for more information. Pre-Private Sale
             Starts from 16th May 2022 till end of May 2022. info@playpoint.ai
           </p>
-          <p>
+          {/* <p>
             <span className="numbering">#3</span> Interested Investors & Venture
             Capitalists can get in touch or directly contact to learn about the
             process.💵
-          </p>
-          <p>
+          </p> */}
+          {/* <p>
             <span className="numbering">#4</span> Pre/Private Sale will be
             initiated soon 🚀.
-          </p>
+          </p> */}
         </Marquee>
       </div>
       <div className="navbar__container">

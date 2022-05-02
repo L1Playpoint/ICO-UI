@@ -7,6 +7,7 @@ import "animate.css";
 import React from "react";
 import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
+import Popup from 'reactjs-popup';
 
 /**
  * @components custom main components
@@ -39,6 +40,13 @@ function Home() {
   return (
     <div className="home__container">
       <Navbar refs={refs} />
+      <Popup defaultOpen position="center center">
+        <h3 className="title">Message from Playpoint 🔺</h3>
+        <hr/>
+      <p className="content">Pre-Private Sale has started from  16th May till end of May 2022.<br/>
+      Get in touch at <b>neil@playpoint.ai</b> for investing information.
+      </p>
+    </Popup>
 
       {/**
        * @section => landing
@@ -62,15 +70,7 @@ function Home() {
         }
         height="auto"
       /> */}
-      <img
-        // src="https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-        // src={BannerImage}
-        src="https://ik.imagekit.io/pptai/Banner_ZDXMZTHVO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611976675"
-        ref={HomeRef}
-        alt="The City of Winners"
-        className="home__container__landing"
-        height="auto"
-      />
+      <img className="home__container__landing" src="https://ik.imagekit.io/pptai/Screen_Shot_2022-05-02_at_12.32.09_c9zu-DhnH_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651474105690" alt="" />
 
       {/**
        * @section => about

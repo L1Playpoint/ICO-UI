@@ -22,10 +22,13 @@
   // @section => landing
   .home__container__landing {
     width: 100vw;
+    height: 60vh;
+    object-fit: cover;
 
     @media (max-width: 768px) {
       margin-top: 55px;
       transform: scale(1.95);
+      height: 15vh;
     }
   }
 

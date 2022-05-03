@@ -43,7 +43,7 @@ function Home() {
       <Popup defaultOpen position="center center">
         <h3 className="title">Message from Playpoint 🔺</h3>
         <hr/>
-      <p className="content">Pre-Private Sale has started from  16th May till end of May 2022.<br/>
+      <p className="content">Pre-Private Sale will start from  16th May till end of May 2022.<br/>
       Get in touch at <b>neil@playpoint.ai</b> for investing information.
       </p>
     </Popup>
@@ -70,7 +70,8 @@ function Home() {
         }
         height="auto"
       /> */}
-      <img className="home__container__landing" src="https://ik.imagekit.io/pptai/Screen_Shot_2022-05-02_at_12.32.09_c9zu-DhnH_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651474105690" alt="" />
+      <img className="home__container__landing" 
+      src="https://ik.imagekit.io/pptai/mgmt_vLF41B7-q.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590445312" alt="Landing" />
 
       {/**
        * @section => about
@@ -328,34 +329,16 @@ function Home() {
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/6.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/8_Bxj0DQINO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590444718"
+                alt="8 Ball Pool"
               />
             </div>
             <div className="image-box">
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/9.png"
-                alt="Sport"
-              />
-            </div>
-          </div>
-          <div className="column">
-            <div className="image-box">
-              <img
-                width="100%"
-                height="auto"
-                src="https://ik.imagekit.io/lexworld/2.png"
-                alt="Sport"
-              />
-            </div>
-            <div className="image-box">
-              <img
-                width="100%"
-                height="auto"
-                src="https://ik.imagekit.io/lexworld/4.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/2_9LcswRGJU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442945"
+                alt="Football"
               />
             </div>
           </div>
@@ -364,16 +347,16 @@ function Home() {
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/1.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/6__yvQv5CND.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443927"
+                alt="Tennis"
               />
             </div>
             <div className="image-box">
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/3.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/4_x60hyzrV3p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443183"
+                alt="Hockey"
               />
             </div>
           </div>
@@ -382,16 +365,34 @@ function Home() {
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/8.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/1_wzxCQWMOg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
+                alt="Soccer"
               />
             </div>
             <div className="image-box">
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/7.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/5_ip3KOShfw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443838"
+                alt="Basketball"
+              />
+            </div>
+          </div>
+          <div className="column">
+            <div className="image-box">
+              <img
+                width="100%"
+                height="auto"
+                src="https://ik.imagekit.io/pptai/3_vYrcn-c6P.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
+                alt="Cricket"
+              />
+            </div>
+            <div className="image-box">
+              <img
+                width="100%"
+                height="auto"
+                src="https://ik.imagekit.io/pptai/7_1GW7hWBIM.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590444430"
+                alt="MMA"
               />
             </div>
           </div>

@@ -3,11 +3,11 @@
   color: #fff;
   padding: 8px 0;
   font-family: "Fira Code", monospace;
-  background: #2b5876;
+  background: #317db0;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#4e4376), to(#2b5876));
-  background: linear-gradient(to left, #4e4376, #2b5876);
+  background: -webkit-gradient(linear, right top, left top, from(#7463b1), to(#317db0));
+  background: linear-gradient(to left, #7463b1, #317db0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .nav__container .topbar__container .marquee-container .overlay {
@@ -103,4 +103,3 @@
   background-color: #5308f7;
   color: #fff;
 }
-/*# sourceMappingURL=style.css.map */

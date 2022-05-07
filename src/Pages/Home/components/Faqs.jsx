@@ -14,15 +14,15 @@ function Faqs() {
           aria-controls="faq1-content"
           id="faq1-header"
         >
-          <Typography>Is PPT, the native token, a cryptocurrency?</Typography>
+          <Typography>Is PPTT, the native token, a cryptocurrency?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Technically, PPT is a fungible token on the Avalanche Ecosystem,
-            similar to any ARC20 Token or Currency. However, PPT can be used as
+            Technically, PPTT is a fungible token on the Avalanche Ecosystem,
+            similar to any ARC20 Token or Currency. However, PPTT can be used as
             a utility and a tradable token. This means it can be used inside
             Playpoint and can be withdrawn. By doing so, we can achieve trading
-            of PPT on external or decentralized exchanges outside of our
+            of PPTT on external or decentralized exchanges outside of our
             control.
           </Typography>
         </AccordionDetails>
@@ -37,9 +37,9 @@ function Faqs() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Playpoint offers staking PPT as a method of rewarding community
-            members for locking up their PPT Tokens for long-term. The user can
-            participate in an online prediction pool game soon, earn PPT after
+            Playpoint offers staking PPTT as a method of rewarding community
+            members for locking up their PPTT Tokens for long-term. The user can
+            participate in an online prediction pool game soon, earn PPTT after
             their successful stake period completion as the treasury grows.
           </Typography>
         </AccordionDetails>

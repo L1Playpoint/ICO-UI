@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap");
 
 * {
@@ -22,4 +21,23 @@ body {
   position: relative;
   background: #000;
 
+}
+
+.popup-content{
+  color: #fff;
+  border: none!important;
+  padding: 10px;
+  border-radius: 16px;
+  background: #000!important;
+  text-align: center;
+  font-family: "Fira Code", monospace;
+}
+
+.popup-content h3{
+  padding: 15px 0;
+}
+
+.popup-content p{
+  padding: 15px 0;
+  line-height: 1.5;
 }

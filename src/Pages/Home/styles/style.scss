@@ -22,10 +22,11 @@
   // @section => landing
   .home__container__landing {
     width: 100vw;
+    object-fit: contain;
 
     @media (max-width: 768px) {
-      margin-top: 55px;
-      transform: scale(1.95);
+      margin-top: 95px;
+      transform: scale(2.2);
     }
   }
 
@@ -36,7 +37,7 @@
     // margin-top: -120px;
 
     @media (max-width: 768px) {
-      margin-top: 80px;
+      margin-top: 105px;
     }
 
     .absolute__title {
@@ -458,7 +459,8 @@
           }
 
           span {
-            color: #9361ff;
+            color: #00d56a;
+            font-weight: bold;
           }
         }
       }

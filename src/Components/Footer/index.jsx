@@ -4,7 +4,7 @@ import "remixicon/fonts/remixicon.css";
 export default function Footer() {
   return (
     <div className="footer__container">
-      <div className="update">Website Last Updated: May 01, 2022</div>
+      <div className="update">Website Last Updated: May 07, 2022</div>
       <ul className="social__links">
         <li>
           <a

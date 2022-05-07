@@ -7,6 +7,7 @@ import "animate.css";
 import React from "react";
 import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
+import Popup from 'reactjs-popup';
 
 /**
  * @components custom main components
@@ -39,6 +40,13 @@ function Home() {
   return (
     <div className="home__container">
       <Navbar refs={refs} />
+      <Popup defaultOpen position="center center">
+        <h3 className="title">Message from Playpoint 🔺</h3>
+        <hr/>
+      <p className="content">Pre-Private Sale will start from  16th May till end of May 2022.<br/>
+      Get in touch at <b>neil@playpoint.ai</b> for investing information.
+      </p>
+    </Popup>
 
       {/**
        * @section => landing
@@ -62,15 +70,8 @@ function Home() {
         }
         height="auto"
       /> */}
-      <img
-        // src="https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80"
-        // src={BannerImage}
-        src="https://ik.imagekit.io/pptai/Banner_ZDXMZTHVO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611976675"
-        ref={HomeRef}
-        alt="The City of Winners"
-        className="home__container__landing"
-        height="auto"
-      />
+      <img className="home__container__landing" 
+      src="https://ik.imagekit.io/pptai/mgmt_vLF41B7-q.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590445312" alt="Landing" />
 
       {/**
        * @section => about
@@ -89,8 +90,9 @@ function Home() {
               <h1>Playpoint</h1>
             </div>
             <p>
-              is an online <b>Play to Earn (P2E)</b> and <b>prediction-pool
-              platform</b>, based on real-time sporting events. It is supported by
+              is an online <b>Play to Earn (P2E)</b> and{" "}
+              <b>prediction-pool platform</b>, based on real-time sporting
+              events. It is supported by
               <b> decentralized blockchain network</b> and its primary network
               comprises:
               <br />
@@ -102,11 +104,13 @@ function Home() {
               </ol>
               The affiliated participants can take part in the prediction pool
               sweepstakes by selecting a match or matches (fixtures) prescribed
-              in the <b>Playpoint Showcase</b>. After the selection, the participant
-              must ultimately answer the questions based on their predictions
-              for the said match. These questions are assessed or set up by the
-              <b> Playpoint Questionnaires hub</b>.<br/> The participants acquiring the
-              highest score range, in percentage, become prize contenders.
+              in the <b>Playpoint Showcase</b>. After the selection, the
+              participant must ultimately answer the questions based on their
+              predictions for the said match. These questions are assessed or
+              set up by the
+              <b> Playpoint Questionnaires hub</b>.<br /> The participants
+              acquiring the highest score range, in percentage, become prize
+              contenders.
             </p>
           </div>
           <div className="icon">
@@ -325,34 +329,16 @@ function Home() {
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/6.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/8_Bxj0DQINO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590444718"
+                alt="8 Ball Pool"
               />
             </div>
             <div className="image-box">
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/9.png"
-                alt="Sport"
-              />
-            </div>
-          </div>
-          <div className="column">
-            <div className="image-box">
-              <img
-                width="100%"
-                height="auto"
-                src="https://ik.imagekit.io/lexworld/2.png"
-                alt="Sport"
-              />
-            </div>
-            <div className="image-box">
-              <img
-                width="100%"
-                height="auto"
-                src="https://ik.imagekit.io/lexworld/4.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/2_9LcswRGJU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442945"
+                alt="Football"
               />
             </div>
           </div>
@@ -361,16 +347,16 @@ function Home() {
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/1.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/6__yvQv5CND.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443927"
+                alt="Tennis"
               />
             </div>
             <div className="image-box">
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/3.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/4_x60hyzrV3p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443183"
+                alt="Hockey"
               />
             </div>
           </div>
@@ -379,16 +365,34 @@ function Home() {
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/8.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/1_wzxCQWMOg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
+                alt="Soccer"
               />
             </div>
             <div className="image-box">
               <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/lexworld/7.png"
-                alt="Sport"
+                src="https://ik.imagekit.io/pptai/5_ip3KOShfw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443838"
+                alt="Basketball"
+              />
+            </div>
+          </div>
+          <div className="column">
+            <div className="image-box">
+              <img
+                width="100%"
+                height="auto"
+                src="https://ik.imagekit.io/pptai/3_vYrcn-c6P.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
+                alt="Cricket"
+              />
+            </div>
+            <div className="image-box">
+              <img
+                width="100%"
+                height="auto"
+                src="https://ik.imagekit.io/pptai/7_1GW7hWBIM.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590444430"
+                alt="MMA"
               />
             </div>
           </div>
@@ -435,11 +439,9 @@ function Home() {
           </Button>
 
           <p>
-            Here's the guide that informs our new players concisely about a
-            complex mechanism of gameplay's and presents the playpoint's{" "}
-            <b className="content__highlight">main philosophy on the matter</b>.
-            It is meant to help players understand an requirements of our
-            platform, solve a problem, or make a decision.
+            A complete guide for investors, players and community stake holders
+            which explains the complex mechanics of the game play and tokenomics
+            of Playpoint Token.
           </p>
 
           <img
@@ -487,12 +489,16 @@ function Home() {
               playpoint.on.fleek.co
             </a>
           </p>
-          <h1 style={{marginTop: 20}}>
-            Contact Us_
-          </h1>
-            <p><b>Email</b>: info@playpoint.ai</p>
-            <p><b>Marketing</b>: neil@playpoint.ai</p>
-            <p><b>Development</b>: domsan@playpoint.ai</p>
+          <h1 style={{ marginTop: 20 }}>Contact Us_</h1>
+          <p>
+            <b>Email</b>: info@playpoint.ai
+          </p>
+          <p>
+            <b>Marketing</b>: neil@playpoint.ai
+          </p>
+          <p>
+            <b>Development</b>: domsan@playpoint.ai
+          </p>
         </div>
       </div>
 

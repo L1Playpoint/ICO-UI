@@ -71,7 +71,7 @@ function Home() {
         height="auto"
       /> */}
       <img className="home__container__landing" 
-      src="https://ik.imagekit.io/pptai/mgmt_vLF41B7-q.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590445312" alt="Landing" />
+      src="https://ik.imagekit.io/pptai/mgmt_Ihyh_RANP.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1652256598188" alt="Landing" />
 
       {/**
        * @section => about
@@ -326,32 +326,7 @@ function Home() {
         <div className="row">
           <div className="column">
             <div className="image-box">
-              <img
-                width="100%"
-                height="auto"
-                src="https://ik.imagekit.io/pptai/8_Bxj0DQINO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590444718"
-                alt="8 Ball Pool"
-              />
-            </div>
-            <div className="image-box">
-              <img
-                width="100%"
-                height="auto"
-                src="https://ik.imagekit.io/pptai/2_9LcswRGJU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442945"
-                alt="Football"
-              />
-            </div>
-          </div>
-          <div className="column">
-            <div className="image-box">
-              <img
-                width="100%"
-                height="auto"
-                src="https://ik.imagekit.io/pptai/6__yvQv5CND.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443927"
-                alt="Tennis"
-              />
-            </div>
-            <div className="image-box">
+              
               <img
                 width="100%"
                 height="auto"
@@ -359,15 +334,44 @@ function Home() {
                 alt="Hockey"
               />
             </div>
+            <div className="image-box">
+            <img
+                width="100%"
+                height="auto"
+                src="https://ik.imagekit.io/pptai/3_vYrcn-c6P.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
+                alt="Cricket"
+              />
+            </div>
           </div>
           <div className="column">
             <div className="image-box">
-              <img
+            <img
+                width="100%"
+                height="auto"
+                src="https://ik.imagekit.io/pptai/2_9LcswRGJU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442945"
+                alt="Football"
+              />
+                
+              
+            </div>
+            <div className="image-box">
+            <img
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/pptai/1_wzxCQWMOg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
                 alt="Soccer"
               />
+            </div>
+          </div>
+          <div className="column">
+            <div className="image-box">
+            <img
+                width="100%"
+                height="auto"
+                src="https://ik.imagekit.io/pptai/8_Bxj0DQINO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590444718"
+                alt="8 Ball Pool"
+              />
+
             </div>
             <div className="image-box">
               <img
@@ -380,11 +384,11 @@ function Home() {
           </div>
           <div className="column">
             <div className="image-box">
-              <img
+            <img
                 width="100%"
                 height="auto"
-                src="https://ik.imagekit.io/pptai/3_vYrcn-c6P.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
-                alt="Cricket"
+                src="https://ik.imagekit.io/pptai/6__yvQv5CND.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443927"
+                alt="Tennis"
               />
             </div>
             <div className="image-box">

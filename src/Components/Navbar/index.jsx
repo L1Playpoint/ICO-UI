@@ -26,9 +26,19 @@ function Navbar({ refs }) {
             Questions will be answered on Blog Post.🤝
           </p> */}
           <p>
-            <span className="numbering">#1</span> Invitation to Private
-            Investors; Get in touch for more information. Pre-Private Sale
-            Starts from 16th May 2022 till end of May 2022. info@playpoint.ai
+            <span className="numbering">#1</span> Invitation to Pre/Private Sale
+            Investors; Pre-Private Sale Started from 16th May 2022 till end of
+            May 2022. Visit{" "}
+            <a
+              href="https://sale.playpoint.ai/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: "white",
+              }}
+            >
+              https://sale.playpoint.ai/
+            </a>
           </p>
           {/* <p>
             <span className="numbering">#3</span> Interested Investors & Venture

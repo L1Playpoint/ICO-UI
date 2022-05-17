@@ -7,7 +7,7 @@ import "animate.css";
 import React from "react";
 import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
-import Popup from 'reactjs-popup';
+import Popup from "reactjs-popup";
 
 /**
  * @components custom main components
@@ -42,11 +42,25 @@ function Home() {
       <Navbar refs={refs} />
       <Popup defaultOpen position="center center">
         <h3 className="title">Message from Playpoint 🔺</h3>
-        <hr/>
-      <p className="content">Pre-Private Sale will start from  16th May till end of May 2022.<br/>
-      Get in touch at <b>neil@playpoint.ai</b> for investing information.
-      </p>
-    </Popup>
+        <hr />
+        <p className="content">
+          Pre-Private Sale has started from 16th May till end of May 2022.
+          <br />
+          Visit{" "}
+          <a
+            href="https://sale.playpoint.ai/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              color: "white",
+              fontWeight: "bold",
+            }}
+          >
+            https://sale.playpoint.ai/
+          </a>{" "}
+          for presale investment.
+        </p>
+      </Popup>
 
       {/**
        * @section => landing
@@ -70,8 +84,11 @@ function Home() {
         }
         height="auto"
       /> */}
-      <img className="home__container__landing" 
-      src="https://ik.imagekit.io/pptai/mgmt_Ihyh_RANP.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1652256598188" alt="Landing" />
+      <img
+        className="home__container__landing"
+        src="https://ik.imagekit.io/pptai/mgmt_Ihyh_RANP.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1652256598188"
+        alt="Landing"
+      />
 
       {/**
        * @section => about
@@ -326,7 +343,6 @@ function Home() {
         <div className="row">
           <div className="column">
             <div className="image-box">
-              
               <img
                 width="100%"
                 height="auto"
@@ -335,7 +351,7 @@ function Home() {
               />
             </div>
             <div className="image-box">
-            <img
+              <img
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/pptai/3_vYrcn-c6P.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
@@ -345,17 +361,15 @@ function Home() {
           </div>
           <div className="column">
             <div className="image-box">
-            <img
+              <img
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/pptai/2_9LcswRGJU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442945"
                 alt="Football"
               />
-                
-              
             </div>
             <div className="image-box">
-            <img
+              <img
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/pptai/1_wzxCQWMOg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590442986"
@@ -365,13 +379,12 @@ function Home() {
           </div>
           <div className="column">
             <div className="image-box">
-            <img
+              <img
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/pptai/8_Bxj0DQINO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590444718"
                 alt="8 Ball Pool"
               />
-
             </div>
             <div className="image-box">
               <img
@@ -384,7 +397,7 @@ function Home() {
           </div>
           <div className="column">
             <div className="image-box">
-            <img
+              <img
                 width="100%"
                 height="auto"
                 src="https://ik.imagekit.io/pptai/6__yvQv5CND.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651590443927"

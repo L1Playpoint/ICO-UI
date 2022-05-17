@@ -36,11 +36,21 @@ function TimelineContainer() {
                 <li>
                   <b>1.3 Pre, Private-Token Sale</b>
                   <br />
-                  The pre and private token sales (ARC20 Token, Smart Contract)
-                  will be handled with SAFT instruments. These instruments will
-                  ensure the safety and legality of the tokens on sale. They
-                  will only be distributed at the time of TGE (Token Generating
-                  Event).
+                  The pre and private token sales has started and is live on {" "}
+                  <span>
+                    <a
+                      href="https://sale.playpoint.ai/"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        color: "#00D569",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      https://sale.playpoint.ai/
+                    </a>
+                  </span>. Minimum investment starts from 3 AVAX. Contact us for
+                  more details at info@playpoint.ai.
                 </li>
               </ul>
             </div>

@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div className={`app__container ${!lightMode ? "lightMode" : "darkMode"}`}>
+    <div className={`app__container ${lightMode ? "lightMode" : "darkMode"}`}>
       <Home
         lightMode={lightMode}
         setLightMode={setLightMode}

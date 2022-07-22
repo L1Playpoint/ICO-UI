@@ -11,6 +11,24 @@
   }
 }
 
+$darkBackground:#262626;
+$darkColor:#000;
+
+$lightBackground:#fff;
+$lightColor:#fff;
+
+$darkMode:true;
+
+@mixin lightMode {
+  background: $lightBackground !important;
+  color: $darkColor !important;
+}
+
+@mixin  darkMode {
+  background: $darkBackground !important;
+  color: $lightColor !important;
+}
+
 
 
 .home__container {
@@ -416,6 +434,14 @@
         font-size: 35px;
         margin-bottom: 20px;
       }
+      &.lightMode {
+        color: #000;
+        background: transparent;
+      }
+      &.darkMode {
+        color: #fff;
+        background: transparent;
+      }
     }
 
     p {
@@ -429,6 +455,14 @@
       text-align: center;
       opacity: 0.5;
       font-size: 19px;
+      &.lightMode {
+        color: #000;
+        background: transparent;
+      }
+      &.darkMode {
+        color: #fff;
+        background: transparent;
+      }
 
       @media (max-width: 768px) {
         max-width: 80vw;
@@ -449,20 +483,39 @@
 
       .p {
         color: #adadad;
+        &.lightMode {
+          @include darkMode()
+        }
+        &.darkMode {
+          @include lightMode()
+        }
 
+        b{
+          color: #fff;
+          &.lightMode{
+            @include darkMode()
+          }
+          &.darkMode {
+            @include darkMode()
+          }
+        }
+      
         li {
           margin-bottom: 20px;
           list-style: none;
-
-          b {
-            font-size: 19px;
-            line-height: 2;
-            color: #fff;
+          &.lightMode {
+            @include darkMode()
           }
-
-          span {
-            color: #00d56a;
-            font-weight: bold;
+          &.darkMode {
+            @include lightMode()
+          }
+        }
+        p {
+          &.lightMode {
+            @include darkMode()
+          }
+          &.darkMode {
+            @include lightMode()
           }
         }
       }
@@ -473,6 +526,11 @@
         }
       }
     }
+  }
+
+  .button__container {
+    display: flex;
+    gap: 20px;
   }
 
   // @section => gallery
@@ -738,7 +796,3 @@
   }
 }
 
-.lightMode {
-  background: #fff;
-  color: #000;
-}

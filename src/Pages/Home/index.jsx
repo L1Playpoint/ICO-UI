@@ -108,22 +108,36 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
                 _
               </span>
             </h1>
-            <div className="title">
-              <h1>Playpoint</h1>
+            <div className={`title `}>
+              <h1 className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                Playpoint
+              </h1>
             </div>
-            <p>
-              is an online <b>Play to Earn (P2E)</b> and{" "}
-              <b>prediction-pool platform</b>, based on real-time sporting
+            <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
+              is an online{" "}
+              <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                Play to Earn (P2E)
+              </b>{" "}
+              and <b>prediction-pool platform</b>, based on real-time sporting
               events. It is supported by
               <b> decentralized blockchain network</b> and its primary network
               comprises:
               <br />
               <ol>
-                <li>Logical Marketplace </li>
-                <li>Virtual Showcase Vendor,</li>
-                <li>Prediction Questionnaire Hub, and </li>
-                <li>Variant Prediction Pools. </li>
+                <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Logical Marketplace{" "}
+                </li>
+                <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Virtual Showcase Vendor,
+                </li>
+                <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Prediction Questionnaire Hub, and{" "}
+                </li>
+                <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Variant Prediction Pools.{" "}
+                </li>
               </ol>
+              <p>
               The affiliated participants can take part in the prediction pool
               sweepstakes by selecting a match or matches (fixtures) prescribed
               in the <b>Playpoint Showcase</b>. After the selection, the
@@ -133,6 +147,7 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
               <b> Playpoint Questionnaires hub</b>.<br /> The participants
               acquiring the highest score range, in percentage, become prize
               contenders.
+              </p>
             </p>
           </div>
           <div className="icon">
@@ -323,13 +338,13 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
           <h1>Roadmap_</h1>
           <h1>Roadmap_</h1>
         </div>
-        <h1 className="roadmap__title">
+        <h1 className={`roadmap__title ${lightMode ? "lightMode" : "darkMode"}`}>
           Roadmap
           <span className="animate__flash animate__slower animate__animated animate__infinite">
             _
           </span>
         </h1>
-        <p className="top__description">
+        <p className={`top__description ${lightMode ? "lightMode" : "darkMode"}`}>
           Playpoint will continue to grow with new features, systems, and
           cross-chain expansions. The roadmap below indicates the expected
           milestones in development.

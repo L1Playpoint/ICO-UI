@@ -454,6 +454,14 @@
     margin-bottom: 20px;
   }
 }
+.home__container .home__container__roadmap .roadmap__title.lightMode {
+  color: #000;
+  background: transparent;
+}
+.home__container .home__container__roadmap .roadmap__title.darkMode {
+  color: #fff;
+  background: transparent;
+}
 .home__container .home__container__roadmap p {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
@@ -464,6 +472,14 @@
   text-align: center;
   opacity: 0.5;
   font-size: 19px;
+}
+.home__container .home__container__roadmap .top__description.lightMode {
+  color: #000;
+  background: transparent;
+}
+.home__container .home__container__roadmap .top__description.darkMode {
+  color: #fff;
+  background: transparent;
 }
 @media (max-width: 768px) {
   .home__container .home__container__roadmap .top__description {
@@ -484,18 +500,44 @@
 .home__container .home__container__roadmap .timeline__container .p {
   color: #adadad;
 }
+.home__container .home__container__roadmap .timeline__container .p.lightMode {
+  background: #262626 !important;
+  color: #fff !important;
+}
+.home__container .home__container__roadmap .timeline__container .p.darkMode {
+  background: #fff !important;
+  color: #000 !important;
+}
+.home__container .home__container__roadmap .timeline__container .p b {
+  color: #fff;
+}
+.home__container .home__container__roadmap .timeline__container .p b.lightMode {
+  background: #262626 !important;
+  color: #fff !important;
+}
+.home__container .home__container__roadmap .timeline__container .p b.darkMode {
+  background: #262626 !important;
+  color: #fff !important;
+}
 .home__container .home__container__roadmap .timeline__container .p li {
   margin-bottom: 20px;
   list-style: none;
 }
-.home__container .home__container__roadmap .timeline__container .p li b {
-  font-size: 19px;
-  line-height: 2;
-  color: #fff;
+.home__container .home__container__roadmap .timeline__container .p li.lightMode {
+  background: #262626 !important;
+  color: #fff !important;
 }
-.home__container .home__container__roadmap .timeline__container .p li span {
-  color: #00d56a;
-  font-weight: bold;
+.home__container .home__container__roadmap .timeline__container .p li.darkMode {
+  background: #fff !important;
+  color: #000 !important;
+}
+.home__container .home__container__roadmap .timeline__container .p p.lightMode {
+  background: #262626 !important;
+  color: #fff !important;
+}
+.home__container .home__container__roadmap .timeline__container .p p.darkMode {
+  background: #fff !important;
+  color: #000 !important;
 }
 @media (max-width: 991px) {
   .home__container .home__container__roadmap .timeline__container .MuiTimelineItem-root::before {
@@ -503,6 +545,12 @@
         -ms-flex: 0;
             flex: 0;
   }
+}
+.home__container .button__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 .home__container .home__container__gallery {
   display: block;
@@ -771,10 +819,5 @@
   margin-left: 30px;
   font-size: 30px;
   text-decoration: none;
-}
-
-.lightMode {
-  background: #fff;
-  color: #000;
 }
 /*# sourceMappingURL=style.css.map */

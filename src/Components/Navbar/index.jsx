@@ -3,7 +3,8 @@ import "./styles/style.css";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-function Navbar({ refs }) {
+function Navbar({ refs, lightMode, setLightMode,handleLightMode }) {
+
   const {
     HomeRef,
     AboutRef,
@@ -13,13 +14,22 @@ function Navbar({ refs }) {
     GalleryRef,
     DocumentsRef,
   } = refs;
-
+  //  console.log(ref)
   const scrollToElement = (ref) =>
-    window.scrollTo({ top: ref.current.offsetTop - 50, behavior: "smooth" });
+    window.scrollTo(
+      ref.curren === "HomeRef"
+        ? { top: window.top }
+        : { top: ref.current.offset - 50 }
+    );
+  // window.scrollTo({ top: ref.current.offsetTop - 50, behavior: "smooth" });
 
   return (
-    <div className="nav__container">
-      <div className="topbar__container">
+    <div className={`nav__container`}>
+      <div
+        // className={`topbar__container  ${
+        //   !lightMode ? "lightMode" : "darkMode"
+        // }`}
+      >
         <Marquee pauseOnHover={true} speed={35}>
           {/* <p>
             <span className="numbering">#1</span> All the relevant remaining AMA
@@ -51,7 +61,9 @@ function Navbar({ refs }) {
           </p> */}
         </Marquee>
       </div>
-      <div className="navbar__container">
+      <div
+        className={`navbar__container ${!lightMode ? "lightMode" : "darkMode"}`}
+      >
         <div onClick={() => scrollToElement(HomeRef)} className="navbar__logo">
           <img
             src="https://ik.imagekit.io/lexworld/Logo.png"
@@ -62,26 +74,49 @@ function Navbar({ refs }) {
           <p>Playpoint</p>
         </div>
 
-        <div className="navbar__links">
-          <div className="navbar__link">
-            <button onClick={() => scrollToElement(HomeRef)}>Home</button>
+        <div className={`navbar__links`}>
+          <div className={`navbar__link`}>
+            <button
+              onClick={() => scrollToElement(HomeRef)}
+              className={`${!lightMode ? "lightMode" : "darkMode"}`}
+            >
+              Home
+            </button>
           </div>
           <div className="navbar__link">
-            <button onClick={() => scrollToElement(AboutRef)}>About</button>
+            <button
+              onClick={() => scrollToElement(AboutRef)}
+              className={`${!lightMode ? "lightMode" : "darkMode"}`}
+            >
+              About
+            </button>
           </div>
           {/* <div className='navbar__link'>
           <button onClick={() => scrollToElement(TokenSaleRef)}>
             Token Sale
           </button>
         </div> */}
-          <div className="navbar__link">
-            <button onClick={() => scrollToElement(RoadmapRef)}>Roadmap</button>
+          <div className={`navbar__link`}>
+            <button
+              onClick={() => scrollToElement(RoadmapRef)}
+              className={`${!lightMode ? "lightMode" : "darkMode"}`}
+            >
+              Roadmap
+            </button>
           </div>
           <div className="navbar__link">
-            <button onClick={() => scrollToElement(GalleryRef)}>Gallery</button>
+            <button
+              onClick={() => scrollToElement(GalleryRef)}
+              className={`${!lightMode ? "lightMode" : "darkMode"}`}
+            >
+              Gallery
+            </button>
           </div>
           <div className="navbar__link">
-            <button onClick={() => scrollToElement(DocumentsRef)}>
+            <button
+              onClick={() => scrollToElement(DocumentsRef)}
+              className={`${!lightMode ? "lightMode" : "darkMode"}`}
+            >
               Documents
             </button>
           </div>
@@ -92,6 +127,13 @@ function Navbar({ refs }) {
             Blogs_
           </a>
         </div>
+        <button
+          style={{ padding: "10px", cursor: "pointer" }}
+          onClick={handleLightMode}
+          className={`${!lightMode ? "lightMode" : "darkMode"}`}
+        >
+          {!lightMode ? "EnableLightMode" : "EnableDarkMode"}
+        </button>
       </div>
     </div>
   );

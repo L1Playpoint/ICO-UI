@@ -19,7 +19,7 @@ import Footer from "../../Components/Footer";
 // import PolarChart from "./components/PolarChart";
 // import BannerImage from "../../Assets/Banner.png";
 
-function Home() {
+function Home({ lightMode, setLightMode, handleLightMode }) {
   // refs
   const HomeRef = React.useRef();
   const AboutRef = React.useRef();
@@ -39,7 +39,12 @@ function Home() {
 
   return (
     <div className="home__container">
-      <Navbar refs={refs} />
+      <Navbar
+        refs={refs}
+        lightMode={lightMode}
+        setLightMode={setLightMode}
+        handleLightMode={handleLightMode}
+      />
       <Popup defaultOpen position="center center">
         <h3 className="title">Message from Playpoint 🔺</h3>
         <hr />

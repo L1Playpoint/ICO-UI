@@ -7,7 +7,6 @@ import "animate.css";
 import React from "react";
 import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
-import Popup from "reactjs-popup";
 
 /**
  * @components custom main components
@@ -45,27 +44,7 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
         setLightMode={setLightMode}
         handleLightMode={handleLightMode}
       />
-      <Popup defaultOpen position="center center">
-        <h3 className="title">Message from Playpoint 🔺</h3>
-        <hr />
-        <p className="content">
-          Pre-Private Sale has started from 16th May till end of May 2022.
-          <br />
-          Visit{" "}
-          <a
-            href="https://sale.playpoint.ai/"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            https://sale.playpoint.ai/
-          </a>{" "}
-          for presale investment.
-        </p>
-      </Popup>
+     
 
       {/**
        * @section => landing
@@ -323,13 +302,13 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
           <h1>Roadmap_</h1>
           <h1>Roadmap_</h1>
         </div>
-        <h1 className="roadmap__title">
+        <h1 className={`roadmap__title ${lightMode ? "darkMode" : "lightMode"}`}>
           Roadmap
           <span className="animate__flash animate__slower animate__animated animate__infinite">
             _
           </span>
         </h1>
-        <p className="top__description">
+        <p className={`top__description ${lightMode ? "darkMode" : "lightMode"}`}>
           Playpoint will continue to grow with new features, systems, and
           cross-chain expansions. The roadmap below indicates the expected
           milestones in development.
@@ -425,17 +404,17 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
        * @section => documents
        */}
       <div ref={DocumentsRef} className="home__container__documents">
-        <div className="absolute">
+        <div className="absolute ">
           <Marquee>Frequently Asked Question, Whitepaper</Marquee>
           <Marquee>Whitepaper, FAQs, Frequently Asked Question</Marquee>
         </div>
-        <div className="faqs" data-aos="fade-right">
+        <div  className={`faqs ${!lightMode ? "darkMode" : "lightMode"}`} >
           <h1>Frequently Asked Questions_</h1>
-          <p className="faq__description">
+          <p className={`faq__description ${lightMode ? "darkMode" : "lightMode"}`}>  
             The tech is new and ever-evolving – it helps to have a guide. Here's
             what we recommend you should know while you're diving in.
           </p>
-          <Faqs />
+          <Faqs lightMode = {lightMode} />
         </div>
         <div
           className="documents__links"
@@ -498,7 +477,7 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
           <p className="contractAddr">
             <b>Centralized Landing(Google Firebase):</b>{" "}
             <a href="https://playpoint.ai" target="_blank" rel="noreferrer">
-              https://platpoint.ai
+              https://playpoint.ai
             </a>
           </p>
           <p className="contractAddr">

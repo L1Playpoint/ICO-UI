@@ -5,9 +5,9 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-function Faqs() {
+function Faqs({lightMode}) {
   return (
-    <div className="faqs__container">
+    <div className={`faqs__container ${!lightMode ? "darkMode" : "lightMode"}`}>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

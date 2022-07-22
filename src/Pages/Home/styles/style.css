@@ -448,6 +448,14 @@
   margin-bottom: 40px;
   font-family: "Fira Code", monospace;
 }
+.home__container .home__container__roadmap .roadmap__title.lightMode {
+  background: #000 !important;
+  color: #fff !important;
+}
+.home__container .home__container__roadmap .roadmap__title.darkMode {
+  background: #fff !important;
+  color: #000 !important;
+}
 @media (max-width: 768px) {
   .home__container .home__container__roadmap .roadmap__title {
     font-size: 35px;
@@ -464,6 +472,14 @@
   text-align: center;
   opacity: 0.5;
   font-size: 19px;
+}
+.home__container .home__container__roadmap .top__description.lightMode {
+  background: #000 !important;
+  color: #fff !important;
+}
+.home__container .home__container__roadmap .top__description.darkMode {
+  background: #fff !important;
+  color: #000 !important;
 }
 @media (max-width: 768px) {
   .home__container .home__container__roadmap .top__description {
@@ -487,11 +503,6 @@
 .home__container .home__container__roadmap .timeline__container .p li {
   margin-bottom: 20px;
   list-style: none;
-}
-.home__container .home__container__roadmap .timeline__container .p li b {
-  font-size: 19px;
-  line-height: 2;
-  color: #fff;
 }
 .home__container .home__container__roadmap .timeline__container .p li span {
   color: #00d56a;
@@ -638,6 +649,14 @@
   font-family: "Fira Code", monospace;
   font-size: 4em;
 }
+.home__container .home__container__documents .faqs h1.lightMode {
+  background: #000 !important;
+  color: #fff !important;
+}
+.home__container .home__container__documents .faqs h1.darkMode {
+  background: #fff !important;
+  color: #000 !important;
+}
 @media (max-width: 768px) {
   .home__container .home__container__documents .faqs h1 {
     font-size: 2em;
@@ -647,6 +666,14 @@
   color: rgb(153, 153, 153);
   font-size: 18px;
   margin-top: 20px;
+}
+.home__container .home__container__documents .faqs .faq__description.lightMode {
+  background: #000 !important;
+  color: #fff !important;
+}
+.home__container .home__container__documents .faqs .faq__description.darkMode {
+  background: #fff !important;
+  color: #000 !important;
 }
 .home__container .home__container__documents .faqs .faqs__container {
   margin-top: 40px;
@@ -661,6 +688,14 @@
 .home__container .home__container__documents .faqs .faqs__container .MuiTypography-root {
   font-size: 18px;
   font-weight: 600;
+}
+.home__container .home__container__documents .faqs .faqs__container p.lightMode {
+  background: #000 !important;
+  color: #fff !important;
+}
+.home__container .home__container__documents .faqs .faqs__container p.darkMode {
+  background: #fff !important;
+  color: #000 !important;
 }
 .home__container .home__container__documents .faqs .faqs__container .MuiAccordionDetails-root .MuiTypography-root {
   font-size: 16px;

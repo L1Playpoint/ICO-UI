@@ -9,6 +9,7 @@ $darkMode:true;
 @mixin lightMode {
   background: $lightBackground !important;
   color: $darkColor !important;
+ 
 }
 
 @mixin  darkMode {

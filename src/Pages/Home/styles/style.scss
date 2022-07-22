@@ -1,3 +1,21 @@
+$darkBackground:#000;
+$darkColor:#000;
+
+$lightBackground:#fff;
+$lightColor:#fff;
+
+$darkMode:true;
+
+@mixin lightMode {
+  background: $lightBackground !important;
+  color: $darkColor !important;
+ 
+}
+
+@mixin  darkMode {
+  background: $darkBackground !important;
+  color: $lightColor !important;
+}
 // Animation => Glow
 @keyframes glow {
   from {
@@ -17,6 +35,7 @@
   margin-top: 70px;
   position: relative;
 
+  
   p {
     line-height: 1.5;
   }
@@ -100,6 +119,8 @@
           font-size: 18px;
           line-height: 1.6;
           color: #c3c3c3;
+          
+          
 
           b {
             color: #fff;
@@ -173,6 +194,7 @@
         -webkit-text-stroke-width: 4px;
         -webkit-text-stroke-color: #fff;
         text-align: center;
+        
 
         @media (max-width: 768px) {
           font-size: 2.5em;
@@ -184,6 +206,7 @@
     .content {
       display: flex;
       align-items: center;
+      
 
       @media (max-width: 992px) {
         align-items: flex-start;
@@ -219,6 +242,7 @@
         b {
           color: #fff;
           // animation: glow 2s ease-in-out infinite alternate;
+          
         }
 
         @media (max-width: 768px) {
@@ -342,6 +366,7 @@
           font-family: "Roboto", sans-serif;
           font-size: 19px;
           color: #c3c3c3;
+          
 
           .highlight {
             color: #9361ff;
@@ -382,6 +407,7 @@
       padding: 0;
     }
 
+   
     .absolute__title {
       position: absolute;
       opacity: 0.1;
@@ -411,6 +437,14 @@
       margin-bottom: 40px;
       font-family: "Fira Code", monospace;
       // animation: glow 2s ease-in-out infinite alternate;
+      &.lightMode {
+        @include darkMode();
+      
+      }
+      
+      &.darkMode {
+        @include lightMode();
+      }
 
       @media (max-width: 768px) {
         font-size: 35px;
@@ -429,7 +463,14 @@
       text-align: center;
       opacity: 0.5;
       font-size: 19px;
-
+      &.lightMode {
+        @include darkMode();
+      
+      }
+      
+      &.darkMode {
+        @include lightMode();
+      }
       @media (max-width: 768px) {
         max-width: 80vw;
       }
@@ -453,12 +494,6 @@
         li {
           margin-bottom: 20px;
           list-style: none;
-
-          b {
-            font-size: 19px;
-            line-height: 2;
-            color: #fff;
-          }
 
           span {
             color: #00d56a;
@@ -591,6 +626,14 @@
       h1 {
         font-family: "Fira Code", monospace;
         font-size: 4em;
+        &.lightMode {
+          @include darkMode();
+        
+        }
+        
+        &.darkMode {
+          @include lightMode();
+        }
 
         @media (max-width: 768px) {
           font-size: 2em;
@@ -601,6 +644,15 @@
         color: rgb(153, 153, 153);
         font-size: 18px;
         margin-top: 20px;
+        &.lightMode {
+          @include darkMode();
+        
+        }
+        
+        &.darkMode {
+          @include lightMode();
+        }
+        
       }
 
       .faqs__container {
@@ -619,6 +671,17 @@
         .MuiTypography-root {
           font-size: 18px;
           font-weight: 600;
+          
+        }
+        p{
+          &.lightMode {
+            @include darkMode();
+          
+          }
+          
+          &.darkMode {
+            @include lightMode();
+          }
         }
 
         .MuiAccordionDetails-root {

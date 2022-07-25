@@ -587,16 +587,41 @@ body.darkMode {
 }
 .home__container .home__container__team .home__container__team__content h1 {
   width: 100%;
-  text-align: center;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
   font-size: 4em;
   font-family: "Fira Code", monospace;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .home__container .home__container__team .home__container__team__content h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+}
 .home__container .home__container__team .home__container__team__content .teams {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(0, 1fr))[3];
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .home__container .home__container__team .home__container__team__content .teams {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .home__container .home__container__team .home__container__team__content .teams .user {
   display: -webkit-box;
@@ -606,27 +631,44 @@ body.darkMode {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-.home__container .home__container__team .home__container__team__content .teams .user img {
-  height: 200px;
+.home__container .home__container__team .home__container__team__content .teams .user.darkMode {
+  background: #fff !important;
+  color: #000 !important;
+}
+.home__container .home__container__team .home__container__team__content .teams .user.lightMode {
+  color: #000;
+  background: transparent;
+}
+.home__container .home__container__team .home__container__team__content .teams .user .imageBox {
+  border-radius: 16px;
+  height: 400px;
   width: 200px;
-  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .home__container .home__container__team .home__container__team__content .teams .user .imageBox {
+    width: 80vw;
+  }
+}
+.home__container .home__container__team .home__container__team__content .teams .user .imageBox img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 20px 0;
   cursor: pointer;
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-}
-.home__container .home__container__team .home__container__team__content .teams .user img:hover {
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.home__container .home__container__team .home__container__team__content .teams .user .imageBox img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .home__container .home__container__team .home__container__team__content .teams .user .username {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: left;
   width: 200px;
@@ -634,10 +676,37 @@ body.darkMode {
 }
 .home__container .home__container__team .home__container__team__content .teams .user .post {
   text-align: left;
+  color: #8a8a8a;
   width: 200px;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
+}
+.home__container .home__container__team .home__container__team__content .teams .user .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+.home__container .home__container__team .home__container__team__content .teams .user .social a {
+  text-decoration: none;
+  margin: 2px;
+  color: #fff;
+  font-size: 18px;
+}
+.home__container .home__container__team .home__container__team__content .teams .user .social a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.home__container .home__container__team .home__container__team__content .teams .user .social a.darkMode {
+  color: #fff;
+  background: transparent;
+}
+.home__container .home__container__team .home__container__team__content .teams .user .social a.lightMode {
+  color: #000;
+  background: transparent;
 }
 
 .button__container {

@@ -564,39 +564,110 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
       {/**
        *  @section => team members
        */}
-      <div
-        className={`home__container__team ${
-          lightMode ? "lightMode" : "darkMode"
-        }`}
+      <div  
+      className={`home__container__team  ${
+        lightMode ? "lightMode" : "darkMode"
+      }`
+    }
       >
-        <div className="home__container__team__content">
-          <h1>Meet Our Team__</h1>
-          <div className="teams">
+    
+        <div className="home__container__team__content"   data-aos="zoom-in" >
+        <h1 className="absolute__title">
+              Meet Our Team
+              <span className="animate__flash animate__slower animate__animated animate__infinite">
+                _
+              </span>
+            </h1>
+          <div className="teams" >
             <div className="user">
-              <img
-                src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/277584819_3211368542474917_8359344236602525081_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=iQyopYRv_DUAX8oDAwj&_nc_ht=scontent.fktm10-1.fna&oh=00_AT-Aswk0aN2lZFrpcC1n0ncatyBLGCaIdwv-iQE-Vk5m0g&oe=62E232F8"
-                alt="image"
-              />
-              <p className="username">Suraj Gaire</p>
-              <p className="post">Student Researcher</p>
-            </div>
-            <div className="user">
-              <img
-                src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/277584819_3211368542474917_8359344236602525081_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=iQyopYRv_DUAX8oDAwj&_nc_ht=scontent.fktm10-1.fna&oh=00_AT-Aswk0aN2lZFrpcC1n0ncatyBLGCaIdwv-iQE-Vk5m0g&oe=62E232F8"
-                alt="image"
-              />
-              <p className="username">Suraj Gaire</p>
-              <p className="post">Student Researcher</p>
-            </div>
-            <div className="user">
-              <div className="image-box">
+              <div className="imageBox">
                 <img
-                  src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/277584819_3211368542474917_8359344236602525081_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=iQyopYRv_DUAX8oDAwj&_nc_ht=scontent.fktm10-1.fna&oh=00_AT-Aswk0aN2lZFrpcC1n0ncatyBLGCaIdwv-iQE-Vk5m0g&oe=62E232F8"
+                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
                   alt="image"
                 />
               </div>
-              <p className="username">Suraj Gaire</p>
+              <p className="username">Domsan Lex</p>
+              <p className="post">Lead Developer</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  alt="image"
+                />
+              </div>
+              <p className="username">Aakala</p>
+              <p className="post">Lead Developer</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  alt="image"
+                />
+              </div>
+              <p className="username">Neil</p>
+              <p className="post">Lead Developer</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  alt="image"
+                />
+              </div>
+              <p className="username">Jake Lewis</p>
+              <p className="post">Lead Developer</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  alt="image"
+                />
+              </div>
+              <p className="username">Eraig Thomas</p>
               <p className="post">Student Researcher</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className={`user `}>
+              <div className="imageBox">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  alt="image"
+                />
+              </div>
+              <p className="username">Riktriz</p>
+              <p className="post">Student Researcher</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`}href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
             </div>
           </div>
         </div>

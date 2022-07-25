@@ -120,11 +120,25 @@
   transition: 0.3s all ease;
   cursor: pointer;
 }
+.nav__container .navbar__container .navbar__app.lightMode {
+  border: 1px solid #000;
+}
 .nav__container .navbar__container .navbar__app a {
   text-decoration: none;
 }
-.nav__container .navbar__container .navbar__app:hover {
-  background-color: #5308f7;
+.nav__container .navbar__container .navbar__app a.lightMode {
+  color: #000;
+  background: none;
+}
+.nav__container .navbar__container .navbar__app a.darkMode {
   color: #fff;
+}
+.nav__container .navbar__container .navbar__app.darkMode:hover {
+  background-color: #5308f7;
+  color: #fff !important;
+}
+.nav__container .navbar__container .navbar__app.lightMode:hover {
+  background-color: #fff;
+  color: #5308f7 !important;
 }
 /*# sourceMappingURL=style.css.map */

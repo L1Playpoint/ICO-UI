@@ -11,29 +11,39 @@
   }
 }
 
-$darkBackground:#262626;
-$darkColor:#000;
+$darkBackground: #262626;
+$darkColor: #000;
 
-$lightBackground:#fff;
-$lightColor:#fff;
+$lightBackground: #fff;
+$lightColor: #fff;
 
-$darkMode:true;
+$darkMode: true;
 
 @mixin lightMode {
   background: $lightBackground !important;
   color: $darkColor !important;
 }
 
-@mixin  darkMode {
+@mixin darkMode {
   background: $darkBackground !important;
   color: $lightColor !important;
 }
 
-
+body {
+  &.lightMode {
+    @include lightMode();
+  }
+  &.darkMode {
+    @include darkMode();
+  }
+}
 
 .home__container {
   margin-top: 70px;
   position: relative;
+  // &.lightMode {
+  //   background: #dfe4ea;
+  // }
 
   p {
     line-height: 1.5;
@@ -54,7 +64,12 @@ $darkMode:true;
   .home__container__about {
     color: #fff;
     padding: 0 5vw;
-    // margin-top: -120px;
+    margin: 20px 0;
+    padding: 5px 100px;
+    &.lightMode {
+      background: #f1f1f1;
+
+    }
 
     @media (max-width: 768px) {
       margin-top: 105px;
@@ -76,6 +91,12 @@ $darkMode:true;
 
     .title {
       font-family: "Fira Code", monospace;
+      h1 {
+        &.lightMode {
+          color: #000;
+          background: transparent;
+        }
+      }
     }
 
     .home__container__about__content {
@@ -118,14 +139,38 @@ $darkMode:true;
           font-size: 18px;
           line-height: 1.6;
           color: #c3c3c3;
+          &.lightMode {
+            background: transparent;
+            color: #000;
+          }
+          &.darkMode {
+            background: transparent;
+            color: #c3c3c3;
+          }
 
           b {
             color: #fff;
             // animation: glow 2s ease-in-out infinite alternate;
+            &.lightMode {
+              background: transparent;
+              color: #000;
+            }
+            &.darkMode {
+              background: transparent;
+              color: #fff;
+            }
           }
 
-          ol{
+          ol {
             margin: 20px;
+            &.lightMode {
+              background: transparent;
+            }
+            li {
+              &.lightMode {
+                background: transparent;
+              }
+            }
           }
         }
       }
@@ -157,7 +202,14 @@ $darkMode:true;
             bottom: 0;
             right: 0;
             z-index: -1;
-            opacity: 0.5;
+
+            &.lightMode {
+              opacity: 1 !important;
+            }
+
+            &.darkMode {
+              opacity: 0.5;
+            }
 
             @media (max-width: 992px) {
               right: 50px;
@@ -402,7 +454,7 @@ $darkMode:true;
 
     .absolute__title {
       position: absolute;
-      opacity: 0.1;
+      opacity: 0.07;
       top: 10vh;
       left: 50%;
       font-size: 5em;
@@ -447,6 +499,14 @@ $darkMode:true;
     p {
       font-family: "Roboto", sans-serif;
       font-size: 17px;
+      // &.lightMode {
+      //   color: #000;
+      //   background: transparent;
+      // }
+      // &.darkMode {
+      //   color: #fff;
+      //   background: transparent;
+      // }
     }
 
     .top__description {
@@ -455,13 +515,16 @@ $darkMode:true;
       text-align: center;
       opacity: 0.5;
       font-size: 19px;
+      color: #fff;
       &.lightMode {
-        color: #000;
+        color: #000 !important;
         background: transparent;
+        opacity: 1;
       }
       &.darkMode {
-        color: #fff;
+        color: #fff !important;
         background: transparent;
+        opacity: 0.5;
       }
 
       @media (max-width: 768px) {
@@ -481,318 +544,469 @@ $darkMode:true;
         }
       }
 
-      .p {
-        color: #adadad;
+      // .p {
+      //   color: #adadad;
+      //   &.lightMode {
+      //     @include darkMode();
+      //     background: transparent;
+      //   }
+      //   &.darkMode {
+      //     @include lightMode();
+      //   }
+
+      li {
+        margin-bottom: 20px;
+        list-style: none;
         &.lightMode {
-          @include darkMode()
+          // background: transparent !important;
+          color: #000;
+          background: transparent !important;
         }
         &.darkMode {
-          @include lightMode()
-        }
-
-        b{
+          background: transparent !important;
+          // background: transparent !important;
           color: #fff;
-          &.lightMode{
-            @include darkMode()
-          }
-          &.darkMode {
-            @include darkMode()
-          }
         }
-      
-        li {
-          margin-bottom: 20px;
-          list-style: none;
+        b {
+          color: #fff;
           &.lightMode {
-            @include darkMode()
+            // background: transparent;
+            background: transparent !important;
+
+            color: #000;
           }
           &.darkMode {
-            @include lightMode()
-          }
-        }
-        p {
-          &.lightMode {
-            @include darkMode()
-          }
-          &.darkMode {
-            @include lightMode()
+            // background: transparent;
+            background: transparent !important;
+
+            color: #fff;
           }
         }
       }
+    }
 
-      .MuiTimelineItem-root::before {
-        @media (max-width: 991px) {
-          flex: 0;
-        }
+    .MuiTimelineItem-root::before {
+      @media (max-width: 991px) {
+        flex: 0;
       }
     }
   }
 
-  .button__container {
-    display: flex;
-    gap: 20px;
-  }
-
-  // @section => gallery
-  .home__container__gallery {
-    display: block;
-    margin: 0 auto;
-    margin-top: 120px;
-    width: 100%;
-    padding: 0 5vw;
-
-    @media (max-width: 768px) {
-      margin-top: 50px;
-    }
-
-    .row {
-      display: -ms-flexbox; /* IE10 */
-      display: flex;
-      -ms-flex-wrap: wrap; /* IE10 */
-      flex-wrap: wrap;
-      padding: 0 5px;
-      justify-content: center;
-
-      .column {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 5px;
-
-        .image-box {
-          width: 100%;
-          position: relative;
-          margin: auto;
-          overflow: hidden;
-          vertical-align: middle;
-          margin-top: 10px;
-        }
-
-        img {
-          width: 100%;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          display: block;
-          transform: scale(1);
-
-          &:hover {
-            transform: scale(1.1);
-          }
-        }
-      }
-
-      /* Responsive layout - makes a two column-layout instead of four columns */
-      @media screen and (max-width: 992px) {
-        .column {
-          -ms-flex: 50%;
-          flex: 50%;
-          max-width: 50%;
-        }
-      }
-
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 768px) {
-        .column {
-          -ms-flex: 100%;
-          flex: 100%;
-          max-width: 100%;
-        }
-      }
-    }
-  }
-
-  // @section => documents
-  .home__container__documents {
-    color: #fff;
+  .home__container__team {
     margin: 100px 5vw;
-    display: flex;
-    align-items: flex-start;
-    position: relative;
 
-    @media (max-width: 992px) {
-      flex-wrap: wrap;
-      flex-direction: column;
+    &.darkMode {
+      color: #fff;
+      background: #000;
     }
-
-    @media (max-width: 768px) {
-      margin: 50px 5vw;
-    }
-
-    .faqs,
-    .documents__links {
-      flex: 1 1 0;
-      font-family: "Roboto", sans-serif;
-
-      @media (max-width: 992px) {
-        flex: 1;
-      }
-    }
-
-    .absolute {
-      position: absolute;
-      font-size: 15em;
-      -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: 2px;
-      z-index: -1;
-      top: 50%;
-      -webkit-text-stroke-color: #fff;
-      transform: translateY(-50%);
-      opacity: 0.1;
-    }
-
-    .overlay {
-      width: 0;
-      height: 0;
-    }
-
-    .faqs {
+    .home__container__team__content {
+      width: 100%;
       h1 {
-        font-family: "Fira Code", monospace;
+        width:100%;
+        text-align: center;
         font-size: 4em;
-
-        @media (max-width: 768px) {
-          font-size: 2em;
-        }
+        font-family: "Fira Code", monospace;
+        margin-bottom: 20px;
       }
+      .teams {
+        display: grid;
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        .user{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+          img{
+            height: 200px;
+            width:200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px 0;
+            cursor: pointer;
+            transform: scale(0.95);
+            &:hover {
+              transform: scale(1);
+            }
+          }
+          .username {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-align: left;
+            width: 200px;
+            font-family: "Roboto", sans-serif;
+          }
 
-      .faq__description {
-        color: rgb(153, 153, 153);
-        font-size: 18px;
-        margin-top: 20px;
-      }
+          .post {
+            text-align: left;
+            // left: 10px;
+            width: 200px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            font-family: "Roboto", sans-serif;
 
-      .faqs__container {
-        margin-top: 40px;
-
-        .MuiPaper-root {
-          background: transparent;
-          color: #fff;
-        }
-
-        .MuiAccordionSummary-root {
-          border-top: 0.2px solid #dedede;
-          //   border-bottom: 0.2px solid #dedede;
-        }
-
-        .MuiTypography-root {
-          font-size: 18px;
-          font-weight: 600;
-        }
-
-        .MuiAccordionDetails-root {
-          .MuiTypography-root {
-            font-size: 16px;
-            font-weight: 400;
-            color: #b9b9b9;
           }
         }
-
-        .MuiAccordionSummary-expandIconWrapper {
-          color: #fff;
-        }
       }
+  
     }
+  }
+}
 
-    .documents__links {
-      margin-left: 80px;
-      font-size: 18px;
-      color: #a7a7a7;
+.button__container {
+  display: flex;
+  gap: 20px;
+}
 
-      @media (max-width: 992px) {
-        margin-left: 0;
-        margin-top: 50px;
-      }
+// @section => gallery
+.home__container__gallery {
+  display: block;
+  margin: 0 auto;
+  margin-top: 120px;
+  width: 100%;
+  padding: 0 5vw;
 
-      h1 {
-        font-size: 4em;
-        -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #fff;
-        font-family: "Fira Code", monospace;
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 
-        @media (max-width: 768px) {
-          font-size: 2em;
-        }
-      }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 5px;
+    justify-content: center;
 
-      .MuiButton-root {
-        margin-bottom: 20px;
-        background: #000;
-        border: 0.5px solid #fff;
-        color: #fff;
-        padding: 0;
-        
-        &:hover {
-          background: #5308f7;
-        }
-        
-        a{
-          padding: 0 40px;
-          text-decoration: none;
-          color: #fff;
-        }
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 5px;
+
+      .image-box {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        vertical-align: middle;
+        margin-top: 10px;
       }
 
       img {
         width: 100%;
-        border-radius: 15px;
-        margin-top: 25px;
-        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: block;
+        transform: scale(1);
 
-        @media (max-width: 768px) {
-          width: 90vw;
-        }
-      }
-
-      b {
-        color: #9361ff;
-
-        &.content__highlight {
-          color: #fff;
-        }
-      }
-
-      .contractAddr {
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
-        @media (max-width: 768px) {
-          font-size: 14px;
+        &:hover {
+          transform: scale(1.1);
         }
       }
     }
-  }
 
-  .footer__container {
-    color: #fff;
-    padding: 0 5vw;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .update {
-      font-family: "Fira Code", monospace;
-      font-size: 18px;
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 992px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
     }
 
-    ul {
-      display: flex;
-      list-style-type: none;
-
-      @media (max-width: 768px) {
-        margin-top: 20px;
-      }
-
-      a {
-        color: #fff;
-        margin-left: 30px;
-        font-size: 30px;
-        text-decoration: none;
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 768px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
       }
     }
   }
 }
 
+// @section => documents
+.home__container__documents {
+  color: #fff;
+  margin: 100px 5vw;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin: 20px 0;
+  padding: 20px 100px;
+  &.lightMode {
+    background: #f1f1f1;
+
+  }
+
+  h1 {
+    &.lightMode {
+      background: transparent;
+    }
+  }
+
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    margin: 50px 5vw;
+  }
+
+  .faqs,
+  .documents__links {
+    flex: 1 1 0;
+    font-family: "Roboto", sans-serif;
+    button {
+      a {
+        &.lightMode {
+          border: 0.5px solid;
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      flex: 1;
+    }
+  }
+
+  // .home__container__documents .documents__links .MuiButton-root a {
+  //   &.lightMode{
+  //     border: .5px solid #000;
+  //   }
+  // }
+
+  .absolute {
+    position: absolute;
+    font-size: 15em;
+    -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    z-index: -1;
+    top: 50%;
+    -webkit-text-stroke-color: #fff;
+    transform: translateY(-50%);
+    opacity: 0.1;
+  }
+
+  .overlay {
+    width: 0;
+    height: 0;
+  }
+
+  .faqs {
+    h1 {
+      font-family: "Fira Code", monospace;
+      font-size: 4em;
+
+      @media (max-width: 768px) {
+        font-size: 2em;
+      }
+    }
+
+    .faq__description {
+      color: rgb(153, 153, 153);
+      font-size: 18px;
+      margin-top: 20px;
+      &.lightMode {
+        background: transparent;
+        color: #000;
+      }
+      &.darkMode {
+        background: transparent;
+        color: rgb(153, 153, 153);
+      }
+    }
+
+    .faqs__container {
+      margin-top: 40px;
+
+      .MuiPaper-root {
+        background: transparent;
+        color: #fff;
+      }
+
+      .MuiAccordionSummary-root {
+        border-top: 0.2px solid #dedede;
+        //   border-bottom: 0.2px solid #dedede;
+      }
+
+      .MuiTypography-root {
+        font-size: 18px;
+        font-weight: 600;
+        &.lightMode {
+          background: transparent;
+        }
+      }
+
+      .MuiAccordionDetails-root {
+        .MuiTypography-root {
+          font-size: 16px;
+          font-weight: 400;
+          color: #b9b9b9;
+          &.lightMode {
+            background: transparent;
+            color: #000;
+          }
+          &.darkMode {
+            background: transparent;
+            color: #b9b9b9;
+          }
+        }
+      }
+
+      .MuiAccordionSummary-expandIconWrapper {
+        color: #fff;
+        .MuiSvgIcon {
+          &.lightMode {
+            background: transparent;
+            color: #000;
+          }
+          &.darkMode {
+            background: transparent;
+            color: #fff;
+          }
+        }
+      }
+
+      #faq1-header
+        div.MuiAccordionSummary-expandIconWrapper.css-yw020d-MuiAccordionSummary-expandIconWrapper
+        svg {
+        &.lightMode {
+          background: transparent;
+          color: #fff;
+        }
+        &.darkMode {
+          background: transparent;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .documents__links {
+    margin-left: 80px;
+    font-size: 18px;
+    color: #a7a7a7;
+
+    @media (max-width: 992px) {
+      margin-left: 0;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 4em;
+      -webkit-text-fill-color: #000; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #fff;
+      font-family: "Fira Code", monospace;
+
+      @media (max-width: 768px) {
+        font-size: 2em;
+      }
+    }
+    p {
+      &.lightMode {
+        background: transparent;
+        color: #000;
+        // opacity: 0.8;
+      }
+      &.darkMode {
+        background: transparent;
+        color: #fff;
+        opacity: 1;
+      }
+    }
+
+    .MuiButton-root {
+      margin-bottom: 20px;
+      background: #000;
+      border: 0.5px solid #fff;
+      color: #fff;
+      padding: 0;
+
+      &:hover {
+        background: #5308f7;
+      }
+
+      a {
+        padding: 0 40px;
+        text-decoration: none;
+        &.lightMode {
+          color: #000;
+        }
+        &.darkMode {
+          color: #fff;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+
+      @media (max-width: 768px) {
+        width: 90vw;
+      }
+    }
+
+    b {
+      color: #9361ff;
+
+      &.content__highlight {
+        color: #fff;
+      }
+    }
+
+    .contractAddr {
+      a {
+        color: #fff;
+        text-decoration: none;
+        &.lightMode {
+          color: #000;
+        }
+        &.darkMode {
+          color: #fff;
+        }
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+
+.footer__container {
+  color: #fff;
+  padding: 0 5vw;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .update {
+    font-family: "Fira Code", monospace;
+    font-size: 18px;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+
+    a {
+      color: #fff;
+      margin-left: 30px;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  }
+}

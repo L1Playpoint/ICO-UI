@@ -1,7 +1,7 @@
 import "./styles/style.css";
 
 import React from "react";
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 import { Switch } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -65,51 +65,15 @@ function Navbar({ refs, lightMode, setLightMode, handleLightMode }) {
   } = refs;
   //  console.log(ref)
   const scrollToElement = (ref) =>
-    window.scrollTo(
-      ref.curren === "HomeRef"
-        ? { top: window.top }
-        : { top: ref.current.offset - 50 }
-    );
-  // window.scrollTo({ top: ref.current.offsetTop - 50, behavior: "smooth" });
+    window.scrollTo({ top: ref.current.offsetTop - 50, behavior: "smooth" });
+  // window.scrollTo(
+  //   ref.curren === "HomeRef"
+  //     ? { top: window.top }
+  //     : { top: ref.current.offset - 50 }
+  // );
 
   return (
     <div className={`nav__container`}>
-      <div
-        className={`topbar__container  ${
-          !lightMode ? "lightMode" : "darkMode"
-        }`}
-      >
-        <Marquee pauseOnHover={true} speed={35}>
-          {/* <p>
-            <span className="numbering">#1</span> All the relevant remaining AMA
-            Questions will be answered on Blog Post.🤝
-          </p> */}
-          <p>
-            <span className="numbering">#1</span> Invitation to Pre/Private Sale
-            Investors; Pre-Private Sale Started from 16th May 2022 till end of
-            May 2022. Visit{" "}
-            <a
-              href="https://sale.playpoint.ai/"
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                color: "white",
-              }}
-            >
-              https://sale.playpoint.ai/
-            </a>
-          </p>
-          {/* <p>
-            <span className="numbering">#3</span> Interested Investors & Venture
-            Capitalists can get in touch or directly contact to learn about the
-            process.💵
-          </p> */}
-          {/* <p>
-            <span className="numbering">#4</span> Pre/Private Sale will be
-            initiated soon 🚀.
-          </p> */}
-        </Marquee>
-      </div>
       <div
         className={`navbar__container ${!lightMode ? "lightMode" : "darkMode"}`}
       >
@@ -172,21 +136,27 @@ function Navbar({ refs, lightMode, setLightMode, handleLightMode }) {
         </div>
 
         <div className="button__container">
-        <div className="navbar__app">
-          <a href="https://blog.playpoint.ai" target="_blank" rel="noreferrer">
-            Blogs_
-          </a>
-        </div>
-        <FormControlLabel
-          control={
-            <MaterialUISwitch
-              sx={{ m: 1 }}
-              defaultChecked
-              onClick={handleLightMode}
-            />
-          }
-        />
-
+          <div
+            className={`navbar__app ${lightMode ? "lightMode" : "darkMode"}`}
+          >
+            <a
+              href="https://blog.playpoint.ai"
+              target="_blank"
+              rel="noreferrer"
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            >
+              Blogs_
+            </a>
+          </div>
+          <FormControlLabel
+            control={
+              <MaterialUISwitch
+                sx={{ m: 1 }}
+                defaultChecked
+                onClick={handleLightMode}
+              />
+            }
+          />
         </div>
       </div>
     </div>

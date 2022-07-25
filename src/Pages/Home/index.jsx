@@ -7,7 +7,9 @@ import "animate.css";
 import React from "react";
 import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
-import Popup from "reactjs-popup";
+// import Popup from "reactjs-popup";
+// import About from "../../Assets/About1(1).png"
+// import image from "../../Assets/About1(1).png"
 
 /**
  * @components custom main components
@@ -38,34 +40,13 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
   };
 
   return (
-    <div className="home__container">
+    <div className={`home__container ${lightMode ? "lightMode" : "darkMode"}`}>
       <Navbar
         refs={refs}
         lightMode={lightMode}
         setLightMode={setLightMode}
         handleLightMode={handleLightMode}
       />
-      <Popup defaultOpen position="center center">
-        <h3 className="title">Message from Playpoint 🔺</h3>
-        <hr />
-        <p className="content">
-          Pre-Private Sale has started from 16th May till end of May 2022.
-          <br />
-          Visit{" "}
-          <a
-            href="https://sale.playpoint.ai/"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            https://sale.playpoint.ai/
-          </a>{" "}
-          for presale investment.
-        </p>
-      </Popup>
 
       {/**
        * @section => landing
@@ -98,7 +79,12 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
       {/**
        * @section => about
        */}
-      <div ref={AboutRef} className="home__container__about">
+      <div
+        ref={AboutRef}
+        className={`home__container__about ${
+          lightMode ? "lightMode" : "darkMode"
+        }`}
+      >
         <div className="blob" />
         <div className="home__container__about__content">
           <div className="description">
@@ -118,12 +104,18 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
               <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
                 Play to Earn (P2E)
               </b>{" "}
-              and <b>prediction-pool platform</b>, based on real-time sporting
-              events. It is supported by
-              <b> decentralized blockchain network</b> and its primary network
-              comprises:
+              and{" "}
+              <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                prediction-pool platform
+              </b>
+              , based on real-time sporting events. It is supported by
+              <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                {" "}
+                decentralized blockchain network
+              </b>{" "}
+              and its primary network comprises:
               <br />
-              <ol>
+              <ol className={`${lightMode ? "lightMode" : "DarkMode"}`}>
                 <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
                   Logical Marketplace{" "}
                 </li>
@@ -137,16 +129,22 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
                   Variant Prediction Pools.{" "}
                 </li>
               </ol>
-              <p>
-              The affiliated participants can take part in the prediction pool
-              sweepstakes by selecting a match or matches (fixtures) prescribed
-              in the <b>Playpoint Showcase</b>. After the selection, the
-              participant must ultimately answer the questions based on their
-              predictions for the said match. These questions are assessed or
-              set up by the
-              <b> Playpoint Questionnaires hub</b>.<br /> The participants
-              acquiring the highest score range, in percentage, become prize
-              contenders.
+              <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                The affiliated participants can take part in the prediction pool
+                sweepstakes by selecting a match or matches (fixtures)
+                prescribed in the{" "}
+                <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Playpoint Showcase
+                </b>
+                . After the selection, the participant must ultimately answer
+                the questions based on their predictions for the said match.
+                These questions are assessed or set up by the
+                <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  {" "}
+                  Playpoint Questionnaires hub
+                </b>
+                .<br /> The participants acquiring the highest score range, in
+                percentage, become prize contenders.
               </p>
             </p>
           </div>
@@ -194,7 +192,9 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
                   : "https://ik.imagekit.io/lexworld/About1.png?tr=w-280.797,h-109.641"
               }
               alt="About"
-              className="absolute__icon"
+              className={`absolute__icon ${
+                lightMode ? "lightMode" : "darkMode"
+              }`}
               width={
                 window.innerWidth >= 1920 ||
                 (window.innerWidth <= 1920 && window.innerWidth > 992)
@@ -338,18 +338,22 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
           <h1>Roadmap_</h1>
           <h1>Roadmap_</h1>
         </div>
-        <h1 className={`roadmap__title ${lightMode ? "lightMode" : "darkMode"}`}>
+        <h1
+          className={`roadmap__title ${lightMode ? "lightMode" : "darkMode"}`}
+        >
           Roadmap
           <span className="animate__flash animate__slower animate__animated animate__infinite">
             _
           </span>
         </h1>
-        <p className={`top__description ${lightMode ? "lightMode" : "darkMode"}`}>
+        <p
+          className={`top__description ${lightMode ? "lightMode" : "darkMode"}`}
+        >
           Playpoint will continue to grow with new features, systems, and
           cross-chain expansions. The roadmap below indicates the expected
           milestones in development.
         </p>
-        <TimelineContainer />
+        <TimelineContainer lightMode={lightMode} />
       </div>
 
       {/**
@@ -439,18 +443,29 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
       {/**
        * @section => documents
        */}
-      <div ref={DocumentsRef} className="home__container__documents">
+      <div
+        ref={DocumentsRef}
+        className={`home__container__documents ${
+          lightMode ? "lightMode" : "darkMode"
+        }`}
+      >
         <div className="absolute">
           <Marquee>Frequently Asked Question, Whitepaper</Marquee>
           <Marquee>Whitepaper, FAQs, Frequently Asked Question</Marquee>
         </div>
         <div className="faqs" data-aos="fade-right">
-          <h1>Frequently Asked Questions_</h1>
-          <p className="faq__description">
+          <h1 className={`${lightMode ? "lightMode" : "darkMode"}`}>
+            Frequently Asked Questions_
+          </h1>
+          <p
+            className={`faq__description ${
+              lightMode ? "lightMode" : "darkMode"
+            }`}
+          >
             The tech is new and ever-evolving – it helps to have a guide. Here's
             what we recommend you should know while you're diving in.
           </p>
-          <Faqs />
+          <Faqs lightMode={lightMode} />
         </div>
         <div
           className="documents__links"
@@ -465,17 +480,18 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
             </span>
           </h1>
 
-          <Button type="submit">
+          <Button type={`submit ${lightMode ? "lightMode" : "darkMode"}`}>
             <a
               href="https://docs.playpoint.ai/"
               target="_blank"
               rel="noreferrer"
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
             >
               Whitepaper_
             </a>
           </Button>
 
-          <p>
+          <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
             A complete guide for investors, players and community stake holders
             which explains the complex mechanics of the game play and tokenomics
             of Playpoint Token.
@@ -512,8 +528,13 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
 
           <p className="contractAddr">
             <b>Centralized Landing(Google Firebase):</b>{" "}
-            <a href="https://playpoint.ai" target="_blank" rel="noreferrer">
-              https://platpoint.ai
+            <a
+              href="https://playpoint.ai"
+              target="_blank"
+              rel="noreferrer"
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            >
+              https://playpoint.ai
             </a>
           </p>
           <p className="contractAddr">
@@ -522,24 +543,66 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
               href="https://playpoint.on.fleek.co"
               target="_blank"
               rel="noreferrer"
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
             >
               playpoint.on.fleek.co
             </a>
           </p>
           <h1 style={{ marginTop: 20 }}>Contact Us_</h1>
-          <p>
+          <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
             <b>Email</b>: info@playpoint.ai
           </p>
-          <p>
+          <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
             <b>Marketing</b>: neil@playpoint.ai
           </p>
-          <p>
+          <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
             <b>Development</b>: domsan@playpoint.ai
           </p>
         </div>
       </div>
 
-      <Footer />
+      {/**
+       *  @section => team members
+       */}
+      <div
+        className={`home__container__team ${
+          lightMode ? "lightMode" : "darkMode"
+        }`}
+      >
+        <div className="home__container__team__content">
+          <h1>Meet Our Team__</h1>
+          <div className="teams">
+            <div className="user">
+              <img
+                src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/277584819_3211368542474917_8359344236602525081_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=iQyopYRv_DUAX8oDAwj&_nc_ht=scontent.fktm10-1.fna&oh=00_AT-Aswk0aN2lZFrpcC1n0ncatyBLGCaIdwv-iQE-Vk5m0g&oe=62E232F8"
+                alt="image"
+              />
+              <p className="username">Suraj Gaire</p>
+              <p className="post">Student Researcher</p>
+            </div>
+            <div className="user">
+              <img
+                src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/277584819_3211368542474917_8359344236602525081_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=iQyopYRv_DUAX8oDAwj&_nc_ht=scontent.fktm10-1.fna&oh=00_AT-Aswk0aN2lZFrpcC1n0ncatyBLGCaIdwv-iQE-Vk5m0g&oe=62E232F8"
+                alt="image"
+              />
+              <p className="username">Suraj Gaire</p>
+              <p className="post">Student Researcher</p>
+            </div>
+            <div className="user">
+              <div className="image-box">
+                <img
+                  src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/277584819_3211368542474917_8359344236602525081_n.jpg?stp=dst-jpg_p720x720&_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=iQyopYRv_DUAX8oDAwj&_nc_ht=scontent.fktm10-1.fna&oh=00_AT-Aswk0aN2lZFrpcC1n0ncatyBLGCaIdwv-iQE-Vk5m0g&oe=62E232F8"
+                  alt="image"
+                />
+              </div>
+              <p className="username">Suraj Gaire</p>
+              <p className="post">Student Researcher</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer lightMode={lightMode} />
     </div>
   );
 }

@@ -12,6 +12,17 @@ function App() {
   const handleLightMode = () => {
     setLightMode((prev) => !prev);
   };
+  console.log(lightMode)
+
+  React.useEffect(() => {
+    lightMode
+      ? (document.body.style.background === "white" &&
+        document.body.style.color === "black")
+      : (document.body.style.background === "black" &&
+        document.body.style.color === "white")
+
+  }, [lightMode]);
+  console.log(document.body.style);
 
   return (
     <div className={`app__container ${lightMode ? "lightMode" : "darkMode"}`}>

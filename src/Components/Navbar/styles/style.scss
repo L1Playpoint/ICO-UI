@@ -133,24 +133,29 @@ $darkMode:true;
       padding: 10px 20px;
       transition: 0.3s all ease;
       cursor: pointer;
-
-      // button {
-      //   &.lightMode {
-      //     @include darkMode()
-      //   }
-      //   &.darkMode {
-      //     @include lightMode()
-      //   }
-      // }
+      &.lightMode {
+        border: 1px solid #000;
+      }
 
       a {
         // color: #fff;
         text-decoration: none;
+        // &.lightMode {
+        //   color: #000;
+        //   background: none;
+        // }
+        &.darkMode {
+          color: #fff;
+        }
       }
 
-      &:hover {
+      &.darkMode:hover{
         background-color: #5308f7;
-        color: #fff;
+        color: #fff !important;
+      }
+      &.lightMode:hover{
+        background-color: #fff;
+        color: #5308f7 !important;
       }
     }
   }

@@ -20,7 +20,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   background: #000;
-  /* background: "#fff"; */
+}
+
+body.lightMode {
+  background: #fff !important;
+
+}
+
+body.darkMode {
+  background: #000 !important;
 }
 
 .popup-content{

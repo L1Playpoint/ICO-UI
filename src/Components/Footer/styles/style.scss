@@ -1,0 +1,31 @@
+.footer__container {
+    &.lightMode {
+        background: #fff ;
+        color: #000 ;
+    }
+    &.darkMode {
+        // background: #000 ;
+        color: #fff ;
+    }
+    .update {
+        &.lightMode {
+            background: #fff ;
+            color: #000 ;
+        }
+        &.darkMode {
+            background: #000 ;
+            color: #fff ;
+        }
+
+    }
+    .social__links{
+        &.lightMode {
+            background: #fff;
+            color: #000;
+        }
+        &.darkMode {
+            background: #000 ;
+            color: #fff;
+        }
+    }
+}

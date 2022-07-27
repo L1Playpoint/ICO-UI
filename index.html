@@ -2,23 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Playpoint is an online P2E prediction pool platform based on real time sporting events/ Avalanche network."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!-- This is the create react app url. change this to not have the variable... -->
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+
+    <!-- ... to be like this. This is the correct url for Vite -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <title>Playpoint | Decentralized P2E Prediction Platform</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <!-- Like below. This is the script tag for bootstrapping your Vite application -->
+    <script type="module" src="/src/index.jsx"></script>
   </body>
+  
 </html>

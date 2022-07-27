@@ -7,7 +7,18 @@ import "animate.css";
 import React from "react";
 import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
-import Popup from "reactjs-popup";
+import lex from "../../Assets/lex.jpg"
+import aakala from "../../Assets/aakala.jpg"
+import jake from "../../Assets/jake.jpg"
+import neil from "../../Assets/neil.jpg"
+// import gaire from "../../Assets/gaire.jpg"
+
+
+
+
+// import Popup from "reactjs-popup";
+// import About from "../../Assets/About1(1).png"
+// import image from "../../Assets/About1(1).png"
 
 /**
  * @components custom main components
@@ -19,7 +30,7 @@ import Footer from "../../Components/Footer";
 // import PolarChart from "./components/PolarChart";
 // import BannerImage from "../../Assets/Banner.png";
 
-function Home() {
+function Home({ lightMode, setLightMode, handleLightMode }) {
   // refs
   const HomeRef = React.useRef();
   const AboutRef = React.useRef();
@@ -38,29 +49,13 @@ function Home() {
   };
 
   return (
-    <div className="home__container">
-      <Navbar refs={refs} />
-      <Popup defaultOpen position="center center">
-        <h3 className="title">Message from Playpoint 🔺</h3>
-        <hr />
-        <p className="content">
-          Pre-Private Sale has started from 16th May till end of May 2022.
-          <br />
-          Visit{" "}
-          <a
-            href="https://sale.playpoint.ai/"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            https://sale.playpoint.ai/
-          </a>{" "}
-          for presale investment.
-        </p>
-      </Popup>
+    <div className={`home__container ${lightMode ? "lightMode" : "darkMode"}`}>
+      <Navbar
+        refs={refs}
+        lightMode={lightMode}
+        setLightMode={setLightMode}
+        handleLightMode={handleLightMode}
+      />
 
       {/**
        * @section => landing
@@ -93,7 +88,12 @@ function Home() {
       {/**
        * @section => about
        */}
-      <div ref={AboutRef} className="home__container__about">
+      <div
+        ref={AboutRef}
+        className={`home__container__about ${
+          lightMode ? "lightMode" : "darkMode"
+        }`}
+      >
         <div className="blob" />
         <div className="home__container__about__content">
           <div className="description">
@@ -103,31 +103,58 @@ function Home() {
                 _
               </span>
             </h1>
-            <div className="title">
-              <h1>Playpoint</h1>
+            <div className={`title `}>
+              <h1 className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                Playpoint
+              </h1>
             </div>
-            <p>
-              is an online <b>Play to Earn (P2E)</b> and{" "}
-              <b>prediction-pool platform</b>, based on real-time sporting
-              events. It is supported by
-              <b> decentralized blockchain network</b> and its primary network
-              comprises:
+            <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
+              is an online{" "}
+              <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                Play to Earn (P2E)
+              </b>{" "}
+              and{" "}
+              <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                prediction-pool platform
+              </b>
+              , based on real-time sporting events. It is supported by
+              <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                {" "}
+                decentralized blockchain network
+              </b>{" "}
+              and its primary network comprises:
               <br />
-              <ol>
-                <li>Logical Marketplace </li>
-                <li>Virtual Showcase Vendor,</li>
-                <li>Prediction Questionnaire Hub, and </li>
-                <li>Variant Prediction Pools. </li>
+              <ol className={`${lightMode ? "lightMode" : "DarkMode"}`}>
+                <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Logical Marketplace{" "}
+                </li>
+                <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Virtual Showcase Vendor,
+                </li>
+                <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Prediction Questionnaire Hub, and{" "}
+                </li>
+                <li className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Variant Prediction Pools.{" "}
+                </li>
               </ol>
-              The affiliated participants can take part in the prediction pool
-              sweepstakes by selecting a match or matches (fixtures) prescribed
-              in the <b>Playpoint Showcase</b>. After the selection, the
-              participant must ultimately answer the questions based on their
-              predictions for the said match. These questions are assessed or
-              set up by the
-              <b> Playpoint Questionnaires hub</b>.<br /> The participants
-              acquiring the highest score range, in percentage, become prize
-              contenders.
+              <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                The affiliated participants can take part in the prediction pool
+                sweepstakes by selecting a match or matches (fixtures)
+                prescribed in the{" "}
+                <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  Playpoint Showcase
+                </b>
+                . After the selection, the participant must ultimately answer
+                the questions based on their predictions for the said match.
+                These questions are assessed or set up by the
+                <b className={`${lightMode ? "lightMode" : "darkMode"}`}>
+                  {" "}
+                  Playpoint Questionnaires hub
+                </b>
+                .<br /> The participants acquiring the highest score range, in
+                percentage, become prize contenders.
+              </p>
             </p>
           </div>
           <div className="icon">
@@ -174,7 +201,9 @@ function Home() {
                   : "https://ik.imagekit.io/lexworld/About1.png?tr=w-280.797,h-109.641"
               }
               alt="About"
-              className="absolute__icon"
+              className={`absolute__icon ${
+                lightMode ? "lightMode" : "darkMode"
+              }`}
               width={
                 window.innerWidth >= 1920 ||
                 (window.innerWidth <= 1920 && window.innerWidth > 992)
@@ -318,18 +347,22 @@ function Home() {
           <h1>Roadmap_</h1>
           <h1>Roadmap_</h1>
         </div>
-        <h1 className="roadmap__title">
+        <h1
+          className={`roadmap__title ${lightMode ? "lightMode" : "darkMode"}`}
+        >
           Roadmap
           <span className="animate__flash animate__slower animate__animated animate__infinite">
             _
           </span>
         </h1>
-        <p className="top__description">
+        <p
+          className={`top__description ${lightMode ? "lightMode" : "darkMode"}`}
+        >
           Playpoint will continue to grow with new features, systems, and
           cross-chain expansions. The roadmap below indicates the expected
           milestones in development.
         </p>
-        <TimelineContainer />
+        <TimelineContainer lightMode={lightMode} />
       </div>
 
       {/**
@@ -419,18 +452,29 @@ function Home() {
       {/**
        * @section => documents
        */}
-      <div ref={DocumentsRef} className="home__container__documents">
+      <div
+        ref={DocumentsRef}
+        className={`home__container__documents ${
+          lightMode ? "lightMode" : "darkMode"
+        }`}
+      >
         <div className="absolute">
           <Marquee>Frequently Asked Question, Whitepaper</Marquee>
           <Marquee>Whitepaper, FAQs, Frequently Asked Question</Marquee>
         </div>
         <div className="faqs" data-aos="fade-right">
-          <h1>Frequently Asked Questions_</h1>
-          <p className="faq__description">
+          <h1 className={`${lightMode ? "lightMode" : "darkMode"}`}>
+            Frequently Asked Questions_
+          </h1>
+          <p
+            className={`faq__description ${
+              lightMode ? "lightMode" : "darkMode"
+            }`}
+          >
             The tech is new and ever-evolving – it helps to have a guide. Here's
             what we recommend you should know while you're diving in.
           </p>
-          <Faqs />
+          <Faqs lightMode={lightMode} />
         </div>
         <div
           className="documents__links"
@@ -445,17 +489,18 @@ function Home() {
             </span>
           </h1>
 
-          <Button type="submit">
+          <Button type={`submit ${lightMode ? "lightMode" : "darkMode"}`}>
             <a
               href="https://docs.playpoint.ai/"
               target="_blank"
               rel="noreferrer"
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
             >
               Whitepaper_
             </a>
           </Button>
 
-          <p>
+          <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
             A complete guide for investors, players and community stake holders
             which explains the complex mechanics of the game play and tokenomics
             of Playpoint Token.
@@ -492,8 +537,13 @@ function Home() {
 
           <p className="contractAddr">
             <b>Centralized Landing(Google Firebase):</b>{" "}
-            <a href="https://playpoint.ai" target="_blank" rel="noreferrer">
-              https://platpoint.ai
+            <a
+              href="https://playpoint.ai"
+              target="_blank"
+              rel="noreferrer"
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            >
+              https://playpoint.ai
             </a>
           </p>
           <p className="contractAddr">
@@ -502,24 +552,137 @@ function Home() {
               href="https://playpoint.on.fleek.co"
               target="_blank"
               rel="noreferrer"
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
             >
               playpoint.on.fleek.co
             </a>
           </p>
           <h1 style={{ marginTop: 20 }}>Contact Us_</h1>
-          <p>
+          <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
             <b>Email</b>: info@playpoint.ai
           </p>
-          <p>
+          <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
             <b>Marketing</b>: neil@playpoint.ai
           </p>
-          <p>
+          <p className={`${lightMode ? "lightMode" : "darkMode"}`}>
             <b>Development</b>: domsan@playpoint.ai
           </p>
         </div>
       </div>
 
-      <Footer />
+      {/**
+       *  @section => team members
+       */}
+      <div  
+      className={`home__container__team  ${
+        lightMode ? "lightMode" : "darkMode"
+      }`
+    }
+      >
+    
+        <div className="home__container__team__content"   data-aos="zoom-in" >
+        <h1 className="absolute__title">
+              Meet Our Team
+              <span className="animate__flash animate__slower animate__animated animate__infinite">
+                _
+              </span>
+            </h1>
+          <div className="teams" >
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src={lex}
+                  alt="image"
+                />
+              </div>
+              <p className="username">Domsan Lex</p>
+              <p className="post">Head of Technology</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://github.com/lex-world"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://twitter.com/domsan_lex"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://www.linkedin.com/in/lexworld/"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src={aakala}
+                  alt="image"
+                />
+              </div>
+              <p className="username">Aakala</p>
+              <p className="post">Head of Product</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src={neil}
+                  alt="image"
+                />
+              </div>
+              <p className="username">Neil</p>
+              <p className="post">Head of Partnerships</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src={jake}
+                  alt="image"
+                />
+              </div>
+              <p className="username">Jake Lewis</p>
+              <p className="post">Business Development Manager</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://twitter.com/JakeLewis_PPTT"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className="user">
+              <div className="imageBox">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  alt="image"
+                />
+              </div>
+              <p className="username">Eraig Thomas</p>
+              <p className="post">Student Researcher</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://github.com/surajgaire14"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://twitter.com/SurajGaire16"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://www.linkedin.com/in/suraj-gaire-11941b1bb/"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+            <div className={`user `}>
+              <div className="imageBox">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  alt="image"
+                />
+              </div>
+              <p className="username">Riktriz</p>
+              <p className="post">Student Researcher</p>
+              <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://github.com/reewazz"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`}href="https://twitter.com/WazzRee"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://www.linkedin.com/in/riwaj-neupane-9a906823a/"> <i class="ri-linkedin-fill"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer lightMode={lightMode} />
     </div>
   );
 }

@@ -5,19 +5,26 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-function Faqs() {
+function Faqs({ lightMode }) {
   return (
     <div className="faqs__container">
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${!lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq1-content"
           id="faq1-header"
         >
-          <Typography>Is PPTT, the native token, a cryptocurrency?</Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
+            Is PPTT, the native token, a cryptocurrency?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             Technically, PPTT is a fungible token on the Avalanche Ecosystem,
             similar to any ARC20 Token or Currency. However, PPTT can be used as
             a utility and a tradable token. This means it can be used inside
@@ -29,14 +36,21 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon color="#fff" />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq2-content"
           id="faq2-header"
         >
-          <Typography>Does Playpoint offer Staking?</Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
+            Does Playpoint offer Staking?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             Playpoint offers staking PPTT as a method of rewarding community
             members for locking up their PPTT Tokens for long-term. The user can
             participate in an online prediction pool game soon, earn PPTT after
@@ -46,14 +60,21 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq3-content"
           id="faq3-header"
         >
-          <Typography>What are Variant Prediction Pools?</Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
+            What are Variant Prediction Pools?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             A Playpoint prediction pool is a virtual venue where a group of
             participants compete amongst each other on the basis of prediction
             outcomes of a commonly selected match. Of the variant Playpoint
@@ -67,14 +88,21 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq4-content"
           id="faq4-header"
         >
-          <Typography>What is a Community Hub?</Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
+            What is a Community Hub?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             The Community Hub is a continuously evolving community platform that
             will evolve and expand as adoption increases. Gamers can launch
             games, socialize, get up to speed about new releases and other
@@ -89,14 +117,21 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq5-content"
           id="faq5-header"
         >
-          <Typography>How can I stay updated about Playpoint?</Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
+            How can I stay updated about Playpoint?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             Join Playpoint's Discord and Twitter for frequent updates. Playpoint
             also maintains a presence on Telegram.
           </Typography>
@@ -104,14 +139,21 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+              style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq6-content"
           id="faq6-header"
         >
-          <Typography>How do I play on Playpoint?</Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
+            How do I play on Playpoint?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             For broader advice on game strategy, we'll maintain network of
             broadcasters who make content about how to play the game. Above all,
             we are a community full of awesome, friendly players who love
@@ -122,17 +164,22 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq7-content"
           id="faq7-header"
         >
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             How many Games are you supporting to predict on your platform and if
             I want to predict anything, what is the process of it?{" "}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             Initially the game will be based on football games prediction. But
             as you know we are an online prediction pool platform based on
             real-time sporting events, we will add all popular sports. The game
@@ -142,18 +189,25 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq8-content"
           id="faq8-header"
+          className={`${lightMode ? "lightMode" : "darkMode"}`}
+          color={lightMode ? "#000" : "#fff"}
         >
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             What is your Game going to be like? Because I think Playpoint is
             putting money into 1 pool and see what team wins in sporting events
             then take the money. Very like betting.
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             The game will be a very simple challenge game where players can
             challenge other players for the outcome based on a series of
             questions and answers.
@@ -162,18 +216,24 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq9-content"
           id="faq9-header"
+          className={`${lightMode ? "lightMode" : "darkMode"}`}
         >
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             Can you tell me how any of the users can know about the giveaways or
             any airdrops announcement? Tell us so the users can follow that
             account or join it.
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             We will be running an airdrop campaign in the future and you can
             find the details about it in our social media handles. So make sure
             to follow us on twitter, telegram and discord.
@@ -182,16 +242,21 @@ function Faqs() {
       </Accordion>
       <Accordion TransitionProps={{ unmountOnExit: true }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+            style={{background:"transparent"}}
+              className={`${lightMode ? "lightMode" : "darkMode"}`}
+            />
+          }
           aria-controls="faq10-content"
           id="faq10-header"
         >
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             Are Playpoint games suitable for adults or only limited to children?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography className={`${lightMode ? "lightMode" : "darkMode"}`}>
             The game is intended to be suitable for anyone above the age of 18.
           </Typography>
         </AccordionDetails>

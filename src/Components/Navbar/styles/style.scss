@@ -1,4 +1,23 @@
+$darkBackground:#262626;
+$darkColor:#000;
+
+$lightBackground:#fff;
+$lightColor:#fff;
+
+$darkMode:true;
+
+@mixin lightMode {
+  background: $lightBackground !important;
+  color: $darkColor !important;
+}
+
+@mixin  darkMode {
+  background: $darkBackground !important;
+  color: $lightColor !important;
+}
+
 .nav__container {
+
   .topbar__container {
     margin-top: 75px;
     color: #fff;
@@ -15,6 +34,14 @@
       #7463b1,
       #317db0
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    &.lightMode{
+      @include darkMode()
+    }
+    &.darkMode{
+      @include lightMode();
+      border-bottom:1px solid #B6B6B6;
+    }
 
     .marquee-container {
       .overlay {
@@ -48,6 +75,13 @@
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     z-index: 5;
+    &.lightMode {
+      @include darkMode()
+    }
+
+    &.darkMode {
+      @include lightMode()
+    }
 
     .navbar__logo {
       display: flex;
@@ -63,6 +97,7 @@
 
       p {
         font-weight: bold;
+        // color: "000";
       }
     }
 
@@ -82,6 +117,13 @@
         border: none;
         cursor: pointer;
         font-size: 16px;
+        &.lightMode {
+          @include darkMode()
+        }
+    
+        &.darkMode {
+          @include lightMode()
+        } 
       }
     }
 
@@ -91,16 +133,31 @@
       padding: 10px 20px;
       transition: 0.3s all ease;
       cursor: pointer;
-
-      a {
-        color: #fff;
-        text-decoration: none;
+      &.lightMode {
+        border: 1px solid #000;
       }
 
-      &:hover {
+      a {
+        // color: #fff;
+        text-decoration: none;
+        // &.lightMode {
+        //   color: #000;
+        //   background: none;
+        // }
+        &.darkMode {
+          color: #fff;
+        }
+      }
+
+      &.darkMode:hover{
         background-color: #5308f7;
-        color: #fff;
+        color: #fff !important;
+      }
+      &.lightMode:hover{
+        background-color: #fff;
+        color: #5308f7 !important;
       }
     }
   }
 }
+

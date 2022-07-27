@@ -10,6 +10,15 @@
   background: linear-gradient(to left, #7463b1, #317db0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.nav__container .topbar__container.lightMode {
+  background: #262626 !important;
+  color: #fff !important;
+}
+.nav__container .topbar__container.darkMode {
+  background: #fff !important;
+  color: #000 !important;
+  border-bottom: 1px solid #B6B6B6;
+}
 .nav__container .topbar__container .marquee-container .overlay {
   display: none;
 }
@@ -42,6 +51,14 @@
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   z-index: 5;
+}
+.nav__container .navbar__container.lightMode {
+  background: #262626 !important;
+  color: #fff !important;
+}
+.nav__container .navbar__container.darkMode {
+  background: #fff !important;
+  color: #000 !important;
 }
 .nav__container .navbar__container .navbar__logo {
   display: -webkit-box;
@@ -87,6 +104,14 @@
   cursor: pointer;
   font-size: 16px;
 }
+.nav__container .navbar__container .navbar__links button.lightMode {
+  background: #262626 !important;
+  color: #fff !important;
+}
+.nav__container .navbar__container .navbar__links button.darkMode {
+  background: #fff !important;
+  color: #000 !important;
+}
 .nav__container .navbar__container .navbar__app {
   border: 1px solid #fff;
   border-radius: 10px;
@@ -95,11 +120,25 @@
   transition: 0.3s all ease;
   cursor: pointer;
 }
+.nav__container .navbar__container .navbar__app.lightMode {
+  border: 1px solid #000;
+}
 .nav__container .navbar__container .navbar__app a {
-  color: #fff;
   text-decoration: none;
 }
-.nav__container .navbar__container .navbar__app:hover {
-  background-color: #5308f7;
+.nav__container .navbar__container .navbar__app a.lightMode {
+  color: #000;
+  background: none;
+}
+.nav__container .navbar__container .navbar__app a.darkMode {
   color: #fff;
 }
+.nav__container .navbar__container .navbar__app.darkMode:hover {
+  background-color: #5308f7;
+  color: #fff !important;
+}
+.nav__container .navbar__container .navbar__app.lightMode:hover {
+  background-color: #fff;
+  color: #5308f7 !important;
+}
+/*# sourceMappingURL=style.css.map */

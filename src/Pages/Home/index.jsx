@@ -7,6 +7,15 @@ import "animate.css";
 import React from "react";
 import { Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
+import lex from "../../Assets/lex.jpg"
+import aakala from "../../Assets/aakala.jpg"
+import jake from "../../Assets/jake.jpg"
+import neil from "../../Assets/neil.jpg"
+// import gaire from "../../Assets/gaire.jpg"
+
+
+
+
 // import Popup from "reactjs-popup";
 // import About from "../../Assets/About1(1).png"
 // import image from "../../Assets/About1(1).png"
@@ -582,27 +591,27 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
             <div className="user">
               <div className="imageBox">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  src={lex}
                   alt="image"
                 />
               </div>
               <p className="username">Domsan Lex</p>
-              <p className="post">Lead Developer</p>
+              <p className="post">Head of Technology</p>
               <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://github.com/lex-world"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://twitter.com/domsan_lex"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://www.linkedin.com/in/lexworld/"> <i class="ri-linkedin-fill"></i> </a>
               </div>
             </div>
             <div className="user">
               <div className="imageBox">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  src={aakala}
                   alt="image"
                 />
               </div>
               <p className="username">Aakala</p>
-              <p className="post">Lead Developer</p>
+              <p className="post">Head of Product</p>
               <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
              <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
              <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
@@ -612,12 +621,12 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
             <div className="user">
               <div className="imageBox">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  src={neil}
                   alt="image"
                 />
               </div>
               <p className="username">Neil</p>
-              <p className="post">Lead Developer</p>
+              <p className="post">Head of Partnerships</p>
               <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
              <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
              <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
@@ -627,15 +636,15 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
             <div className="user">
               <div className="imageBox">
                 <img
-                  src="https://pbs.twimg.com/profile_images/1491844488087494674/6tKrKNZK_400x400.jpg"
+                  src={jake}
                   alt="image"
                 />
               </div>
               <p className="username">Jake Lewis</p>
-              <p className="post">Lead Developer</p>
+              <p className="post">Business Development Manager</p>
               <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
              <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://twitter.com/JakeLewis_PPTT"> <i class="ri-twitter-fill"></i></a>
              <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
               </div>
             </div>
@@ -649,9 +658,9 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
               <p className="username">Eraig Thomas</p>
               <p className="post">Student Researcher</p>
               <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-twitter-fill"></i></a>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://github.com/surajgaire14"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://twitter.com/SurajGaire16"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://www.linkedin.com/in/suraj-gaire-11941b1bb/"> <i class="ri-linkedin-fill"></i> </a>
               </div>
             </div>
             <div className={`user `}>
@@ -664,9 +673,9 @@ function Home({ lightMode, setLightMode, handleLightMode }) {
               <p className="username">Riktriz</p>
               <p className="post">Student Researcher</p>
               <div className={`social  ${lightMode ? "lightMode" : "darkMode"}`}>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-github-fill"></i></a>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`}href="#"> <i class="ri-twitter-fill"></i></a>
-             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="#"> <i class="ri-linkedin-fill"></i> </a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://github.com/reewazz"> <i class="ri-github-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`}href="https://twitter.com/WazzRee"> <i class="ri-twitter-fill"></i></a>
+             <a className={` ${lightMode ? "lightMode" : "darkMode"}`} href="https://www.linkedin.com/in/riwaj-neupane-9a906823a/"> <i class="ri-linkedin-fill"></i> </a>
               </div>
             </div>
           </div>

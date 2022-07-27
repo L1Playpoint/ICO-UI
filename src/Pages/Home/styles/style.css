@@ -687,6 +687,7 @@ body.darkMode {
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
+  margin: 2px;
 }
 .home__container .home__container__team .home__container__team__content .teams .user .social a {
   text-decoration: none;

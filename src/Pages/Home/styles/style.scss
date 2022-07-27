@@ -649,6 +649,7 @@ body {
             @media (max-width: 768px) {
               width: 80vw;
             }
+            
 
             img {
               // height: 100%;
@@ -677,6 +678,7 @@ body {
             text-align: left;
             // left: 10px;
             color: #8a8a8a;
+            // margin: px;
             width: 200px;
             font-size: 1rem;
             font-weight: 500;
@@ -685,6 +687,7 @@ body {
           .social {
             display: flex;
             gap: 4px;
+            margin: 2px;
             a {
               text-decoration: none;
               margin: 2px;
